@@ -19,3 +19,6 @@ venv/
 
 # Experiments (private)
 experiments/
+
+# Tests (local only)
+tests/
