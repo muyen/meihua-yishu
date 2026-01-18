@@ -6,6 +6,47 @@
 
 **Meihua Yishu** (Plum Blossom Numerology) is a traditional Chinese I Ching divination method, attributed to Shao Yong (邵雍) of the Song Dynasty. This project provides a professional Meihua divination system that can be used as a Claude AI Skill.
 
+## Why Meihua Yishu?
+
+### A Decision-Making Framework, Not Fortune-Telling
+
+Unlike popular misconceptions about divination, Meihua Yishu is a **structured thinking tool** rooted in 3,000 years of Chinese philosophical wisdom:
+
+| Misconception | Reality |
+|---------------|---------|
+| "Predicts the future" | Analyzes present conditions and likely trajectories |
+| "Superstition" | Systematic framework based on pattern recognition |
+| "Magic" | Philosophical method for examining situations from multiple angles |
+
+### Benefits
+
+🎯 **Decision Clarity** — When facing complex choices, the hexagram structure forces you to consider factors you might overlook
+
+🔄 **Multiple Perspectives** — The Ti-Yong (体用) framework systematically examines self vs. environment, action vs. reaction
+
+⏱️ **Timing Awareness** — The 應期 (Yingqi) system encourages thinking about *when* to act, not just *what* to do
+
+🌊 **Change Philosophy** — Based on the I Ching principle that everything changes; helps accept uncertainty and plan adaptively
+
+💭 **Reflection Tool** — The divination process creates space for introspection and deeper thinking about your situation
+
+### Who Uses It?
+
+- **Entrepreneurs** — For strategic timing and partnership decisions
+- **Individuals** — For major life choices (career, relationships, relocation)
+- **Curious Minds** — To explore Eastern philosophy and symbolic thinking
+- **Developers** — To integrate traditional wisdom into AI applications
+
+### The Meihua Advantage
+
+Compared to other I Ching methods:
+- **Faster** — No coins or yarrow stalks needed; cast from time, numbers, or observation
+- **More Intuitive** — Trigram-based (8 symbols) rather than full hexagram memorization (64 symbols)
+- **Contextual** — Ti-Yong analysis relates directly to your specific situation
+- **Practical** — Clear auspicious/inauspicious framework with actionable insights
+
+> *"The Yi does not predict fate — it reveals patterns. Understanding patterns empowers better choices."*
+
 ## Features
 
 ### Casting Methods
@@ -39,7 +80,8 @@
 ```
 meihua-yishu/
 ├── SKILL.md                      # Main skill documentation
-├── ETHICS.md                     # Ethical guidelines for divination
+├── ETHICS.md                     # Ethical guidelines (English)
+├── ETHICS.zh-TW.md              # Ethical guidelines (繁體中文)
 ├── README.md                     # This file
 ├── README.zh-TW.md              # Traditional Chinese README
 ├── LICENSE                       # CC BY-NC-SA 4.0 License
