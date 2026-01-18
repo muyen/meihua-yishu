@@ -1,139 +1,192 @@
 # 梅花易數 Meihua Yishu
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-**梅花易數**（Plum Blossom Numerology）是相傳為宋代邵雍（邵康節）所創的中國傳統易學占卜術。此專案提供一個專業的梅花易數占卜系統，可作為 Claude AI 的 Skill 使用。
+**[English](README.md)** | **[繁體中文](README.zh-TW.md)**
 
-## 功能特色
+**Meihua Yishu** (Plum Blossom Numerology) is a traditional Chinese I Ching divination method, attributed to Shao Yong (邵雍) of the Song Dynasty. This project provides a professional Meihua divination system that can be used as a Claude AI Skill.
 
-- **時間起卦** — 以當前或指定時間起卦
-- **數字起卦** — 用數字來起卦
-- **體用生克分析** — 解讀卦象中的體卦與用卦關係
-- **六十四卦解讀** — 詳細解釋卦辭與爻辭
-- **動爻變卦推演** — 分析變卦的吉凶
-- **八卦萬物類象** — 提供現代與傳統的類象對照
+## Features
 
-## 專案結構
+### Casting Methods
+- **Time-based Divination** — Cast hexagrams using current or specified time
+- **Number-based Divination** — Cast hexagrams using numbers
+- **Sound-based Divination** — Cast using the count of sounds heard
+- **Color-based Divination** — Cast based on colors corresponding to five elements
+- **Measurement-based Divination** — Cast using object dimensions
+- **Direction-based Divination** — Cast based on the direction of a person or object
+
+### Interpretation Functions
+- **Ti-Yong Analysis** — Interpret the relationship between Ti (体) and Yong (用) trigrams
+- **Tongguan Mediation** — Analyze five-element bridging to mitigate克 (controlling) relationships
+- **64 Hexagrams Interpretation** — Detailed explanations of hexagram and line texts
+- **Changing Lines Derivation** — Analyze the fortune of transformed hexagrams
+- **Seasonal Strength (卦氣)** — Determine Ti trigram strength based on season
+- **Timing Prediction (應期)** — Predict when events will manifest
+
+### Specialized Readings
+- **18 Specific Readings** — Marriage, illness, wealth, travel, and more
+- **Ten Responses (十應)** — Environmental sign analysis
+- **Bagua Correspondences** — Modern and traditional symbolic associations
+- **Character Analysis (測字)** — Fortune telling by analyzing Chinese characters
+
+### AI-Assisted Features
+- **Photo Analysis** — Upload photos for AI to analyze environmental signs
+- **Environmental Sensing** — Describe surrounding sounds, colors, people for enhanced readings
+
+## Project Structure
 
 ```
 meihua-yishu/
-├── SKILL.md                      # 主要技能說明文件
-├── README.md                     # 本文件
-├── LICENSE                       # MIT 授權
+├── SKILL.md                      # Main skill documentation
+├── README.md                     # This file
+├── README.zh-TW.md              # Traditional Chinese README
+├── LICENSE                       # MIT License
 ├── references/
-│   ├── 64gua.md                 # 六十四卦詳解
-│   ├── bagua-symbols.md         # 八卦萬物類象
-│   └── case-studies.md          # 經典斷卦案例
+│   ├── 64gua.md                 # 64 Hexagrams detailed guide
+│   ├── yaoci.md                 # 384 Line texts
+│   ├── zhouyi-zhuan.md          # Tuan & Xiang commentaries
+│   ├── bagua-symbols.md         # Bagua correspondences
+│   ├── case-studies-expanded.md # Classic divination cases
+│   ├── waiying-guide.md         # External signs guide
+│   ├── yingqi-calc.md           # Timing calculation guide
+│   ├── 18-divinations.md        # 18 types of specific readings
+│   ├── shiying-guide.md         # Ten responses detailed guide
+│   ├── wanwu-fu.md              # Myriad things verses
+│   └── cezi-method.md           # Character analysis (測字法)
 └── scripts/
-    └── meihua_calc.py           # Python 起卦計算工具
+    └── meihua_calc.py           # Python calculation tool
 ```
 
-## 使用方式
+## Usage
 
-### 作為 Claude Skill 使用
+### As a Claude Skill
 
-將此資料夾放入你的 Claude Skills 目錄即可使用。
+Place this folder in your Claude Skills directory to use.
 
-### 使用 Python 計算工具
+### Using the Python Tool
 
 ```bash
-# 以當前時間起卦
+# Cast hexagram using current time
 python scripts/meihua_calc.py time
 
-# 以數字起卦（兩個數字）
+# Cast hexagram using two numbers
 python scripts/meihua_calc.py num 6 8
 
-# 以數字起卦（三個數字，第三個為動爻）
+# Cast hexagram using three numbers (third is changing line)
 python scripts/meihua_calc.py num 6 8 3
 ```
 
-輸出範例：
+Example output:
 
 ```
 ==================================================
-📿 梅花易數起卦結果
+📿 Meihua Yishu Divination Result
 ==================================================
 
-【一、起卦計算】
-  年數：10
-  月數：1
-  日數：17
-  時辰：亥時 (12)
+【1. Calculation】
+  Year: 10
+  Month: 1
+  Day: 17
+  Hour: Hai (12)
 
-【二、本卦】
-  第 49 卦：澤火革
-  上卦：兌 ☱
-  下卦：離 ☲
-  二進位：011101
-  第4爻動
+【2. Primary Hexagram】
+  #49: Ze Huo Ge (Revolution)
+  Upper: Dui ☱
+  Lower: Li ☲
+  Binary: 011101
+  Line 4 changing
 
-【三、體用分析】
-  體卦：離（下卦）- 火
-  用卦：兌（上卦）- 金
-  生克：體克用（吉）
+【3. Ti-Yong Analysis】
+  Ti Trigram: Li (lower) - Fire
+  Yong Trigram: Dui (upper) - Metal
+  Relationship: Ti controls Yong (Auspicious)
 
-【四、互卦】
-  乾為天（上乾下乾）
+【4. Mutual Hexagram】
+  Qian Wei Tian (Heaven over Heaven)
 
-【五、變卦】
-  第 17 卦：澤雷隨
-  二進位：011001
+【5. Transformed Hexagram】
+  #17: Ze Lei Sui (Following)
+  Binary: 011001
 ==================================================
 ```
 
-## 核心原理
+## Core Principles
 
-梅花易數以**先天八卦數**起卦：
+Meihua Yishu uses **Early Heaven Bagua Numbers**:
 
-| 卦 | 數 | 五行 | 符號 |
-|---|---|------|------|
-| 乾 | 1 | 金 | ☰ |
-| 兌 | 2 | 金 | ☱ |
-| 離 | 3 | 火 | ☲ |
-| 震 | 4 | 木 | ☳ |
-| 巽 | 5 | 木 | ☴ |
-| 坎 | 6 | 水 | ☵ |
-| 艮 | 7 | 土 | ☶ |
-| 坤 | 8 | 土 | ☷ |
+| Trigram | Number | Element | Symbol |
+|---------|--------|---------|--------|
+| Qian (乾) | 1 | Metal | ☰ |
+| Dui (兌) | 2 | Metal | ☱ |
+| Li (離) | 3 | Fire | ☲ |
+| Zhen (震) | 4 | Wood | ☳ |
+| Xun (巽) | 5 | Wood | ☴ |
+| Kan (坎) | 6 | Water | ☵ |
+| Gen (艮) | 7 | Earth | ☶ |
+| Kun (坤) | 8 | Earth | ☷ |
 
-### 體用論
+### Ti-Yong Theory
 
-- **體卦**：主體、自己、問卦者
-- **用卦**：客體、事情、外在環境
-- **互卦**：事情發展過程
-- **變卦**：最終結果
+- **Ti (体)**: The subject, self, the querent
+- **Yong (用)**: The object, matter, external environment
+- **Mutual Hexagram (互卦)**: The development process
+- **Transformed Hexagram (變卦)**: The final outcome
 
-### 吉凶判定
+### Fortune Determination
 
-| 情況 | 吉凶 | 說明 |
-|------|------|------|
-| 用生體 | 大吉 | 有進益之喜，外力相助 |
-| 體克用 | 吉 | 我制約對方，可成事 |
-| 體用比和 | 吉 | 五行相同，和諧順利 |
-| 用克體 | 凶 | 受制於人，不利 |
-| 體生用 | 耗洩 | 付出多回報少 |
+| Situation | Fortune | Explanation |
+|-----------|---------|-------------|
+| Yong generates Ti | Very Auspicious | Gaining benefits, external assistance |
+| Ti controls Yong | Auspicious | You control the situation, success likely |
+| Ti-Yong in harmony | Auspicious | Same element, harmonious and smooth |
+| Yong controls Ti | Inauspicious | Constrained by others, unfavorable |
+| Ti generates Yong | Draining | Much effort, little return |
 
-## 占卜原則
+### Tongguan Mediation (通關化解)
 
-1. **無疑不卜** — 沒有具體問題不占
-2. **筮不過三** — 同一問題不重複占卜超過三次
-3. **不動不占** — 無事不占
-4. **依理推斷** — 卦象需結合實際情況解讀
+When Ti and Yong are in a controlling relationship, a "bridging" element in the Mutual or Transformed hexagram can mitigate the inauspicious outcome:
 
-## 參考資料
+| Controlling Relationship | Bridging Element |
+|--------------------------|------------------|
+| Metal controls Wood | Water |
+| Wood controls Earth | Fire |
+| Earth controls Water | Metal |
+| Water controls Fire | Wood |
+| Fire controls Metal | Earth |
 
-- 《梅花易數》— 邵雍
-- 《周易》
-- 《易學啟蒙》
+## Divination Principles
 
-## 授權
+1. **No question, no divination** — Don't divine without a specific question
+2. **No more than three times** — Don't repeat divination for the same question more than three times
+3. **No movement, no divination** — Don't divine without cause
+4. **Interpret with reason** — Hexagrams must be interpreted in context
 
-本專案採用 MIT 授權條款。詳見 [LICENSE](LICENSE) 文件。
+## References
 
-## 貢獻
+- *Meihua Yishu (梅花易數)* — Shao Yong
+- *Zhou Yi (I Ching / 周易)*
+- *Introduction to I Ching Studies (易學啟蒙)*
 
-歡迎提交 Issue 或 Pull Request！
+## License
+
+This work is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+**You are free to:**
+- Share — copy and redistribute the material
+- Adapt — remix, transform, and build upon the material
+
+**Under the following terms:**
+- **Attribution** — You must give appropriate credit
+- **NonCommercial** — You may not use the material for commercial purposes
+- **ShareAlike** — Derivatives must be distributed under the same license
+
+See [LICENSE](LICENSE) for details.
+
+## Contributing
+
+Issues and Pull Requests are welcome!
 
 ---
 
-☯️ 易有太極，是生兩儀，兩儀生四象，四象生八卦。
+☯️ The Yi has Taiji, which generates the Two Forms, which generate the Four Images, which generate the Eight Trigrams.

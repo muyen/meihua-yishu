@@ -39,12 +39,12 @@ HEXAGRAMS = {
     (8, 5): (46, "地風升"),   (8, 6): (7, "地水師"),    (8, 7): (15, "地山謙"),   (8, 8): (2, "坤為地"),
 }
 
-# 時辰對照
+# 時辰對照（子時為23:00-00:59）
 SHICHEN = {
     0: (1, "子"), 1: (1, "子"), 2: (2, "丑"), 3: (2, "丑"), 4: (3, "寅"), 5: (3, "寅"),
     6: (4, "卯"), 7: (4, "卯"), 8: (5, "辰"), 9: (5, "辰"), 10: (6, "巳"), 11: (6, "巳"),
     12: (7, "午"), 13: (7, "午"), 14: (8, "未"), 15: (8, "未"), 16: (9, "申"), 17: (9, "申"),
-    18: (10, "酉"), 19: (10, "酉"), 20: (11, "戌"), 21: (11, "戌"), 22: (12, "亥"), 23: (12, "亥"),
+    18: (10, "酉"), 19: (10, "酉"), 20: (11, "戌"), 21: (11, "戌"), 22: (12, "亥"), 23: (1, "子"),
 }
 
 
@@ -84,7 +84,7 @@ def binary_to_gua_pair(binary: str) -> Tuple[int, int]:
     """二進位轉上下卦數"""
     upper_bin = binary[:3]
     lower_bin = binary[3:]
-
+    
     # 反查二進位對應的卦數
     for num, info in BAGUA.items():
         if info["binary"] == upper_bin:
@@ -99,7 +99,7 @@ def get_hu_gua(binary: str) -> Tuple[int, int]:
     # binary index: 0=上爻, 1=五爻, 2=四爻, 3=三爻, 4=二爻, 5=初爻
     upper_hu = binary[1:4]  # 5,4,3爻
     lower_hu = binary[2:5]  # 4,3,2爻
-
+    
     for num, info in BAGUA.items():
         if info["binary"] == upper_hu:
             hu_upper = num
@@ -112,7 +112,7 @@ def analyze_wuxing(ti_element: str, yong_element: str) -> str:
     """分析體用五行生克關係"""
     sheng = {"木": "火", "火": "土", "土": "金", "金": "水", "水": "木"}
     ke = {"木": "土", "土": "水", "水": "火", "火": "金", "金": "木"}
-
+    
     if ti_element == yong_element:
         return "比和（吉）"
     elif sheng.get(yong_element) == ti_element:
@@ -130,22 +130,22 @@ def qigua_by_time(year: int, month: int, day: int, hour: int) -> Dict:
     """以時間起卦"""
     # 計算年數（各位數相加）
     year_sum = sum(int(d) for d in str(year))
-
+    
     # 獲取時辰
     shichen_num, shichen_name = get_shichen(hour)
-
+    
     # 計算上卦、下卦、動爻
     upper_sum = year_sum + month + day
     lower_sum = upper_sum + shichen_num
-
+    
     upper_gua = num_to_gua(upper_sum)
     lower_gua = num_to_gua(lower_sum)
     dong_yao = num_to_yao(lower_sum)
-
+    
     # 獲取卦象
     hexagram_binary = get_hexagram_binary(upper_gua, lower_gua)
     hexagram_info = HEXAGRAMS.get((upper_gua, lower_gua), (0, "未知卦"))
-
+    
     # 判斷體用（動爻在上卦則上卦為用，反之下卦為用）
     if dong_yao > 3:  # 動爻在上卦
         ti_gua = lower_gua
@@ -157,21 +157,21 @@ def qigua_by_time(year: int, month: int, day: int, hour: int) -> Dict:
         yong_gua = lower_gua
         ti_pos = "上卦"
         yong_pos = "下卦"
-
+    
     # 計算變卦
     bian_binary = apply_change(hexagram_binary, dong_yao)
     bian_upper, bian_lower = binary_to_gua_pair(bian_binary)
     bian_info = HEXAGRAMS.get((bian_upper, bian_lower), (0, "未知卦"))
-
+    
     # 計算互卦
     hu_upper, hu_lower = get_hu_gua(hexagram_binary)
     hu_info = HEXAGRAMS.get((hu_upper, hu_lower), (0, "未知卦"))
-
+    
     # 分析體用生克
     ti_element = BAGUA[ti_gua]["element"]
     yong_element = BAGUA[yong_gua]["element"]
     wuxing_relation = analyze_wuxing(ti_element, yong_element)
-
+    
     return {
         "計算過程": {
             "年數": year_sum,
@@ -212,16 +212,16 @@ def qigua_by_numbers(num1: int, num2: int, num3: int = None) -> Dict:
     """以數字起卦"""
     upper_gua = num_to_gua(num1)
     lower_gua = num_to_gua(num2)
-
+    
     if num3 is not None:
         dong_yao = num_to_yao(num3)
     else:
         dong_yao = num_to_yao(num1 + num2)
-
+    
     # 獲取卦象
     hexagram_binary = get_hexagram_binary(upper_gua, lower_gua)
     hexagram_info = HEXAGRAMS.get((upper_gua, lower_gua), (0, "未知卦"))
-
+    
     # 判斷體用
     if dong_yao > 3:
         ti_gua = lower_gua
@@ -233,21 +233,21 @@ def qigua_by_numbers(num1: int, num2: int, num3: int = None) -> Dict:
         yong_gua = lower_gua
         ti_pos = "上卦"
         yong_pos = "下卦"
-
+    
     # 計算變卦
     bian_binary = apply_change(hexagram_binary, dong_yao)
     bian_upper, bian_lower = binary_to_gua_pair(bian_binary)
     bian_info = HEXAGRAMS.get((bian_upper, bian_lower), (0, "未知卦"))
-
+    
     # 計算互卦
     hu_upper, hu_lower = get_hu_gua(hexagram_binary)
     hu_info = HEXAGRAMS.get((hu_upper, hu_lower), (0, "未知卦"))
-
+    
     # 分析體用生克
     ti_element = BAGUA[ti_gua]["element"]
     yong_element = BAGUA[yong_gua]["element"]
     wuxing_relation = analyze_wuxing(ti_element, yong_element)
-
+    
     return {
         "計算過程": {
             "第一數": f"{num1} → {num1} mod 8 = {upper_gua} → {BAGUA[upper_gua]['name']}",
@@ -285,11 +285,11 @@ def print_result(result: Dict):
     print("\n" + "=" * 50)
     print("📿 梅花易數起卦結果")
     print("=" * 50)
-
+    
     print("\n【一、起卦計算】")
     for key, value in result["計算過程"].items():
         print(f"  {key}：{value}")
-
+    
     print("\n【二、本卦】")
     ben = result["本卦"]
     print(f"  第 {ben['序號']} 卦：{ben['名稱']}")
@@ -297,28 +297,28 @@ def print_result(result: Dict):
     print(f"  下卦：{ben['下卦']}")
     print(f"  二進位：{ben['二進位']}")
     print(f"  {ben['動爻']}動")
-
+    
     print("\n【三、體用分析】")
     ty = result["體用"]
     print(f"  體卦：{ty['體卦']}")
     print(f"  用卦：{ty['用卦']}")
     print(f"  生克：{ty['生克關係']}")
-
+    
     print("\n【四、互卦】")
     hu = result["互卦"]
     print(f"  {hu['名稱']}（上{hu['上互']}下{hu['下互']}）")
-
+    
     print("\n【五、變卦】")
     bian = result["變卦"]
     print(f"  第 {bian['序號']} 卦：{bian['名稱']}")
     print(f"  二進位：{bian['二進位']}")
-
+    
     print("\n" + "=" * 50)
 
 
 if __name__ == "__main__":
     import sys
-
+    
     if len(sys.argv) > 1:
         if sys.argv[1] == "time":
             # 使用當前時間起卦
@@ -341,5 +341,5 @@ if __name__ == "__main__":
         now = datetime.now()
         result = qigua_by_time(now.year, now.month, now.day, now.hour)
         print(f"\n起卦時間：{now.strftime('%Y年%m月%d日 %H:%M')}")
-
+    
     print_result(result)
