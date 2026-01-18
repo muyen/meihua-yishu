@@ -1,3 +1,8 @@
+---
+name: meihua-yishu
+description: Meihua Yishu (梅花易數) Plum Blossom I Ching divination skill. Use when users request divination, fortune telling, hexagram casting, or character analysis (測字). Triggers on: 占卜, 算卦, 問卦, 起卦, 解卦, 測字, 拆字, meihua, plum blossom, I Ching divination, 梅花易數.
+---
+
 # 梅花易數占卜技能 (Meihua Yishu Divination Skill)
 
 梅花易數（梅花心易）專業占卜系統。相傳為宋代邵雍（邵康節）所創，是中國傳統易學占卜術。
