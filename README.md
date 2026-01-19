@@ -135,6 +135,18 @@ This skill can be adapted for use with other AI platforms:
    - Paste key reference content directly into instructions, or
    - Upload files when starting a conversation
 
+#### Chinese LLMs (中國大模型)
+
+Supported models: **DeepSeek**, **Kimi (月之暗面)**, **Qwen (通义千问)**, **文心一言**, **ChatGLM (智谱清言)**, **豆包**
+
+1. Copy the contents of `SKILL.md` into your conversation or system prompt
+2. For lunar calendar conversion (without code execution):
+   - The LLM can use web search to find lunar dates (e.g., search "2024年9月17日 農曆")
+   - Then apply the calculation formulas from `SKILL.md`
+3. Upload reference files from `references/` if the platform supports it
+
+> 💡 Most Chinese LLMs have built-in web search, which can be used for accurate lunar date conversion even without code execution capability.
+
 #### Other LLMs (General)
 
 For any LLM that supports system prompts:
