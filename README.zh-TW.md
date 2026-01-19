@@ -4,7 +4,9 @@
 
 **[English](README.md)** | **[繁體中文](README.zh-TW.md)**
 
-**梅花易數**（Plum Blossom Numerology）是相傳為宋代邵雍（邵康節）所創的中國傳統易學占卜術。此專案提供一個專業的梅花易數占卜系統，可作為 Claude AI 的 Skill 使用。
+**梅花易數**（Meihua Yishu / Plum Blossom Numerology / Plum Blossom I Ching）是相傳為宋代邵雍（邵康節）所創的中國傳統易學占卜術。此專案提供一個專業的梅花易數占卜系統，可作為 Claude、ChatGPT、Gemini、DeepSeek 等 **AI / LLM 的 Skill** 使用。
+
+> **其他名稱：** 梅花易数（簡體）、Mei Hua Yi Shu、Plum Blossom Oracle、梅花心易
 
 ## 為什麼選擇梅花易數？
 

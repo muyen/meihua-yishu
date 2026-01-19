@@ -4,7 +4,9 @@
 
 **[English](README.md)** | **[繁體中文](README.zh-TW.md)**
 
-**Meihua Yishu** (Plum Blossom Numerology) is a traditional Chinese I Ching divination method, attributed to Shao Yong (邵雍) of the Song Dynasty. This project provides a professional Meihua divination system that can be used as a Claude AI Skill.
+**Meihua Yishu** (梅花易數 / Plum Blossom Numerology / Plum Blossom I Ching) is a traditional Chinese I Ching divination method, attributed to Shao Yong (邵雍) of the Song Dynasty. This project provides a professional Meihua divination system as an **AI Skill** for Claude, ChatGPT, Gemini, DeepSeek, and other LLMs.
+
+> **Also known as:** 梅花易数 (Simplified Chinese), Mei Hua Yi Shu, Plum Blossom Oracle, 梅花心易
 
 ## Why Meihua Yishu?
 
