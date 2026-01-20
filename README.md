@@ -105,16 +105,21 @@ meihua-yishu/
 
 ### As a Claude Code Skill
 
-1. Clone this repository to your Claude Code skills directory:
-   ```bash
-   # Personal skills (works across all projects)
-   git clone https://github.com/muyen/meihua-yishu.git ~/.claude/skills/meihua-yishu
+**Easy way:** Paste this URL in Claude Code and say "Please install this skill":
+```
+https://github.com/muyen/meihua-yishu
+```
 
-   # Or for a specific project
-   git clone https://github.com/muyen/meihua-yishu.git .claude/skills/meihua-yishu
-   ```
+**Manual way:**
+```bash
+# Personal skills (works across all projects)
+git clone https://github.com/muyen/meihua-yishu.git ~/.claude/skills/meihua-yishu
 
-2. Start a conversation and mention divination keywords like "占卦", "起卦", or "meihua" — the skill will activate automatically.
+# Or for a specific project
+git clone https://github.com/muyen/meihua-yishu.git .claude/skills/meihua-yishu
+```
+
+Once installed, mention divination keywords like "占卦", "起卦", or "meihua" — the skill will activate automatically.
 
 ### Using with Other LLMs
 

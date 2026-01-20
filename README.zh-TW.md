@@ -105,16 +105,21 @@ meihua-yishu/
 
 ### 作為 Claude Code Skill 使用
 
-1. 將此專案 clone 到你的 Claude Code skills 目錄：
-   ```bash
-   # 個人技能（適用於所有專案）
-   git clone https://github.com/muyen/meihua-yishu.git ~/.claude/skills/meihua-yishu
+**簡單方式：** 在 Claude Code 中貼上網址，然後說「請幫我安裝這個 skill」：
+```
+https://github.com/muyen/meihua-yishu
+```
 
-   # 或針對特定專案
-   git clone https://github.com/muyen/meihua-yishu.git .claude/skills/meihua-yishu
-   ```
+**手動方式：**
+```bash
+# 個人技能（適用於所有專案）
+git clone https://github.com/muyen/meihua-yishu.git ~/.claude/skills/meihua-yishu
 
-2. 開始對話時提及占卜相關詞彙如「占卦」、「起卦」、「梅花易數」，技能會自動啟用。
+# 或針對特定專案
+git clone https://github.com/muyen/meihua-yishu.git .claude/skills/meihua-yishu
+```
+
+安裝後，提及占卜相關詞彙如「占卦」、「起卦」、「梅花易數」，技能會自動啟用。
 
 ### 在其他 LLM 上使用
 
