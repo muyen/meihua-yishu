@@ -129,11 +129,24 @@ meihua-yishu/
 
 #### Google Gemini（Gems）
 
-1. 前往 [Gemini](https://gemini.google.com) → Gems → 新增 Gem
-2. 將 `SKILL.md` 內容複製到系統指令
-3. 參考檔案可：
-   - 直接貼入關鍵內容到指令中，或
-   - 在對話開始時上傳檔案
+Gems 操作介面請參考 [官方說明文件](https://support.google.com/gemini/answer/14575153)。
+
+**設定方式（共 10 個檔案）：**
+
+| 區域 | 檔案 | 說明 |
+|------|------|------|
+| **指令區** | `SKILL.md` | 將完整內容貼入系統指令 |
+| **知識庫** | `64gua.md` | 六十四卦詳解 |
+| | `yaoci.md` | 384 條爻辭 |
+| | `zhouyi-zhuan.md` | 彖傳象傳 |
+| | `bagua-wanwu.md` | 八卦類象+萬物賦 |
+| | `ying-guides.md` | 十應+外應指南 |
+| | `yingqi-calc.md` | 應期計算 |
+| | `18-divinations.md` | 十八類分占法 |
+| | `case-studies-expanded.md` | 經典案例 |
+| | `cezi-method.md` | 測字法 |
+
+所有參考檔案位於 `references/` 資料夾。
 
 #### 中國大模型
 

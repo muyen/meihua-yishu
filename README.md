@@ -129,11 +129,24 @@ This skill can be adapted for use with other AI platforms:
 
 #### Google Gemini (Gems)
 
-1. Go to [Gemini](https://gemini.google.com) → Gems → New Gem
-2. Copy the contents of `SKILL.md` into the system instructions
-3. For reference files, either:
-   - Paste key reference content directly into instructions, or
-   - Upload files when starting a conversation
+For Gems UI navigation, see [official Gemini documentation](https://support.google.com/gemini/answer/14575153).
+
+**Setup (10 files total):**
+
+| Section | File | Description |
+|---------|------|-------------|
+| **Instructions** | `SKILL.md` | Paste full content into system instructions |
+| **Knowledge** | `64gua.md` | 64 hexagrams guide |
+| | `yaoci.md` | 384 line texts |
+| | `zhouyi-zhuan.md` | Tuan & Xiang commentaries |
+| | `bagua-wanwu.md` | Bagua correspondences + verses |
+| | `ying-guides.md` | Ten responses + external signs |
+| | `yingqi-calc.md` | Timing calculation |
+| | `18-divinations.md` | 18 specific reading types |
+| | `case-studies-expanded.md` | Classic divination cases |
+| | `cezi-method.md` | Character analysis method |
+
+All files are in the `references/` folder.
 
 #### Chinese LLMs (中國大模型)
 
