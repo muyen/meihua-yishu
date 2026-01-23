@@ -2,17 +2,17 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-**[English](README.md)** | **[繁體中文](README.zh-TW.md)**
+[English](README.md) | [繁體中文](README.zh-TW.md)
 
-**Meihua Yishu** (梅花易數 / Plum Blossom Numerology / Plum Blossom I Ching) is a traditional Chinese I Ching divination method, attributed to Shao Yong (邵雍) of the Song Dynasty. This project provides a professional Meihua divination system as an **AI Skill** for Claude, ChatGPT, Gemini, DeepSeek, and other LLMs.
+Meihua Yishu (梅花易數 / Plum Blossom Numerology / Plum Blossom I Ching) is a traditional Chinese I Ching divination method, attributed to Shao Yong (邵雍) of the Song Dynasty. This project provides a professional Meihua divination system as an AI Skill for Claude, ChatGPT, Gemini, DeepSeek, and other LLMs.
 
-> **Also known as:** 梅花易数 (Simplified Chinese), Mei Hua Yi Shu, Plum Blossom Oracle, 梅花心易
+> Also known as: 梅花易数 (Simplified Chinese), Mei Hua Yi Shu, Plum Blossom Oracle, 梅花心易
 
 ## Why Meihua Yishu?
 
 ### A Decision-Making Framework, Not Fortune-Telling
 
-Unlike popular misconceptions about divination, Meihua Yishu is a **structured thinking tool** rooted in 3,000 years of Chinese philosophical wisdom:
+Unlike popular misconceptions about divination, Meihua Yishu is a structured thinking tool rooted in 3,000 years of Chinese philosophical wisdom:
 
 | Misconception | Reality |
 |---------------|---------|
@@ -22,60 +22,61 @@ Unlike popular misconceptions about divination, Meihua Yishu is a **structured t
 
 ### Benefits
 
-🎯 **Decision Clarity** — When facing complex choices, the hexagram structure forces you to consider factors you might overlook
+🎯 Decision Clarity — When facing complex choices, the hexagram structure forces you to consider factors you might overlook
 
-🔄 **Multiple Perspectives** — The Ti-Yong (体用) framework systematically examines self vs. environment, action vs. reaction
+🔄 Multiple Perspectives — The Ti-Yong (体用) framework systematically examines self vs. environment, action vs. reaction
 
-⏱️ **Timing Awareness** — The 應期 (Yingqi) system encourages thinking about *when* to act, not just *what* to do
+⏱️ Timing Awareness — The 應期 (Yingqi) system encourages thinking about *when* to act, not just *what* to do
 
-🌊 **Change Philosophy** — Based on the I Ching principle that everything changes; helps accept uncertainty and plan adaptively
+🌊 Change Philosophy — Based on the I Ching principle that everything changes; helps accept uncertainty and plan adaptively
 
-💭 **Reflection Tool** — The divination process creates space for introspection and deeper thinking about your situation
+💭 Reflection Tool — The divination process creates space for introspection and deeper thinking about your situation
 
 ### Who Uses It?
 
-- **Entrepreneurs** — For strategic timing and partnership decisions
-- **Individuals** — For major life choices (career, relationships, relocation)
-- **Curious Minds** — To explore Eastern philosophy and symbolic thinking
-- **Developers** — To integrate traditional wisdom into AI applications
+- Entrepreneurs — For strategic timing and partnership decisions
+- Individuals — For major life choices (career, relationships, relocation)
+- Curious Minds — To explore Eastern philosophy and symbolic thinking
+- Developers — To integrate traditional wisdom into AI applications
 
 ### The Meihua Advantage
 
 Compared to other I Ching methods:
-- **Faster** — No coins or yarrow stalks needed; cast from time, numbers, or observation
-- **More Intuitive** — Trigram-based (8 symbols) rather than full hexagram memorization (64 symbols)
-- **Contextual** — Ti-Yong analysis relates directly to your specific situation
-- **Practical** — Clear auspicious/inauspicious framework with actionable insights
+- Faster — No coins or yarrow stalks needed; cast from time, numbers, or observation
+- More Intuitive — Trigram-based (8 symbols) rather than full hexagram memorization (64 symbols)
+- Contextual — Ti-Yong analysis relates directly to your specific situation
+- Practical — Clear auspicious/inauspicious framework with actionable insights
 
 > *"The Yi does not predict fate — it reveals patterns. Understanding patterns empowers better choices."*
 
 ## Features
 
 ### Casting Methods
-- **Time-based Divination** — Cast hexagrams using current or specified time
-- **Number-based Divination** — Cast hexagrams using numbers
-- **Sound-based Divination** — Cast using the count of sounds heard
-- **Color-based Divination** — Cast based on colors corresponding to five elements
-- **Measurement-based Divination** — Cast using object dimensions
-- **Direction-based Divination** — Cast based on the direction of a person or object
+- Time-based Divination — Cast hexagrams using current or specified time
+- Number-based Divination — Cast hexagrams using numbers
+- Sound-based Divination — Cast using the count of sounds heard
+- Color-based Divination — Cast based on colors corresponding to five elements
+- Measurement-based Divination — Cast using object dimensions
+- Direction-based Divination — Cast based on the direction of a person or object
 
 ### Interpretation Functions
-- **Ti-Yong Analysis** — Interpret the relationship between Ti (体) and Yong (用) trigrams
-- **Tongguan Mediation** — Analyze five-element bridging to mitigate克 (controlling) relationships
-- **64 Hexagrams Interpretation** — Detailed explanations of hexagram and line texts
-- **Changing Lines Derivation** — Analyze the fortune of transformed hexagrams
-- **Seasonal Strength (卦氣)** — Determine Ti trigram strength based on season
-- **Timing Prediction (應期)** — Predict when events will manifest
+- Ti-Yong Analysis — Interpret the relationship between Ti (体) and Yong (用) trigrams
+- Tongguan Mediation — Analyze five-element bridging to mitigate克 (controlling) relationships
+- 64 Hexagrams Interpretation — Detailed explanations of hexagram and line texts
+- Changing Lines Derivation — Analyze the fortune of transformed hexagrams
+- Seasonal Strength (卦氣) — Determine Ti trigram strength based on season
+- Timing Prediction (應期) — Predict when events will manifest
+- Strategy Guidance (策略建議) — Data-driven advice on whether to stay, leave, wait, or change (NEW!)
 
 ### Specialized Readings
-- **18 Specific Readings** — Marriage, illness, wealth, travel, and more
-- **Ten Responses (十應)** — Environmental sign analysis
-- **Bagua Correspondences** — Modern and traditional symbolic associations
-- **Character Analysis (測字)** — Fortune telling by analyzing Chinese characters
+- 18 Specific Readings — Marriage, illness, wealth, travel, and more
+- Ten Responses (十應) — Environmental sign analysis
+- Bagua Correspondences — Modern and traditional symbolic associations
+- Character Analysis (測字) — Fortune telling by analyzing Chinese characters
 
 ### AI-Assisted Features
-- **Photo Analysis** — Upload photos for AI to analyze environmental signs
-- **Environmental Sensing** — Describe surrounding sounds, colors, people for enhanced readings
+- Photo Analysis — Upload photos for AI to analyze environmental signs
+- Environmental Sensing — Describe surrounding sounds, colors, people for enhanced readings
 
 ## Project Structure
 
@@ -93,7 +94,7 @@ meihua-yishu/
 │   ├── zhouyi-zhuan.md          # Tuan & Xiang commentaries
 │   ├── bagua-wanwu.md           # Bagua correspondences + verses
 │   ├── hexagram-relationships.md # Hexagram relationships + statistical analysis
-│   ├── hexagram-strategy.md     # 64-hexagram strategy (stay/leave decisions)
+│   ├── hexagram-strategy.md     # Strategy guide (stay/leave/change decisions) - CORE!
 │   ├── ying-guides.md           # Ten responses + external signs
 │   ├── yingqi-calc.md           # Timing calculation guide
 │   ├── 18-divinations.md        # 18 types of specific readings
@@ -107,12 +108,12 @@ meihua-yishu/
 
 ### As a Claude Code Skill
 
-**Easy way:** Paste this URL in Claude Code and say "Please install this skill":
+Easy way: Paste this URL in Claude Code and say "Please install this skill":
 ```
 https://github.com/muyen/meihua-yishu
 ```
 
-**Manual way:**
+Manual way:
 ```bash
 # Personal skills (works across all projects)
 git clone https://github.com/muyen/meihua-yishu.git ~/.claude/skills/meihua-yishu
@@ -130,26 +131,26 @@ This skill can be adapted for use with other AI platforms:
 #### ChatGPT (Custom GPT)
 
 1. Go to [ChatGPT](https://chat.openai.com) → Explore GPTs → Create
-2. Copy the contents of `SKILL.md` into the **Instructions** field
-3. Upload all files from `references/` to the **Knowledge** section
+2. Copy the contents of `SKILL.md` into the Instructions field
+3. Upload all files from `references/` to the Knowledge section
 4. Configure: Enable Code Interpreter for calculations
 
 #### Google Gemini (Gems)
 
-**Steps:**
+Steps:
 
 1. Go to [gemini.google.com](https://gemini.google.com)
 2. Click "Gem manager" or "Explore Gems" in the left sidebar
 3. Click "New Gem"
 4. Configure your Gem:
-   - **Name**: Meihua Yishu (or your preferred name)
-   - **Instructions**: Copy and paste the full content of `SKILL.md`
-   - **Knowledge**: Click "Add files" and upload all 9 files from `references/`
+   - Name: Meihua Yishu (or your preferred name)
+   - Instructions: Copy and paste the full content of `SKILL.md`
+   - Knowledge: Click "Add files" and upload all 9 files from `references/`
 5. Click "Save"
 
 > For detailed UI navigation, see [official Gemini documentation](https://support.google.com/gemini/answer/15236321)
 
-**Files to upload (9 essential + 2 optional):**
+Files to upload (9 essential + 2 optional):
 
 | File | Description | Priority |
 |------|-------------|----------|
@@ -165,11 +166,11 @@ This skill can be adapted for use with other AI platforms:
 | `case-studies-expanded.md` | Classic divination cases | Optional |
 | `cezi-method.md` | Character analysis method | Optional |
 
-> **Note:** Gemini has a 10-file limit for Gems. Upload the 9 essential files + SKILL.md. Add optional files if you have room.
+> Note: Gemini has a 10-file limit for Gems. Upload the 9 essential files + SKILL.md. Add optional files if you have room.
 
 #### Chinese LLMs (中國大模型)
 
-Supported models: **DeepSeek**, **Kimi (月之暗面)**, **Qwen (通义千问)**, **文心一言**, **ChatGLM (智谱清言)**, **豆包**
+Supported models: DeepSeek, Kimi (月之暗面), Qwen (通义千问), 文心一言, ChatGLM (智谱清言), 豆包
 
 1. Copy the contents of `SKILL.md` into your conversation or system prompt
 2. For lunar calendar conversion (without code execution):
@@ -254,7 +255,20 @@ Example output:
 
 ## Core Principles
 
-Meihua Yishu uses **Early Heaven Bagua Numbers**:
+### Yi = Change (易 = 變)
+
+The fundamental principle of I Ching is change. The purpose of divination is not just to predict fortune, but to guide optimal action:
+
+- Able to change = Auspicious (proactive adjustment, flow with circumstances)
+- Unable to change = Inauspicious (stuck in place, missing opportunities)
+- Staying in a bad position without changing = 0% success rate
+- Proactive change = average 44% improvement in outcomes
+
+Every divination must include strategy guidance — telling the querent what to do next.
+
+### Early Heaven Bagua Numbers
+
+Meihua Yishu uses Early Heaven Bagua Numbers:
 
 | Trigram | Number | Element | Symbol |
 |---------|--------|---------|--------|
@@ -269,10 +283,10 @@ Meihua Yishu uses **Early Heaven Bagua Numbers**:
 
 ### Ti-Yong Theory
 
-- **Ti (体)**: The subject, self, the querent
-- **Yong (用)**: The object, matter, external environment
-- **Mutual Hexagram (互卦)**: The development process
-- **Transformed Hexagram (變卦)**: The final outcome
+- Ti (体): The subject, self, the querent
+- Yong (用): The object, matter, external environment
+- Mutual Hexagram (互卦): The development process
+- Transformed Hexagram (變卦): The final outcome
 
 ### Fortune Determination
 
@@ -298,10 +312,10 @@ When Ti and Yong are in a controlling relationship, a "bridging" element in the 
 
 ## Divination Principles
 
-1. **No question, no divination** — Don't divine without a specific question
-2. **No more than three times** — Don't repeat divination for the same question more than three times
-3. **No movement, no divination** — Don't divine without cause
-4. **Interpret with reason** — Hexagrams must be interpreted in context
+1. No question, no divination — Don't divine without a specific question
+2. No more than three times — Don't repeat divination for the same question more than three times
+3. No movement, no divination — Don't divine without cause
+4. Interpret with reason — Hexagrams must be interpreted in context
 
 ## References
 
@@ -313,22 +327,22 @@ When Ti and Yong are in a controlling relationship, a "bridging" element in the 
 
 This work is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-**You are free to:**
+You are free to:
 - Share — copy and redistribute the material
 - Adapt — remix, transform, and build upon the material
 
-**Under the following terms:**
-- **Attribution** — You must give appropriate credit
-- **NonCommercial** — You may not use the material for commercial purposes
-- **ShareAlike** — Derivatives must be distributed under the same license
+Under the following terms:
+- Attribution — You must give appropriate credit
+- NonCommercial — You may not use the material for commercial purposes
+- ShareAlike — Derivatives must be distributed under the same license
 
-**Commercial Licensing:** For commercial use, please contact muyen.lee@gmail.com
+Commercial Licensing: For commercial use, please contact muyen.lee@gmail.com
 
 See [LICENSE](LICENSE) for details.
 
 ## Related Projects
 
-- **[Decoding I Ching](https://github.com/muyen/decoding-iching)** — Data-driven research on I Ching patterns. Provides the 384-line database, hexagram strategy analysis, and statistical insights that complement Meihua divination.
+- [Decoding I Ching](https://github.com/muyen/decoding-iching) — Data-driven research on I Ching patterns. Provides the 384-line database, hexagram strategy analysis, and statistical insights that complement Meihua divination.
 
 ## Contributing
 
