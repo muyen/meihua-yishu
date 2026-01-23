@@ -358,6 +358,192 @@ def qigua_by_numbers(num1: int, num2: int, num3: int = None) -> Dict:
     return result
 
 
+# ==============================================================================
+# 統計輔助功能 (Statistical Helpers)
+# 根據 384 爻數據分析添加，不影響起卦邏輯
+# ==============================================================================
+
+# 爻位係數（Position Coefficients）
+POSITION_COEFFICIENTS = {
+    5: 0.422,   # ★★ 最佳（九五之尊）
+    2: 0.344,   # ★ 佳（得中）
+    4: 0.266,   # 中
+    1: 0.234,   # 中
+    6: 0.031,   # 差
+    3: -0.219,  # ✗✗ 最差（三多凶）
+}
+
+# 爻位 × 陰陽係數
+POSITION_YINYANG_COEFFICIENTS = {
+    # (position, is_yang): coefficient
+    (1, True): 0.281, (1, False): 0.188,
+    (2, True): 0.312, (2, False): 0.375,
+    (3, True): -0.375, (3, False): -0.062,  # 三位陽爻最凶!
+    (4, True): 0.281, (4, False): 0.250,
+    (5, True): 0.344, (5, False): 0.500,
+    (6, True): 0.000, (6, False): 0.062,
+}
+
+# 64卦策略分類
+# 類型: 吸引子(留), 排斥子(走), 福地(守), 困境(變), 陷阱(慎), 一般(觀)
+HEXAGRAM_STRATEGY = {
+    1: ("排斥子", "走", 0, "乾 → 履（變4爻得50%）"),
+    2: ("一般", "觀", 33, "坤 → 謙（變4爻得83%）"),
+    3: ("一般", "觀", 33, "屯 → 比（變6爻得67%）"),
+    4: ("一般", "觀", 33, "蒙 → 損（變6爻得50%）"),
+    5: ("吸引子", "留", 67, None),
+    6: ("吸引子", "留", 67, None),
+    7: ("排斥子", "走", 17, "師 → 臨（變6爻得83%）"),
+    8: ("吸引子", "留", 67, None),
+    9: ("一般", "觀", 33, "小畜 → 家人（變5爻得67%）"),
+    10: ("福地", "守", 50, None),
+    11: ("一般", "觀", 33, "泰 → 臨（變4爻得83%）"),
+    12: ("福地", "守", 50, None),
+    13: ("排斥子", "走", 17, "同人 → 遯（變6爻得67%）"),
+    14: ("一般", "觀", 33, "大有 → 鼎（變6爻得67%）"),
+    15: ("吸引子", "留", 83, None),  # 謙卦 - 唯一全吉卦
+    16: ("困境", "變", 17, "豫 → 晉（變1爻得67%）"),
+    17: ("一般", "觀", 33, "隨 → 萃（變6爻得50%）"),
+    18: ("排斥子", "走", 17, "蠱 → 鼎（變3爻得67%）"),
+    19: ("吸引子", "留", 83, None),  # 臨卦 - 關鍵轉折點
+    20: ("排斥子", "走", 0, "觀 → 比（變1爻得67%）"),
+    21: ("排斥子", "走", 17, "噬嗑 → 晉（變6爻得67%）"),
+    22: ("一般", "觀", 33, "賁 → 家人（變2爻得67%）"),
+    23: ("困境", "變", 17, "剝 → 晉（變3爻得67%）"),
+    24: ("一般", "觀", 33, "復 → 臨（變5爻得83%）"),
+    25: ("一般", "觀", 33, "无妄 → 否（變6爻得50%）"),
+    26: ("福地", "守", 50, None),
+    27: ("福地", "守", 50, None),
+    28: ("一般", "觀", 33, "大過 → 夬 → 革"),
+    29: ("排斥子", "走", 0, "坎 → 比（變5爻得67%）"),
+    30: ("一般", "觀", 33, "離 → 豐（變1爻得50%）"),
+    31: ("困境", "變", 17, "咸 → 遯（變1爻得67%）"),
+    32: ("排斥子", "走", 0, "恆 → 升（變3爻得67%）"),
+    33: ("吸引子", "留", 67, None),
+    34: ("吸引子", "留", 50, None),
+    35: ("吸引子", "留", 67, None),
+    36: ("排斥子", "走", 17, "明夷 → 謙（變6爻得83%）"),
+    37: ("吸引子", "留", 67, None),
+    38: ("一般", "觀", 33, "睽 → 未濟（變6爻得50%）"),
+    39: ("排斥子", "走", 17, "蹇 → 謙（變2爻得83%）"),
+    40: ("吸引子", "留", 50, None),
+    41: ("福地", "守", 50, None),
+    42: ("福地", "守", 50, None),
+    43: ("排斥子", "走", 0, "夬 → 需（變3爻得67%）"),
+    44: ("排斥子", "走", 17, "姤 → 遯（變5爻得67%）"),
+    45: ("福地", "守", 50, None),
+    46: ("吸引子", "留", 67, None),
+    47: ("排斥子", "走", 17, "困 → 訟（變1爻得67%）"),
+    48: ("困境", "變", 17, "井 → 需（變6爻得67%）"),
+    49: ("吸引子", "留", 50, None),
+    50: ("吸引子", "留", 67, None),
+    51: ("陷阱", "慎", 17, "震 → 豐（變4爻得50%）"),
+    52: ("一般", "觀", 33, "艮 → 謙（變1爻得83%）"),
+    53: ("福地", "守", 50, None),
+    54: ("一般", "觀", 33, "歸妹 → 臨（變3爻得83%）"),
+    55: ("吸引子", "留", 50, None),
+    56: ("排斥子", "走", 0, "旅 → 鼎（變5爻得67%）"),
+    57: ("一般", "觀", 33, "巽 → 漸（變5爻得50%）"),
+    58: ("吸引子", "留", 50, None),
+    59: ("一般", "觀", 33, "渙 → 訟（變3爻得67%）"),
+    60: ("排斥子", "走", 17, "節 → 臨（變2爻得83%）"),
+    61: ("排斥子", "走", 17, "中孚 → 益（變5爻得50%）"),
+    62: ("排斥子", "走", 0, "小過 → 謙（變3爻得83%）"),
+    63: ("排斥子", "走", 0, "既濟 → 需（變5爻得67%）"),
+    64: ("福地", "守", 50, None),
+}
+
+
+def get_position_risk(position: int, is_yang: bool = True) -> dict:
+    """
+    獲取爻位風險評估
+
+    Args:
+        position: 動爻位置 (1-6)
+        is_yang: 動爻是否為陽爻
+
+    Returns:
+        dict: {
+            'coefficient': 係數,
+            'risk_level': 風險等級,
+            'warning': 警告信息（若有）
+        }
+    """
+    coef = POSITION_YINYANG_COEFFICIENTS.get((position, is_yang), 0)
+
+    if position == 3 and is_yang:
+        return {
+            'coefficient': coef,
+            'risk_level': '高風險',
+            'warning': '⚠️ 三位陽爻是全表最凶的組合（-0.375）'
+        }
+    elif position == 5:
+        return {
+            'coefficient': coef,
+            'risk_level': '最佳',
+            'warning': None
+        }
+    elif position == 2:
+        return {
+            'coefficient': coef,
+            'risk_level': '佳',
+            'warning': None
+        }
+    elif coef < 0:
+        return {
+            'coefficient': coef,
+            'risk_level': '較差',
+            'warning': f'⚠️ 爻位係數為負值 ({coef:.3f})'
+        }
+    else:
+        return {
+            'coefficient': coef,
+            'risk_level': '中等',
+            'warning': None
+        }
+
+
+def get_hexagram_strategy(hex_num: int) -> dict:
+    """
+    獲取卦的策略建議
+
+    Args:
+        hex_num: 卦序 (1-64)
+
+    Returns:
+        dict: {
+            'type': 類型（吸引子/排斥子/福地/困境/陷阱/一般）,
+            'advice': 建議（留/走/守/變/慎/觀）,
+            'ji_rate': 吉率百分比,
+            'change_path': 推薦變卦路徑（若有）
+        }
+    """
+    if hex_num not in HEXAGRAM_STRATEGY:
+        return None
+
+    type_, advice, ji_rate, change_path = HEXAGRAM_STRATEGY[hex_num]
+    return {
+        'type': type_,
+        'advice': advice,
+        'ji_rate': ji_rate,
+        'change_path': change_path
+    }
+
+
+def print_strategy_advice(hex_num: int):
+    """打印卦的策略建議"""
+    strategy = get_hexagram_strategy(hex_num)
+    if not strategy:
+        return
+
+    print(f"\n【策略建議】")
+    print(f"  類型：{strategy['type']}")
+    print(f"  建議：{strategy['advice']}")
+    print(f"  吉率：{strategy['ji_rate']}%")
+    if strategy['change_path']:
+        print(f"  變卦路徑：{strategy['change_path']}")
+
+
 def print_result(result: Dict):
     """格式化輸出結果"""
     print("\n" + "=" * 50)
@@ -395,6 +581,20 @@ def print_result(result: Dict):
     bian = result["變卦"]
     print(f"  第 {bian['序號']} 卦：{bian['名稱']}")
     print(f"  二進位：{bian['二進位']}")
+
+    # 添加策略建議
+    hex_num = ben['序號']
+    if hex_num in HEXAGRAM_STRATEGY:
+        print_strategy_advice(hex_num)
+
+        # 檢查動爻位置風險
+        dong_yao_str = ben['動爻']
+        dong_yao = int(dong_yao_str.replace('第', '').replace('爻', ''))
+        is_yang = ben['二進位'][6 - dong_yao] == '1'
+        risk = get_position_risk(dong_yao, is_yang)
+        if risk['warning']:
+            print(f"\n【動爻風險提醒】")
+            print(f"  {risk['warning']}")
 
     print("\n" + "=" * 50)
 
