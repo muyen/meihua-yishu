@@ -95,10 +95,10 @@ HEXAGRAMS = {
 
 # 時辰對照（子時為23:00-00:59）
 SHICHEN = {
-    0: (1, "子"), 1: (1, "子"), 2: (2, "丑"), 3: (2, "丑"), 4: (3, "寅"), 5: (3, "寅"),
-    6: (4, "卯"), 7: (4, "卯"), 8: (5, "辰"), 9: (5, "辰"), 10: (6, "巳"), 11: (6, "巳"),
-    12: (7, "午"), 13: (7, "午"), 14: (8, "未"), 15: (8, "未"), 16: (9, "申"), 17: (9, "申"),
-    18: (10, "酉"), 19: (10, "酉"), 20: (11, "戌"), 21: (11, "戌"), 22: (12, "亥"), 23: (1, "子"),
+    0: (1, "子"), 1: (2, "丑"), 2: (2, "丑"), 3: (3, "寅"), 4: (3, "寅"), 5: (4, "卯"),
+    6: (4, "卯"), 7: (5, "辰"), 8: (5, "辰"), 9: (6, "巳"), 10: (6, "巳"), 11: (7, "午"),
+    12: (7, "午"), 13: (8, "未"), 14: (8, "未"), 15: (9, "申"), 16: (9, "申"), 17: (10, "酉"),
+    18: (10, "酉"), 19: (11, "戌"), 20: (11, "戌"), 21: (12, "亥"), 22: (12, "亥"), 23: (1, "子"),
 }
 
 # 二進位 → 卦數 反查表
@@ -192,6 +192,27 @@ def gregorian_to_lunar(year: int, month: int, day: int) -> Tuple[int, int, int, 
 
     # 不應該到達這裡
     raise ValueError("日期計算錯誤")
+
+
+# 地支名稱對照
+DIZHI = {
+    1: "子", 2: "丑", 3: "寅", 4: "卯", 5: "辰", 6: "巳",
+    7: "午", 8: "未", 9: "申", 10: "酉", 11: "戌", 12: "亥"
+}
+
+
+def get_year_dizhi(lunar_year: int) -> Tuple[int, str]:
+    """
+    獲取農曆年的地支數和名稱
+
+    根據梅花易數原典，年數使用地支序數（1-12）
+    1900年為庚子年，地支為子(1)
+    """
+    # 1900年是庚子年，地支為子(1)
+    dizhi_num = ((lunar_year - 1900) % 12) + 1
+    if dizhi_num == 13:  # 處理邊界情況
+        dizhi_num = 1
+    return dizhi_num, DIZHI[dizhi_num]
 
 
 def get_shichen(hour: int) -> Tuple[int, str]:
@@ -307,10 +328,10 @@ def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
 
 def qigua_by_time(year: int, month: int, day: int, hour: int) -> Dict:
     """以農曆時間起卦"""
-    year_sum = sum(int(d) for d in str(year))
+    year_num, year_dizhi = get_year_dizhi(year)
     shichen_num, shichen_name = get_shichen(hour)
 
-    upper_sum = year_sum + month + day
+    upper_sum = year_num + month + day
     lower_sum = upper_sum + shichen_num
 
     upper_gua = num_to_gua(upper_sum)
@@ -319,7 +340,7 @@ def qigua_by_time(year: int, month: int, day: int, hour: int) -> Dict:
 
     result = _analyze_hexagram(upper_gua, lower_gua, dong_yao)
     result["計算過程"] = {
-        "年數": year_sum,
+        "年數": f"{year_dizhi}年 ({year_num})",
         "月數": month,
         "日數": day,
         "時辰": f"{shichen_name}時 ({shichen_num})",
