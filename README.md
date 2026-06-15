@@ -93,8 +93,8 @@ meihua-yishu/
 │   ├── yaoci.md                 # 384 Line texts
 │   ├── zhouyi-zhuan.md          # Tuan & Xiang commentaries
 │   ├── bagua-wanwu.md           # Bagua correspondences + verses + character analysis (測字)
-│   ├── hexagram-relationships.md # Hexagram relationships + statistical analysis + Tongguan
-│   ├── hexagram-strategy.md     # Strategy guide (stay/leave/change decisions) - CORE!
+│   ├── hexagram-relationships.md # Hexagram relationships + classical-text analysis + Tongguan
+│   ├── hexagram-strategy.md     # Strategy guide (stay/leave/change decisions) - optional aid
 │   ├── ying-guides.md           # Ten responses + external signs
 │   ├── yingqi-calc.md           # Timing calculation guide
 │   ├── 18-divinations.md        # 18 types of specific readings
@@ -190,10 +190,8 @@ Example output:
 
 The fundamental principle of I Ching is change. The purpose of divination is not just to predict fortune, but to guide optimal action:
 
-- Able to change = Auspicious (proactive adjustment, flow with circumstances)
-- Unable to change = Inauspicious (stuck in place, missing opportunities)
-- Staying in a bad position without changing = 0% success rate
-- Proactive change = average 44% improvement in outcomes
+- Able to change = things flow (proactive adjustment, flow with circumstances)
+- Stuck in place = trouble (missing opportunities)
 
 Every divination must include strategy guidance — telling the querent what to do next.
 
@@ -273,7 +271,7 @@ See [LICENSE](LICENSE) for details.
 
 ## Related Projects
 
-- [Decoding I Ching](https://github.com/muyen/decoding-iching) — Data-driven research on I Ching patterns. Provides the 384-line database, hexagram strategy analysis, and statistical insights that complement Meihua divination.
+- [Decoding I Ching](https://github.com/muyen/decoding-iching) — Text-analysis research on I Ching patterns. Provides the 384-line database and the classical-text metrics (auspicious/inauspicious word density, text-embedding similarity) used in this skill's reference files. Note: these measure the *language of the classical texts*, not real-world outcome probabilities.
 
 ## Contributing
 
