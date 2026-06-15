@@ -19,3 +19,16 @@ venv/
 
 # Tests (local only)
 tests/
+
+# Personal divination records (local only)
+personal-readings/
+
+# Local Claude Code config + skill symlinks
+.claude/
+
+# Local backups
+_user_claude_backup/
+
+# Firebase debug logs
+firebase-debug.log
+*.log
