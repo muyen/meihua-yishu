@@ -318,6 +318,74 @@ def analyze_guade(ti_gua: int, yong_gua: int) -> str:
     return f"{head}。{note}（{ti_de}遇{yong_de}）"
 
 
+def _yao_name(position: int, is_yang: bool) -> str:
+    """爻的傳統名稱，如 初九、六二、九五、上六。"""
+    yinyang = "九" if is_yang else "六"
+    if position == 1:
+        return "初" + yinyang
+    if position == 6:
+        return "上" + yinyang
+    return yinyang + {2: "二", 3: "三", 4: "四", 5: "五"}[position]
+
+
+def analyze_yao_positions(binary: str, dong_yao: int) -> Dict:
+    """結構性爻位盤：六爻當位(得正)/得中/應(對爻)/承乘。
+
+    純結構決定性分析（非文本統計），每次起卦必出。
+    binary 為頂到底字串：index0=第6爻(上)，index5=第1爻(初)。
+    """
+    is_yang = {i: binary[6 - i] == "1" for i in range(1, 7)}
+
+    lines = []
+    for i in range(1, 7):
+        yang = is_yang[i]
+        # 當位（得正）：陽居奇位、陰居偶位
+        dangwei = (yang and i % 2 == 1) or (not yang and i % 2 == 0)
+        # 應（對爻）：初四、二五、三上，一陰一陽為有應
+        partner = i + 3 if i <= 3 else i - 3
+        lines.append({
+            "位": i,
+            "名稱": _yao_name(i, yang),
+            "陰陽": "陽" if yang else "陰",
+            "當位": "得正" if dangwei else "失正",
+            "得中": "得中" if i in (2, 5) else "",
+            "應位": partner,
+            "應爻名稱": _yao_name(partner, is_yang[partner]),
+            "有應": is_yang[i] != is_yang[partner],
+        })
+
+    # 承乘：相鄰兩爻，標記兩極——陰乘陽(最危)、陽乘陰(最順)。標於上爻。
+    chengcheng = {}
+    for i in range(2, 7):
+        if not is_yang[i] and is_yang[i - 1]:
+            chengcheng[i] = "陰乘陽（柔凌剛·最不穩）"
+        elif is_yang[i] and not is_yang[i - 1]:
+            chengcheng[i] = "陽乘陰（剛統柔·最順）"
+    for ln in lines:
+        ln["承乘"] = chengcheng.get(ln["位"], "")
+
+    # 二五中正相應：二有應且二五皆得正——最強外援徵象
+    er, wu = lines[1], lines[4]
+    zhongzheng = er["有應"] and er["當位"] == "得正" and wu["當位"] == "得正"
+
+    # 動爻處境摘要
+    d = lines[dong_yao - 1]
+    parts = [d["當位"]]
+    parts.append("有應" if d["有應"] else f"無應(↔{d['應爻名稱']}同性)")
+    if d["承乘"]:
+        parts.append(d["承乘"])
+    # 動爻是否被上爻陰乘（柔凌剛壓於其上）
+    if dong_yao < 6 and chengcheng.get(dong_yao + 1, "").startswith("陰乘陽"):
+        parts.append(f"上被{lines[dong_yao]['名稱']}陰乘")
+    dong_summary = f"{d['名稱']}（動）：" + "·".join(parts)
+
+    return {
+        "六爻": lines,
+        "二五中正相應": zhongzheng,
+        "動爻摘要": dong_summary,
+    }
+
+
 def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
     """分析卦象（本卦、體用、互卦、變卦）"""
     hexagram_binary = get_hexagram_binary(upper_gua, lower_gua)
@@ -372,6 +440,7 @@ def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
             "生克關係": analyze_wuxing(ti_element, yong_element),
             "卦德關係": analyze_guade(ti_gua, yong_gua),
         },
+        "爻位盤": analyze_yao_positions(hexagram_binary, dong_yao),
         "互卦": {
             "名稱": hu_info[1],
             "上互": BAGUA[hu_upper]['name'],
@@ -751,17 +820,32 @@ def print_result(result: Dict):
         print("\n【七、綜卦（反爻・對方視角）】")
         print(f"  {zong['名稱']}（上{zong['上卦']}下{zong['下卦']}）— {zong['讀法']}")
 
+    if "爻位盤" in result:
+        yp = result["爻位盤"]
+        dong = ben['動爻位']
+        print("\n【八、爻位盤（結構・每卦必出）】")
+        for ln in reversed(yp["六爻"]):  # 從上爻往下顯示
+            mark = "★" if ln["位"] == dong else "　"
+            zhong = f"·{ln['得中']}" if ln["得中"] else ""
+            ying = ("應↔" if ln["有應"] else "無應↔") + ln["應爻名稱"]
+            cc = f"·{ln['承乘']}" if ln["承乘"] else ""
+            print(f"  {mark}{ln['名稱']}（{ln['陰陽']}）：{ln['當位']}{zhong}·{ying}{cc}")
+        if yp["二五中正相應"]:
+            print("  ※ 二五中正相應——最強外援徵象")
+        print(f"  → 動爻處境：{yp['動爻摘要']}")
+
     # 添加策略建議
     hex_num = ben['序號']
     if hex_num in HEXAGRAM_STRATEGY:
         print_strategy_advice(hex_num)
 
-        # 檢查動爻位置風險（用結構化欄位，免從字串還原）
+        # 動爻文本傾向（爻辭用語統計・非機率），不論吉凶皆出，免靜默漏報
         dong_yao = ben['動爻位']
         is_yang = ben['動爻陰陽'] == '陽'
         risk = get_position_risk(dong_yao, is_yang)
+        print("\n【動爻文本傾向】（爻辭用語統計・非機率，參考）")
+        print(f"  風險等級：{risk['risk_level']}")
         if risk['warning']:
-            print(f"\n【動爻風險提醒】")
             print(f"  {risk['warning']}")
 
     print("\n" + "=" * 50)

@@ -236,5 +236,53 @@ class TestYearDizhi(unittest.TestCase):
         self.assertEqual(mc.get_year_dizhi(1901), (2, "丑"))
 
 
+class TestYaoPositions(unittest.TestCase):
+    """爻位盤：當位/得中/應/承乘。期望值依易理人工推定。
+
+    用澤火革（兌上離下，binary 011101）：六爻自下而上＝
+    初九陽·六二陰·九三陽·九四陽·九五陽·上六陰。
+    這組關係正是當初解卦漏報、後來補進 script 的內容——
+    測試鎖住「九四唯一失正、二五中正相應、陰乘陽偵測、動爻無應」這些判讀依據。
+    """
+
+    def setUp(self):
+        self.yp = mc.analyze_yao_positions("011101", 1)  # 革，動初九
+        self.lines = {ln["位"]: ln for ln in self.yp["六爻"]}
+
+    def test_dangwei_only_fourth_line_fails(self):
+        # 革六爻僅九四（陽居陰位）失正，其餘五爻得正——卦體甚正
+        失正 = [i for i in range(1, 7) if self.lines[i]["當位"] == "失正"]
+        self.assertEqual(失正, [4])
+
+    def test_dezhong_is_two_and_five(self):
+        self.assertEqual(self.lines[2]["得中"], "得中")
+        self.assertEqual(self.lines[5]["得中"], "得中")
+        self.assertEqual(self.lines[1]["得中"], "")
+
+    def test_ying_requires_opposite_polarity(self):
+        self.assertFalse(self.lines[1]["有應"])   # 初九↔九四 同陽，無應
+        self.assertTrue(self.lines[2]["有應"])    # 六二↔九五 一陰一陽，有應
+        self.assertTrue(self.lines[3]["有應"])    # 九三↔上六 有應
+
+    def test_zhongzheng_xiangying_flag(self):
+        # 二有應且二五皆得正 → 最強外援徵象
+        self.assertTrue(self.yp["二五中正相應"])
+
+    def test_chengcheng_detects_yin_over_yang(self):
+        # 六二乘初九、上六乘九五 → 陰乘陽（柔凌剛）
+        self.assertTrue(self.lines[2]["承乘"].startswith("陰乘陽"))
+        self.assertTrue(self.lines[6]["承乘"].startswith("陰乘陽"))
+        # 九三乘六二 → 陽乘陰（剛統柔）
+        self.assertTrue(self.lines[3]["承乘"].startswith("陽乘陰"))
+
+    def test_moving_line_summary_captures_isolation(self):
+        # 動爻初九：得正卻無應、且上被六二陰乘——此刻勿動的結構依據
+        s = self.yp["動爻摘要"]
+        self.assertIn("初九", s)
+        self.assertIn("得正", s)
+        self.assertIn("無應", s)
+        self.assertIn("陰乘", s)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
