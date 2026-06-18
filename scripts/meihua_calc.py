@@ -7,7 +7,7 @@ Meihua Yishu (Plum Blossom Numerology) Calculator
 """
 
 from datetime import datetime, date
-from typing import Tuple, Dict
+from typing import Tuple, Dict, Optional
 
 # 農曆數據表 (1900-2099)
 # 編碼格式：
@@ -210,10 +210,8 @@ def get_year_dizhi(lunar_year: int) -> Tuple[int, str]:
     根據梅花易數原典，年數使用地支序數（1-12）
     1900年為庚子年，地支為子(1)
     """
-    # 1900年是庚子年，地支為子(1)
+    # 1900年是庚子年，地支為子(1)。(% 12) + 1 恆落在 1-12。
     dizhi_num = ((lunar_year - 1900) % 12) + 1
-    if dizhi_num == 13:  # 處理邊界情況
-        dizhi_num = 1
     return dizhi_num, DIZHI[dizhi_num]
 
 
@@ -255,6 +253,17 @@ def binary_to_gua_pair(binary: str) -> Tuple[int, int]:
 def get_hu_gua(binary: str) -> Tuple[int, int]:
     """計算互卦（取2-4爻為下互，3-5爻為上互）"""
     return BINARY_TO_GUA[binary[1:4]], BINARY_TO_GUA[binary[2:5]]
+
+
+def get_cuo_gua(binary: str) -> Tuple[int, int]:
+    """計算錯卦（陰陽全反：六爻每位翻轉）→ 上下卦數"""
+    flipped = "".join("0" if b == "1" else "1" for b in binary)
+    return binary_to_gua_pair(flipped)
+
+
+def get_zong_gua(binary: str) -> Tuple[int, int]:
+    """計算綜卦（上下顛倒：整卦翻轉）→ 上下卦數"""
+    return binary_to_gua_pair(binary[::-1])
 
 
 def analyze_wuxing(ti_element: str, yong_element: str) -> str:
@@ -331,15 +340,16 @@ def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
     hu_upper, hu_lower = get_hu_gua(hexagram_binary)
     hu_info = HEXAGRAMS.get((hu_upper, hu_lower), (0, "未知卦"))
 
-    # 錯卦（陰陽全反）：六爻每位翻轉。看「同一處境的完全相反面」。
-    cuo_binary = "".join("0" if b == "1" else "1" for b in hexagram_binary)
-    cuo_upper, cuo_lower = binary_to_gua_pair(cuo_binary)
+    # 錯卦（陰陽全反）：看「同一處境的完全相反面」。
+    cuo_upper, cuo_lower = get_cuo_gua(hexagram_binary)
     cuo_info = HEXAGRAMS.get((cuo_upper, cuo_lower), (0, "未知卦"))
 
-    # 綜卦（上下顛倒）：整卦翻轉。看「對方/旁觀者眼中的同一件事」。
-    zong_binary = hexagram_binary[::-1]
-    zong_upper, zong_lower = binary_to_gua_pair(zong_binary)
+    # 綜卦（上下顛倒）：看「對方/旁觀者眼中的同一件事」。
+    zong_upper, zong_lower = get_zong_gua(hexagram_binary)
     zong_info = HEXAGRAMS.get((zong_upper, zong_lower), (0, "未知卦"))
+
+    # 動爻陰陽（從下往上數，bit 6-dong_yao）；陽爻=1
+    moving_is_yang = hexagram_binary[6 - dong_yao] == "1"
 
     # 五行生克
     ti_element = BAGUA[ti_gua]["element"]
@@ -353,6 +363,8 @@ def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
             "下卦": f"{BAGUA[lower_gua]['name']} {BAGUA[lower_gua]['symbol']}",
             "二進位": hexagram_binary,
             "動爻": f"第{dong_yao}爻",
+            "動爻位": dong_yao,
+            "動爻陰陽": "陽" if moving_is_yang else "陰",
         },
         "體用": {
             "體卦": f"{BAGUA[ti_gua]['name']}（{ti_pos}）- {ti_element}・{BAGUA[ti_gua]['de']}",
@@ -423,7 +435,7 @@ def qigua_by_gregorian_time(year: int, month: int, day: int, hour: int) -> Dict:
     return result
 
 
-def qigua_by_numbers(num1: int, num2: int, num3: int = None) -> Dict:
+def qigua_by_numbers(num1: int, num2: int, num3: Optional[int] = None) -> Dict:
     """以數字起卦"""
     upper_gua = num_to_gua(num1)
     lower_gua = num_to_gua(num2)
@@ -587,7 +599,7 @@ def get_position_risk(position: int, is_yang: bool = True) -> dict:
         }
 
 
-def get_hexagram_strategy(hex_num: int) -> dict:
+def get_hexagram_strategy(hex_num: int) -> Optional[dict]:
     """
     獲取卦的策略建議
 
@@ -696,10 +708,9 @@ def print_result(result: Dict):
     if hex_num in HEXAGRAM_STRATEGY:
         print_strategy_advice(hex_num)
 
-        # 檢查動爻位置風險
-        dong_yao_str = ben['動爻']
-        dong_yao = int(dong_yao_str.replace('第', '').replace('爻', ''))
-        is_yang = ben['二進位'][6 - dong_yao] == '1'
+        # 檢查動爻位置風險（用結構化欄位，免從字串還原）
+        dong_yao = ben['動爻位']
+        is_yang = ben['動爻陰陽'] == '陽'
         risk = get_position_risk(dong_yao, is_yang)
         if risk['warning']:
             print(f"\n【動爻風險提醒】")
