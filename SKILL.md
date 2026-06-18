@@ -27,22 +27,7 @@ description: Meihua Yishu (梅花易數) Plum Blossom I Ching divination skill. 
 十應判斷（天時、地理、人事等外應分析）
 測字占卜（拆字、相字、字占）
 技能結構
-/meihua-yishu/
-├── SKILL.md（本文件）
-├── references/
-│   ├── 64gua.md（六十四卦簡介）
-│   ├── yaoci.md（384條爻辭全文）
-│   ├── zhouyi-zhuan.md（彖傳象傳參考）
-│   ├── bagua-wanwu.md（八卦類象+萬物賦歌訣）
-│   ├── case-studies-expanded.md（經典案例集）
-│   ├── ying-guides.md（十應+外應指南）
-│   ├── yingqi-calc.md（應期計算指南）
-│   ├── 18-divinations.md（十八類分占法）
-│   ├── hexagram-relationships.md（卦象關係+通關化解）
-│   └── hexagram-strategy.md（策略速查表，必讀）
-└── scripts/
-    └── meihua_calc.py（計算工具）
-v2.1涵蓋原書卷二至卷五。
+參考檔 references/：64gua（卦簡介）、yaoci（384爻辭）、zhouyi-zhuan（彖象傳）、bagua-wanwu（類象+萬物賦）、case-studies-expanded（案例）、ying-guides（十應）、yingqi-calc（應期）、18-divinations（十八占）、hexagram-relationships（卦象關係+通關）、hexagram-strategy（策略速查，必讀）、why-not-prediction（為何非預測）。計算：scripts/meihua_calc.py。v2.1涵蓋原書卷二至卷五。
 用戶引導
 帶問題起卦時（必讀）
 當用戶帶著具體問題請求起卦時（如「幫我問XXX會怎樣」），必須先詢問起卦方式，不可直接用時間起卦：
@@ -90,18 +75,8 @@ python meihua_calc.py convert 2024 1 18
 python meihua_calc.py gregorian 2024 1 18 14
 以農曆時間起卦
 python meihua_calc.py lunar 2023 12 8 14
-方法二：線上工具
-香港天文台萬年曆：https://www.hko.gov.hk/tc/gts/time/conversion.htm
-中央氣象局農民曆：https://www.cwa.gov.tw/V8/C/K/Calendar.html
-方法三：常用日期對照（供參考）
-西曆日期|農曆日期|說明
-2024-02-10|2024年正月初一|2024春節
-2024-09-17|2024年八月十五|2024中秋
-2025-01-29|2025年正月初一|2025春節
-2025-10-06|2025年八月十五|2025中秋
-2026-02-17|2026年正月初一|2026春節
-方法四：詢問用戶
-若無法確定農曆日期，可直接請用戶提供農曆日期或使用以上工具查詢。
+方法二：線上工具或詢問用戶
+香港天文台萬年曆 hko.gov.hk/tc/gts/time/conversion.htm；或請用戶直接提供農曆日期。
 注意事項
 閏月處理：農曆有閏月（如2023年閏二月），起卦時閏月視為該月
 跨年情況：農曆新年通常在西曆1-2月，西曆年初可能仍是農曆上一年
@@ -178,17 +153,10 @@ python meihua_calc.py lunar 2023 12 8 14
 五行生克吉凶傾向：用生體大吉、體克用吉、體用比和吉；用克體凶、體生用耗洩。
 生克為參考，主斷仍看爻辭+卦辭+卦象類型策略。
 詳見references/18-divinations.md（各類占法生克斷例）
-第三步之二：分析體用卦德（參考透鏡之二，解釋力較強）
-八卦卦德（說卦傳第七章）：乾健、兌說、離麗、震動、巽入、坎陷、艮止、坤順。
-讀法用「象的關係」描述處境，不下大吉/凶：「你（體）傾向…，處境（用）正在…，看你如何取捨」。
-例：體震（動）、用艮（止）→你想動、環境在止，進與守拉扯。
-為何加這層：姊妹研究 iching 實證「卦德的解釋力約為五行的 5 倍」，且五行並非易經原始邏輯（爻辭與十翼從未出現「五行/相生/相剋」）。meihua_calc.py 已自動輸出「卦德關係」一欄。
-重要・為什麼不下死的吉凶（兩個獨立實驗的共同結論）：
-五行生剋與卦德都只是「參考透鏡」，不是判決。用結構/五行去「算」吉凶，準確率約 50%（擲硬幣水準）：
-　・本技能自己的 experiments/prediction-validation/FINAL-REPORT.md：五行生剋 50.6%，且加深互卦/變卦不會更準。
-　・姊妹專案 iching：遮蔽爻辭中的判詞後，結構／象／時義／全文本都無法把吉凶還原到基線之上——吉凶有一半是不可化約的原生判斷。
-所以吉凶永遠是「象＋脈絡」的解讀；用「傾向／可能」，不用「一定／絕對」。這正是梅花作為思考工具的價值所在。
-詳見references/why-not-prediction.md（兩專案證據整合）
+第三步之二：體用卦德（參考透鏡之二，解釋力更強；meihua_calc.py 自動輸出「卦德關係」）
+八卦卦德（說卦傳）：乾健、兌說、離麗、震動、巽入、坎陷、艮止、坤順。
+讀法不下大吉/凶：「你（體）傾向…，處境（用）正在…，看你如何取捨」。例：體震(動)用艮(止)→想動而環境在止。
+※五行與卦德皆為「參考透鏡」非判決：兩個獨立實驗證明「算吉凶」僅約50%（本技能 FINAL-REPORT 五行 50.6%；姊妹專案 iching 遮蔽判詞後半數不可恢復）。故吉凶恆為「象＋脈絡」之解讀，用「傾向/可能」非「一定/絕對」。詳見 references/why-not-prediction.md。
 第四步：考慮卦氣旺衰
 體卦當令則旺、事易成；失令則休囚、事難成。旺相加吉，休囚減力。
 詳見references/ying-guides.md（第四應·時令旺衰表）

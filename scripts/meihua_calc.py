@@ -357,8 +357,8 @@ def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
         "體用": {
             "體卦": f"{BAGUA[ti_gua]['name']}（{ti_pos}）- {ti_element}・{BAGUA[ti_gua]['de']}",
             "用卦": f"{BAGUA[yong_gua]['name']}（{yong_pos}）- {yong_element}・{BAGUA[yong_gua]['de']}",
-            "生克關係（五行・參考透鏡）": analyze_wuxing(ti_element, yong_element),
-            "卦德關係（參考透鏡・解釋力較強）": analyze_guade(ti_gua, yong_gua),
+            "生克關係": analyze_wuxing(ti_element, yong_element),
+            "卦德關係": analyze_guade(ti_gua, yong_gua),
         },
         "互卦": {
             "名稱": hu_info[1],
