@@ -62,15 +62,17 @@ YEAR_INFOS = [
 LUNAR_START_DATE = date(1900, 1, 31)
 
 # 先天八卦數對應
+# "de" = 卦德（說卦傳第七章）：易經原始的八卦屬性。姊妹專案 iching 實證卦德的解釋力
+# 約為五行的 5 倍（docs/KEY_DISCOVERIES.md），故在此作為與五行並列的「參考透鏡」。
 BAGUA = {
-    1: {"name": "乾", "symbol": "☰", "binary": "111", "element": "金", "family": "父"},
-    2: {"name": "兌", "symbol": "☱", "binary": "011", "element": "金", "family": "少女"},
-    3: {"name": "離", "symbol": "☲", "binary": "101", "element": "火", "family": "中女"},
-    4: {"name": "震", "symbol": "☳", "binary": "001", "element": "木", "family": "長男"},
-    5: {"name": "巽", "symbol": "☴", "binary": "110", "element": "木", "family": "長女"},
-    6: {"name": "坎", "symbol": "☵", "binary": "010", "element": "水", "family": "中男"},
-    7: {"name": "艮", "symbol": "☶", "binary": "100", "element": "土", "family": "少男"},
-    8: {"name": "坤", "symbol": "☷", "binary": "000", "element": "土", "family": "母"},
+    1: {"name": "乾", "symbol": "☰", "binary": "111", "element": "金", "family": "父",   "de": "健"},
+    2: {"name": "兌", "symbol": "☱", "binary": "011", "element": "金", "family": "少女", "de": "說"},
+    3: {"name": "離", "symbol": "☲", "binary": "101", "element": "火", "family": "中女", "de": "麗"},
+    4: {"name": "震", "symbol": "☳", "binary": "001", "element": "木", "family": "長男", "de": "動"},
+    5: {"name": "巽", "symbol": "☴", "binary": "110", "element": "木", "family": "長女", "de": "入"},
+    6: {"name": "坎", "symbol": "☵", "binary": "010", "element": "水", "family": "中男", "de": "陷"},
+    7: {"name": "艮", "symbol": "☶", "binary": "100", "element": "土", "family": "少男", "de": "止"},
+    8: {"name": "坤", "symbol": "☷", "binary": "000", "element": "土", "family": "母",   "de": "順"},
 }
 
 # 六十四卦名稱
@@ -273,6 +275,40 @@ def analyze_wuxing(ti_element: str, yong_element: str) -> str:
     return "未知關係"
 
 
+# 卦德的「意向」——用象的關係語言描述，不下吉凶判決。
+# 「你（體）傾向…，處境（用）正在…」——讓占者自己在脈絡中讀。
+GUADE_INTENT = {
+    "健": "剛健主導、進取不息",
+    "說": "和悅交流、取悅外應",
+    "麗": "附麗顯明、依託而光",
+    "動": "起而行動、振奮求變",
+    "入": "漸進順入、謙伏滲透",
+    "陷": "涉險應變、勞心趨流",
+    "止": "靜止守成、止於其所",
+    "順": "柔順承載、包容隨順",
+}
+# 少數最鮮明的對極，給一句脈絡提示；其餘走通則。皆為描述，非吉凶。
+_GUADE_POLAR = {
+    frozenset({"健", "順"}): "一剛一柔：主導與承載之間，看你要推進還是承接",
+    frozenset({"動", "止"}): "一動一靜：進與守的拉扯，急動或久守都不易",
+    frozenset({"陷", "麗"}): "一陷一明：身處險而前方有明，關鍵在能否脫險見光",
+    frozenset({"說", "入"}): "一悅一巽：外和而內順，宜柔不宜剛",
+}
+
+
+def analyze_guade(ti_gua: int, yong_gua: int) -> str:
+    """以卦德交互給出『象的關係』描述（互補於五行生剋，皆為參考透鏡，非判決）。"""
+    ti_de, yong_de = BAGUA[ti_gua]["de"], BAGUA[yong_gua]["de"]
+    head = (f"你（體・{BAGUA[ti_gua]['name']}）傾向「{GUADE_INTENT[ti_de]}」，"
+            f"處境（用・{BAGUA[yong_gua]['name']}）正在「{GUADE_INTENT[yong_de]}」")
+    if ti_de == yong_de:
+        note = "同德相應，內外方向一致，順勢即可"
+    else:
+        note = _GUADE_POLAR.get(frozenset({ti_de, yong_de}),
+                                "兩股力性質不同，端看你如何在其間取捨")
+    return f"{head}。{note}（{ti_de}遇{yong_de}）"
+
+
 def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
     """分析卦象（本卦、體用、互卦、變卦）"""
     hexagram_binary = get_hexagram_binary(upper_gua, lower_gua)
@@ -295,6 +331,16 @@ def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
     hu_upper, hu_lower = get_hu_gua(hexagram_binary)
     hu_info = HEXAGRAMS.get((hu_upper, hu_lower), (0, "未知卦"))
 
+    # 錯卦（陰陽全反）：六爻每位翻轉。看「同一處境的完全相反面」。
+    cuo_binary = "".join("0" if b == "1" else "1" for b in hexagram_binary)
+    cuo_upper, cuo_lower = binary_to_gua_pair(cuo_binary)
+    cuo_info = HEXAGRAMS.get((cuo_upper, cuo_lower), (0, "未知卦"))
+
+    # 綜卦（上下顛倒）：整卦翻轉。看「對方/旁觀者眼中的同一件事」。
+    zong_binary = hexagram_binary[::-1]
+    zong_upper, zong_lower = binary_to_gua_pair(zong_binary)
+    zong_info = HEXAGRAMS.get((zong_upper, zong_lower), (0, "未知卦"))
+
     # 五行生克
     ti_element = BAGUA[ti_gua]["element"]
     yong_element = BAGUA[yong_gua]["element"]
@@ -309,9 +355,10 @@ def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
             "動爻": f"第{dong_yao}爻",
         },
         "體用": {
-            "體卦": f"{BAGUA[ti_gua]['name']}（{ti_pos}）- {ti_element}",
-            "用卦": f"{BAGUA[yong_gua]['name']}（{yong_pos}）- {yong_element}",
-            "生克關係": analyze_wuxing(ti_element, yong_element),
+            "體卦": f"{BAGUA[ti_gua]['name']}（{ti_pos}）- {ti_element}・{BAGUA[ti_gua]['de']}",
+            "用卦": f"{BAGUA[yong_gua]['name']}（{yong_pos}）- {yong_element}・{BAGUA[yong_gua]['de']}",
+            "生克關係（五行・參考透鏡）": analyze_wuxing(ti_element, yong_element),
+            "卦德關係（參考透鏡・解釋力較強）": analyze_guade(ti_gua, yong_gua),
         },
         "互卦": {
             "名稱": hu_info[1],
@@ -322,6 +369,18 @@ def _analyze_hexagram(upper_gua: int, lower_gua: int, dong_yao: int) -> Dict:
             "序號": bian_info[0],
             "名稱": bian_info[1],
             "二進位": bian_binary,
+        },
+        "錯卦": {
+            "名稱": cuo_info[1],
+            "上卦": BAGUA[cuo_upper]['name'],
+            "下卦": BAGUA[cuo_lower]['name'],
+            "讀法": "陰陽全反——同一處境的完全相反面，照出你沒看到的另一端",
+        },
+        "綜卦": {
+            "名稱": zong_info[1],
+            "上卦": BAGUA[zong_upper]['name'],
+            "下卦": BAGUA[zong_lower]['name'],
+            "讀法": "上下顛倒——換對方/旁觀者的角度看同一件事",
         },
     }
 

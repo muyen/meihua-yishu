@@ -20,6 +20,13 @@ Unlike popular misconceptions about divination, Meihua Yishu is a structured thi
 | "Superstition" | Systematic framework based on pattern recognition |
 | "Magic" | Philosophical method for examining situations from multiple angles |
 
+> **Why "not prediction" is backed by evidence, not modesty:** two independent experiments
+> both found that *computing* 吉/凶 from structure or 五行 lands at ~50% (coin-flip) — this
+> project's own [prediction-validation report](experiments/prediction-validation/FINAL-REPORT.md)
+> (五行生剋 = 50.6%) and the sibling *iching* project's verdict-word masking test. See
+> [references/why-not-prediction.md](references/why-not-prediction.md). The hexagram is a 象 to
+> read in context (互/變/錯/綜), not a verdict to compute.
+
 ### Benefits
 
 🎯 Decision Clarity — When facing complex choices, the hexagram structure forces you to consider factors you might overlook
