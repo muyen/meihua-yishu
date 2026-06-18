@@ -181,6 +181,54 @@ class TestQiguaEndToEnd(unittest.TestCase):
                     self.assertNotEqual(r["綜卦"]["名稱"], "未知卦")
 
 
+class TestPreciseTimeCasting(unittest.TestCase):
+    """秒精度起卦（今人擴充）——解決同一時辰同卦問題。"""
+
+    def test_known_precise_value(self):
+        # 農曆 2026/5/4 14:30:45 → 年數午(7)、時辰未(8)
+        # 上=(7+5+4+8)=24%8→坤8；下=(24+30)=54%8→坎6；動=(54+45)=99%6=3
+        r = mc.qigua_by_time_precise(2026, 5, 4, 14, 30, 45)
+        self.assertEqual(r["本卦"]["名稱"], "地水師")
+        self.assertEqual(r["本卦"]["動爻"], "第3爻")
+
+    def test_deterministic(self):
+        a = mc.qigua_by_time_precise(2026, 5, 4, 14, 30, 45)
+        b = mc.qigua_by_time_precise(2026, 5, 4, 14, 30, 45)
+        self.assertEqual(a["本卦"], b["本卦"])
+
+    def test_second_changes_moving_line(self):
+        # +1 秒 → 動爻 3→4（同一時辰、同一分鐘內也能區分）
+        r45 = mc.qigua_by_time_precise(2026, 5, 4, 14, 30, 45)
+        r46 = mc.qigua_by_time_precise(2026, 5, 4, 14, 30, 46)
+        self.assertEqual(r45["本卦"]["動爻"], "第3爻")
+        self.assertEqual(r46["本卦"]["動爻"], "第4爻")
+
+    def test_minute_changes_lower_trigram(self):
+        # 不同分鐘 → 下卦不同（同一時辰內本卦即不同）
+        r30 = mc.qigua_by_time_precise(2026, 5, 4, 14, 30, 45)
+        r31 = mc.qigua_by_time_precise(2026, 5, 4, 14, 31, 45)
+        self.assertNotEqual(r30["本卦"]["名稱"], r31["本卦"]["名稱"])
+
+    def test_gregorian_precise_adds_conversion(self):
+        r = mc.qigua_by_gregorian_time_precise(2026, 6, 18, 14, 30, 45)
+        self.assertIn("日期轉換", r)
+        self.assertIn(":", r["日期轉換"]["西曆"])  # 含時分秒
+
+    def test_same_shichen_canonical_collides_but_precise_does_not(self):
+        # 證明問題與修復：同一時辰兩個時刻
+        #   canonical（時辰精度）→ 完全相同（年月日時辰皆同）
+        #   precise（秒精度）→ 整體卦象（本卦+動爻）不同
+        # 註：mod 運算仍可能讓「本卦名稱」相同，故比較有意義的單位＝(本卦, 動爻)。
+        c1 = mc.qigua_by_time(2026, 5, 4, 14)
+        c2 = mc.qigua_by_time(2026, 5, 4, 14)
+        self.assertEqual((c1["本卦"]["名稱"], c1["本卦"]["動爻"]),
+                         (c2["本卦"]["名稱"], c2["本卦"]["動爻"]))
+        p1 = mc.qigua_by_time_precise(2026, 5, 4, 14, 10, 0)
+        p2 = mc.qigua_by_time_precise(2026, 5, 4, 14, 50, 30)
+        self.assertNotEqual((p1["本卦"]["名稱"], p1["本卦"]["動爻"]),
+                            (p2["本卦"]["名稱"], p2["本卦"]["動爻"]))
+
+
 class TestYearDizhi(unittest.TestCase):
     def test_known_years(self):
         self.assertEqual(mc.get_year_dizhi(1900), (1, "子"))   # 庚子

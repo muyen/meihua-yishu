@@ -59,7 +59,7 @@ Compared to other I Ching methods:
 ## Features
 
 ### Casting Methods
-- Time-based Divination — Cast hexagrams using current or specified time
+- Time-based Divination — Cast using current or specified time. **Defaults to second-level precision** (a modern extension) so repeated casts within the same 2-hour 時辰 no longer collide; traditional 時辰 precision remains available (NEW!)
 - Number-based Divination — Cast hexagrams using numbers
 - Sound-based Divination — Cast using the count of sounds heard
 - Color-based Divination — Cast based on colors corresponding to five elements
@@ -67,7 +67,8 @@ Compared to other I Ching methods:
 - Direction-based Divination — Cast based on the direction of a person or object
 
 ### Interpretation Functions
-- Ti-Yong Analysis — Interpret the relationship between Ti (体) and Yong (用) trigrams
+- Ti-Yong Analysis — Interpret the relationship between Ti (体) and Yong (用) trigrams via **two complementary lenses**: five-element 生克 *and* Trigram-Virtue 卦德 (健/順/動/入/陷/麗/止/說). Sibling research found 卦德 has ~5× the explanatory power of five-elements; both are framed as reference lenses, never verdicts (NEW!)
+- Full Relational Field — Beyond 互卦 (nuclear) and 變卦 (changing), each cast now also shows 錯卦 (complement — the opposite face) and 綜卦 (inverse — the other party's view), so a hexagram is read as a 象 in context (NEW!)
 - Tongguan Mediation — Analyze five-element bridging to mitigate克 (controlling) relationships
 - 64 Hexagrams Interpretation — Detailed explanations of hexagram and line texts
 - Changing Lines Derivation — Analyze the fortune of transformed hexagrams
@@ -147,8 +148,11 @@ Once installed, mention divination keywords like "占卦", "起卦", or "meihua"
 ### Using the Python Tool
 
 ```bash
-# Cast hexagram using current time
+# Cast using current time — second precision by default (NEW)
 python scripts/meihua_calc.py time
+
+# Cast using current time — traditional 時辰 (2-hour) precision
+python scripts/meihua_calc.py time-shichen
 
 # Cast hexagram using two numbers
 python scripts/meihua_calc.py num 6 8
@@ -178,16 +182,23 @@ Example output:
   Line 4 changing
 
 【3. Ti-Yong Analysis】
-  Ti Trigram: Li (lower) - Fire
-  Yong Trigram: Dui (upper) - Metal
-  Relationship: Ti controls Yong (Auspicious)
+  Ti Trigram: Li (lower) - Fire · 麗 (clinging)
+  Yong Trigram: Dui (upper) - Metal · 說 (joyous)
+  Five-element (reference): Ti controls Yong (Auspicious)
+  Trigram-Virtue (reference, stronger): You (Ti) tend toward "clinging/showing", the situation (Yong) is "joyous/pleasing" ...
 
-【4. Mutual Hexagram】
+【4. Mutual Hexagram (互卦)】
   Qian Wei Tian (Heaven over Heaven)
 
-【5. Transformed Hexagram】
+【5. Transformed Hexagram (變卦)】
   #17: Ze Lei Sui (Following)
   Binary: 011001
+
+【6. Complement (錯卦) — the opposite face】
+  Shan Shui Meng — flip every line; shows the side you didn't see
+
+【7. Inverse (綜卦) — the other party's view】
+  Shui Huo Ji Ji — turn it upside down; see it from across the table
 ==================================================
 ```
 

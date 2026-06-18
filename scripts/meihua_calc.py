@@ -435,6 +435,54 @@ def qigua_by_gregorian_time(year: int, month: int, day: int, hour: int) -> Dict:
     return result
 
 
+def qigua_by_time_precise(year: int, month: int, day: int,
+                          hour: int, minute: int, second: int) -> Dict:
+    """以農曆時間 + 分秒起卦（今人精確擴充，非邵雍原法）。
+
+    解決純時辰起卦的問題：同一時辰（2小時）內任何時刻同卦。
+    分入下卦、秒入動爻，使同一時辰內不同時刻得不同卦。
+    年/月/日為農曆；時/分/秒為時鐘讀數。
+    """
+    year_num, year_dizhi = get_year_dizhi(year)
+    shichen_num, shichen_name = get_shichen(hour)
+
+    upper_sum = year_num + month + day + shichen_num
+    lower_sum = upper_sum + minute
+    dong_sum = lower_sum + second
+
+    upper_gua = num_to_gua(upper_sum)
+    lower_gua = num_to_gua(lower_sum)
+    dong_yao = num_to_yao(dong_sum)
+
+    result = _analyze_hexagram(upper_gua, lower_gua, dong_yao)
+    result["計算過程"] = {
+        "年數": f"{year_dizhi}年 ({year_num})",
+        "月數": month,
+        "日數": day,
+        "時辰": f"{shichen_name}時 ({shichen_num})",
+        "分": minute,
+        "秒": second,
+        "上卦數": f"(年+月+日+時辰)={upper_sum} mod 8 = {upper_gua}",
+        "下卦數": f"(上+分)={lower_sum} mod 8 = {lower_gua}",
+        "動爻數": f"(下+秒)={dong_sum} mod 6 = {dong_yao}",
+        "備註": "分入下卦、秒入動爻（今人精確擴充，非邵雍原法）",
+    }
+    return result
+
+
+def qigua_by_gregorian_time_precise(year: int, month: int, day: int,
+                                    hour: int, minute: int, second: int) -> Dict:
+    """以西曆時間 + 分秒起卦（自動轉農曆；今人精確擴充）。"""
+    lunar_year, lunar_month, lunar_day, is_leap = gregorian_to_lunar(year, month, day)
+    result = qigua_by_time_precise(lunar_year, lunar_month, lunar_day, hour, minute, second)
+    result["日期轉換"] = {
+        "西曆": f"{year}年{month}月{day}日 {hour:02d}:{minute:02d}:{second:02d}",
+        "農曆": f"{lunar_year}年{'閏' if is_leap else ''}{lunar_month}月{lunar_day}日",
+        "說明": "梅花易數使用農曆計算（分秒為今人精確擴充）",
+    }
+    return result
+
+
 def qigua_by_numbers(num1: int, num2: int, num3: Optional[int] = None) -> Dict:
     """以數字起卦"""
     upper_gua = num_to_gua(num1)
@@ -723,10 +771,17 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) > 1:
-        if sys.argv[1] == "time":
+        if sys.argv[1] in ("time", "time-precise"):
+            # 預設秒精度：避免同一時辰（2hr）重複得同卦
+            now = datetime.now()
+            result = qigua_by_gregorian_time_precise(
+                now.year, now.month, now.day, now.hour, now.minute, now.second)
+            print(f"\n起卦時間：{now.strftime('%Y年%m月%d日 %H:%M:%S')}（西曆，秒精度・預設）")
+        elif sys.argv[1] == "time-shichen":
+            # 傳統時辰精度（2hr）
             now = datetime.now()
             result = qigua_by_gregorian_time(now.year, now.month, now.day, now.hour)
-            print(f"\n起卦時間：{now.strftime('%Y年%m月%d日 %H:%M')}（西曆）")
+            print(f"\n起卦時間：{now.strftime('%Y年%m月%d日 %H時')}（西曆，傳統時辰精度）")
         elif sys.argv[1] == "lunar" and len(sys.argv) >= 5:
             year = int(sys.argv[2])
             month = int(sys.argv[3])
@@ -756,7 +811,8 @@ if __name__ == "__main__":
             sys.exit(0)
         else:
             print("用法：")
-            print("  python meihua_calc.py time                     # 以當前時間起卦")
+            print("  python meihua_calc.py time                     # 當前時間起卦（秒精度・預設）")
+            print("  python meihua_calc.py time-shichen             # 當前時間起卦（傳統時辰精度）")
             print("  python meihua_calc.py gregorian 2024 1 18 14   # 以西曆日期起卦")
             print("  python meihua_calc.py lunar 2024 12 8 14       # 以農曆日期起卦")
             print("  python meihua_calc.py num 6 8 9                # 以數字起卦")
@@ -764,7 +820,8 @@ if __name__ == "__main__":
             sys.exit(1)
     else:
         now = datetime.now()
-        result = qigua_by_gregorian_time(now.year, now.month, now.day, now.hour)
-        print(f"\n起卦時間：{now.strftime('%Y年%m月%d日 %H:%M')}（西曆）")
+        result = qigua_by_gregorian_time_precise(
+            now.year, now.month, now.day, now.hour, now.minute, now.second)
+        print(f"\n起卦時間：{now.strftime('%Y年%m月%d日 %H:%M:%S')}（西曆，秒精度・預設）")
 
     print_result(result)
