@@ -669,7 +669,9 @@ def print_result(result: Dict):
     ty = result["體用"]
     print(f"  體卦：{ty['體卦']}")
     print(f"  用卦：{ty['用卦']}")
-    print(f"  生克：{ty['生克關係']}")
+    print(f"  生克（五行・參考）：{ty['生克關係']}")
+    if "卦德關係" in ty:
+        print(f"  卦德（參考・解釋力更強）：{ty['卦德關係']}")
 
     print("\n【四、互卦】")
     hu = result["互卦"]
@@ -679,6 +681,15 @@ def print_result(result: Dict):
     bian = result["變卦"]
     print(f"  第 {bian['序號']} 卦：{bian['名稱']}")
     print(f"  二進位：{bian['二進位']}")
+
+    if "錯卦" in result:
+        cuo = result["錯卦"]
+        print("\n【六、錯卦（反爻・互補面）】")
+        print(f"  {cuo['名稱']}（上{cuo['上卦']}下{cuo['下卦']}）— {cuo['讀法']}")
+    if "綜卦" in result:
+        zong = result["綜卦"]
+        print("\n【七、綜卦（反爻・對方視角）】")
+        print(f"  {zong['名稱']}（上{zong['上卦']}下{zong['下卦']}）— {zong['讀法']}")
 
     # 添加策略建議
     hex_num = ben['序號']
