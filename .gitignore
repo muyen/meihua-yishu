@@ -17,9 +17,6 @@ venv/
 *.swp
 *.swo
 
-# Tests (local only)
-tests/
-
 # Personal divination records (local only)
 personal-readings/
 
