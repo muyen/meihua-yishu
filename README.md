@@ -8,6 +8,8 @@ Meihua Yishu (梅花易數 / Plum Blossom Numerology / Plum Blossom I Ching) is 
 
 > Also known as: 梅花易数 (Simplified Chinese), Mei Hua Yi Shu, Plum Blossom Oracle, 梅花心易
 
+> **Prefer a web app?** Try the hosted version at [iyarrow.xyz](https://iyarrow.xyz) — no Claude Code setup required.
+
 ## Why Meihua Yishu?
 
 ### A Decision-Making Framework, Not Fortune-Telling

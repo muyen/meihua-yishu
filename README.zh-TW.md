@@ -8,6 +8,8 @@
 
 > **其他名稱：** 梅花易数（簡體）、Mei Hua Yi Shu、Plum Blossom Oracle、梅花心易
 
+> **想直接使用網頁版？** 前往 [iyarrow.xyz](https://iyarrow.xyz)，免安裝 Claude Code。
+
 ## 為什麼選擇梅花易數？
 
 ### 決策思維框架，而非算命
