@@ -1,0 +1,368 @@
+{
+  "generated": "2026-05-07",
+  "batch": 4,
+  "warning": "SEALED until ALL scoring is complete. Do not open during interpretation, narration, or scoring phases.",
+  "blinding_seed": 20260508,
+  "events": [
+    {
+      "event_id": "E63",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E64",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E65",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E66",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E67",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E68",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E69",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E70",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E71",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E72",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E73",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E74",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E75",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E76",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E77",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E78",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E79",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E80",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E81",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E82",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E83",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E84",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E85",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E86",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E87",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E88",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E89",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E90",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E91",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E92",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E93",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E94",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E95",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E96",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E97",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E98",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E99",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E100",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E101",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E102",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E103",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E104",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E105",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E106",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E107",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E108",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E109",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E110",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E111",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E112",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E113",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E114",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E115",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E116",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E117",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E118",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E119",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E120",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    },
+    {
+      "event_id": "E121",
+      "real_is_A": true,
+      "label_A": "real",
+      "label_B": "control"
+    },
+    {
+      "event_id": "E122",
+      "real_is_A": false,
+      "label_A": "control",
+      "label_B": "real"
+    }
+  ]
+}
