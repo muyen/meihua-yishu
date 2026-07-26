@@ -51,6 +51,17 @@ recorded rather than discovered later. Mitigations:
 4. Per the original stop rule: events that fail to resolve in the window are **dropped, not replaced**.
    Final n is whatever resolves. If drop-out is heavy, the reported n falls and the power falls with it.
 
+## Clarification: interpretation text is written once per cast
+
+The original protocol says the control hexagram for event X comes from running 取象法 on event
+Y = pairing[X]. Because the pairing is a single-cycle derangement over the same 60 events, Y's
+control hexagram *is* Y's real hexagram. The interpretation text is therefore written **once per
+cast** and used twice: as Y's real reading and as X's control reading, byte-identical.
+
+This is a tightening, not a loosening. If control readings were written separately, the caster
+could — without intending to — write thinner prose for the ones they know are controls. Reusing
+the identical text makes that impossible. `verify_batch4_seal.py` asserts the byte-identity.
+
 ## Prior expectation, recorded before casting
 
 Stating this so it cannot be adjusted afterwards. The two strongest signals already in hand both

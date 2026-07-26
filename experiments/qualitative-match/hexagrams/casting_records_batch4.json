@@ -1,0 +1,4810 @@
+{
+  "generated": "2026-07-27",
+  "batch": 4,
+  "method": "取象法 numbers -> meihua_calc.qigua_by_numbers; displaced 取象法 controls",
+  "note": "Interpretation text is written ONCE per cast and reused: the text for event Y's real hexagram is the same text served as event X's control, where Y = pairing[X]. Identical hexagram, identical reading — this removes any chance of the caster writing weaker prose for controls.",
+  "total_events": 60,
+  "events": [
+    {
+      "event_id": "E63",
+      "event_title": "Commonwealth Games Glasgow 2026 — final medal table",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "Australia finishes top of the overall gold-medal table.",
+      "real_hexagram": {
+        "numbers": [
+          8,
+          3,
+          2
+        ],
+        "quxiang_rationale": "上坤：列國聚集的獎牌榜為眾、為土；下離：競技的展示與光采。動爻取閉幕日 8/2 之 2",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "離 ☲",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 36,
+          "name": "地火明夷"
+        },
+        "changed_hexagram": {
+          "number": 11,
+          "name": "地天泰"
+        },
+        "mutual_hexagram": {
+          "name": "雷水解"
+        },
+        "cuo_hexagram": {
+          "name": "天水訟"
+        },
+        "zong_hexagram": {
+          "name": "火地晉"
+        },
+        "ti_yong": {
+          "ti": "坤（上卦）- 土・順",
+          "yong": "離（下卦）- 火・麗",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（順遇麗）"
+        },
+        "moving_line_position": "六二（動）：得正·無應(↔六五同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E64",
+        "numbers": [
+          7,
+          2,
+          4
+        ],
+        "quxiang_rationale": "上艮：地主蘇格蘭立於自家山門、承接他人退出的擔子；下兌：主場的喜悅。動爻取 10 金門檻",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 41,
+          "name": "山澤損"
+        },
+        "changed_hexagram": {
+          "number": 38,
+          "name": "火澤睽"
+        },
+        "mutual_hexagram": {
+          "name": "地雷復"
+        },
+        "cuo_hexagram": {
+          "name": "澤山咸"
+        },
+        "zong_hexagram": {
+          "name": "風雷益"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "艮（上卦）- 土・止",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（說遇止）"
+        },
+        "moving_line_position": "六四（動）：得正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "明夷 wounded but 用生體, line 吉, transforming to 泰 — the broadest favourable settlement in the book"
+    },
+    {
+      "event_id": "E64",
+      "event_title": "Commonwealth Games — host nation Scotland's gold haul",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "Scotland wins 10 or more gold medals.",
+      "real_hexagram": {
+        "numbers": [
+          7,
+          2,
+          4
+        ],
+        "quxiang_rationale": "上艮：地主蘇格蘭立於自家山門、承接他人退出的擔子；下兌：主場的喜悅。動爻取 10 金門檻",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 41,
+          "name": "山澤損"
+        },
+        "changed_hexagram": {
+          "number": 38,
+          "name": "火澤睽"
+        },
+        "mutual_hexagram": {
+          "name": "地雷復"
+        },
+        "cuo_hexagram": {
+          "name": "澤山咸"
+        },
+        "zong_hexagram": {
+          "name": "風雷益"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "艮（上卦）- 土・止",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（說遇止）"
+        },
+        "moving_line_position": "六四（動）：得正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E90",
+        "numbers": [
+          6,
+          5,
+          4
+        ],
+        "quxiang_rationale": "上坎：殖利率如水之流與深；下巽：十年為長、為入。動爻取 8/10 mod 6",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 48,
+          "name": "水風井"
+        },
+        "changed_hexagram": {
+          "number": 28,
+          "name": "澤風大過"
+        },
+        "mutual_hexagram": {
+          "name": "火澤睽"
+        },
+        "cuo_hexagram": {
+          "name": "火雷噬嗑"
+        },
+        "zong_hexagram": {
+          "name": "澤水困"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "坎（上卦）- 水・陷",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（入遇陷）"
+        },
+        "moving_line_position": "六四（動）：得正·無應(↔初六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "損 Decrease at line 4: the affliction is reduced, and the host's share is what gets reduced; ends in 睽 divergence"
+    },
+    {
+      "event_id": "E65",
+      "event_title": "Commonwealth Games athletics — closing night relays",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-01",
+      "binary_outcome_definition": "England wins the men's 4x100m relay final.",
+      "real_hexagram": {
+        "numbers": [
+          4,
+          3,
+          4
+        ],
+        "quxiang_rationale": "上震：接力的足與速度、雷動；下離：閉幕夜的燈火與展示。動爻取 4x100 之 4",
+        "upper_trigram": "震 ☳",
+        "lower_trigram": "離 ☲",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 55,
+          "name": "雷火豐"
+        },
+        "changed_hexagram": {
+          "number": 36,
+          "name": "地火明夷"
+        },
+        "mutual_hexagram": {
+          "name": "澤風大過"
+        },
+        "cuo_hexagram": {
+          "name": "風水渙"
+        },
+        "zong_hexagram": {
+          "name": "火山旅"
+        },
+        "ti_yong": {
+          "ti": "離（下卦）- 火・麗",
+          "yong": "震（上卦）- 木・動",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（麗遇動）"
+        },
+        "moving_line_position": "九四（動）：失正·無應(↔初九同性)·上被六五陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E102",
+        "numbers": [
+          4,
+          2,
+          4
+        ],
+        "quxiang_rationale": "上震：音樂節之雷與聲；下兌：群眾之悅。動爻取四日之 4",
+        "upper_trigram": "震 ☳",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 54,
+          "name": "雷澤歸妹"
+        },
+        "changed_hexagram": {
+          "number": 19,
+          "name": "地澤臨"
+        },
+        "mutual_hexagram": {
+          "name": "水火既濟"
+        },
+        "cuo_hexagram": {
+          "name": "風山漸"
+        },
+        "zong_hexagram": {
+          "name": "風山漸"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "震（上卦）- 木・動",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（說遇動）"
+        },
+        "moving_line_position": "九四（動）：失正·無應(↔初九同性)·陽乘陰（剛統柔·最順）·上被六五陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "豐 line 4 遇其夷主吉 — meeting an equal and prevailing, though the light dims after"
+    },
+    {
+      "event_id": "E66",
+      "event_title": "Commonwealth Games boxing — gold medal bouts",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-01",
+      "binary_outcome_definition": "India wins 3 or more boxing gold medals.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          4,
+          3
+        ],
+        "quxiang_rationale": "上乾：拳擊的金屬與剛擊；下震：突發的動作。動爻取 3 金門檻",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "震 ☳",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 25,
+          "name": "天雷无妄"
+        },
+        "changed_hexagram": {
+          "number": 13,
+          "name": "天火同人"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "地風升"
+        },
+        "zong_hexagram": {
+          "name": "山天大畜"
+        },
+        "ti_yong": {
+          "ti": "乾（上卦）- 金・健",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（健遇動）"
+        },
+        "moving_line_position": "六三（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E80",
+        "numbers": [
+          5,
+          1,
+          6
+        ],
+        "quxiang_rationale": "上巽：體操的柔韌與器械之木；下乾：全能為圓、為天。動爻取六項器械",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 9,
+          "name": "風天小畜"
+        },
+        "changed_hexagram": {
+          "number": 5,
+          "name": "水天需"
+        },
+        "mutual_hexagram": {
+          "name": "火澤睽"
+        },
+        "cuo_hexagram": {
+          "name": "雷地豫"
+        },
+        "zong_hexagram": {
+          "name": "天澤履"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（健遇入）"
+        },
+        "moving_line_position": "上九（動）：失正·無應(↔九三同性)"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "无妄 line 3 无妄之災 — the gain goes to a passer-by, the expected holder absorbs the loss"
+    },
+    {
+      "event_id": "E67",
+      "event_title": "Commonwealth Games track cycling at the Sir Chris Hoy Velodrome",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "Australia wins the men's team pursuit gold.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          1,
+          4
+        ],
+        "quxiang_rationale": "上巽：場地自行車的風與穿行；下乾：輪為圓、為金。動爻取團體追逐 4 人",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 9,
+          "name": "風天小畜"
+        },
+        "changed_hexagram": {
+          "number": 1,
+          "name": "乾為天"
+        },
+        "mutual_hexagram": {
+          "name": "火澤睽"
+        },
+        "cuo_hexagram": {
+          "name": "雷地豫"
+        },
+        "zong_hexagram": {
+          "name": "天澤履"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（健遇入）"
+        },
+        "moving_line_position": "六四（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E118",
+        "numbers": [
+          5,
+          6,
+          4
+        ],
+        "quxiang_rationale": "上巽：颶風為風；下坎：海為水。動爻取 8/10 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "changed_hexagram": {
+          "number": 6,
+          "name": "天水訟"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷火豐"
+        },
+        "zong_hexagram": {
+          "name": "水澤節"
+        },
+        "ti_yong": {
+          "ti": "坎（下卦）- 水・陷",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・坎）傾向「涉險應變、勞心趨流」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（陷遇入）"
+        },
+        "moving_line_position": "六四（動）：得正·無應(↔初六同性)"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "小畜 line 4 血去惕出无咎 transforming to 乾, six unbroken lines — total dominance by the stronger party"
+    },
+    {
+      "event_id": "E68",
+      "event_title": "Commonwealth Games judo",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "England wins more judo gold medals than Scotland.",
+      "real_hexagram": {
+        "numbers": [
+          7,
+          8,
+          2
+        ],
+        "quxiang_rationale": "上艮：柔道的手與制止；下坤：摔向地面。動爻取 8/2 之 2",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 23,
+          "name": "山地剝"
+        },
+        "changed_hexagram": {
+          "number": 4,
+          "name": "山水蒙"
+        },
+        "mutual_hexagram": {
+          "name": "坤為地"
+        },
+        "cuo_hexagram": {
+          "name": "澤天夬"
+        },
+        "zong_hexagram": {
+          "name": "地雷復"
+        },
+        "ti_yong": {
+          "ti": "艮（上卦）- 土・止",
+          "yong": "坤（下卦）- 土・順",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（止遇順）"
+        },
+        "moving_line_position": "六二（動）：得正·無應(↔六五同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E109",
+        "numbers": [
+          5,
+          2,
+          2
+        ],
+        "quxiang_rationale": "上巽：摺疊為巽之柔木、之入；下兌：零售與金錢。動爻取 Fold 8 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 61,
+          "name": "風澤中孚"
+        },
+        "changed_hexagram": {
+          "number": 42,
+          "name": "風雷益"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷山小過"
+        },
+        "zong_hexagram": {
+          "name": "風澤中孚"
+        },
+        "ti_yong": {
+          "ti": "巽（上卦）- 木・入",
+          "yong": "兌（下卦）- 金・說",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・兌）正在「和悅交流、取悅外應」。一悅一巽：外和而內順，宜柔不宜剛（入遇說）"
+        },
+        "moving_line_position": "九二（動）：失正·無應(↔九五同性)·上被六三陰乘"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "剝 line 2 蔑貞凶 — the frame is being stripped; explicit 凶"
+    },
+    {
+      "event_id": "E69",
+      "event_title": "Commonwealth Games 3x3 basketball finals",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "Australia wins the men's 3x3 basketball gold.",
+      "real_hexagram": {
+        "numbers": [
+          2,
+          4,
+          3
+        ],
+        "quxiang_rationale": "上兌：少年之戲與喜悅；下震：快攻之動。動爻取 3x3 之 3",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "震 ☳",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 17,
+          "name": "澤雷隨"
+        },
+        "changed_hexagram": {
+          "number": 49,
+          "name": "澤火革"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "山風蠱"
+        },
+        "zong_hexagram": {
+          "name": "山風蠱"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（說遇動）"
+        },
+        "moving_line_position": "六三（動）：失正·無應(↔上六同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E91",
+        "numbers": [
+          2,
+          8,
+          1
+        ],
+        "quxiang_rationale": "上兌：島嶼為澤、初選為口舌；下坤：選民為眾。動爻取 8/1 之 1",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 45,
+          "name": "澤地萃"
+        },
+        "changed_hexagram": {
+          "number": 17,
+          "name": "澤雷隨"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "山天大畜"
+        },
+        "zong_hexagram": {
+          "name": "地風升"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "坤（下卦）- 土・順",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（說遇順）"
+        },
+        "moving_line_position": "初六（動）：失正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "隨 line 3 隨有求得 — seeking and getting, stated together"
+    },
+    {
+      "event_id": "E70",
+      "event_title": "Commonwealth Games swimming",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "Australia wins 15 or more swimming gold medals.",
+      "real_hexagram": {
+        "numbers": [
+          6,
+          2,
+          3
+        ],
+        "quxiang_rationale": "上坎：泳池之水；下兌：澤。動爻取 15 金門檻 mod 6",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 60,
+          "name": "水澤節"
+        },
+        "changed_hexagram": {
+          "number": 5,
+          "name": "水天需"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "火山旅"
+        },
+        "zong_hexagram": {
+          "name": "風水渙"
+        },
+        "ti_yong": {
+          "ti": "坎（上卦）- 水・陷",
+          "yong": "兌（下卦）- 金・說",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坎）傾向「涉險應變、勞心趨流」，處境（用・兌）正在「和悅交流、取悅外應」。兩股力性質不同，端看你如何在其間取捨（陷遇說）"
+        },
+        "moving_line_position": "六三（動）：失正·無應(↔上六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E77",
+        "numbers": [
+          7,
+          4,
+          6
+        ],
+        "quxiang_rationale": "上艮：名人堂為門、為紀念的靜止；下震：球賽之動。動爻取 8/6 之 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "震 ☳",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 27,
+          "name": "山雷頤"
+        },
+        "changed_hexagram": {
+          "number": 24,
+          "name": "地雷復"
+        },
+        "mutual_hexagram": {
+          "name": "坤為地"
+        },
+        "cuo_hexagram": {
+          "name": "澤風大過"
+        },
+        "zong_hexagram": {
+          "name": "山雷頤"
+        },
+        "ti_yong": {
+          "ti": "震（下卦）- 木・動",
+          "yong": "艮（上卦）- 土・止",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・艮）正在「靜止守成、止於其所」。一動一靜：進與守的拉扯，急動或久守都不易（動遇止）"
+        },
+        "moving_line_position": "上九（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "節 line 3 不節若則嗟若 — the measure is not met and there is lamenting"
+    },
+    {
+      "event_id": "E71",
+      "event_title": "Commonwealth Games netball final",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "Australia wins the netball gold medal.",
+      "real_hexagram": {
+        "numbers": [
+          8,
+          2,
+          2
+        ],
+        "quxiang_rationale": "上坤：團隊為眾；下兌：手與悅。動爻取 8/2 之 2",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 19,
+          "name": "地澤臨"
+        },
+        "changed_hexagram": {
+          "number": 24,
+          "name": "地雷復"
+        },
+        "mutual_hexagram": {
+          "name": "地雷復"
+        },
+        "cuo_hexagram": {
+          "name": "天山遯"
+        },
+        "zong_hexagram": {
+          "name": "風地觀"
+        },
+        "ti_yong": {
+          "ti": "坤（上卦）- 土・順",
+          "yong": "兌（下卦）- 金・說",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・兌）正在「和悅交流、取悅外應」。兩股力性質不同，端看你如何在其間取捨（順遇說）"
+        },
+        "moving_line_position": "九二（動）：失正·有應·上被六三陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E103",
+        "numbers": [
+          2,
+          7,
+          2
+        ],
+        "quxiang_rationale": "上兌：歌為口舌；下艮：續居榜首為止、為不動。動爻取 8/8 mod 6",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 31,
+          "name": "澤山咸"
+        },
+        "changed_hexagram": {
+          "number": 28,
+          "name": "澤風大過"
+        },
+        "mutual_hexagram": {
+          "name": "天風姤"
+        },
+        "cuo_hexagram": {
+          "name": "山澤損"
+        },
+        "zong_hexagram": {
+          "name": "雷風恆"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "艮（下卦）- 土・止",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（說遇止）"
+        },
+        "moving_line_position": "六二（動）：得正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "臨 line 2 咸臨，吉无不利 — one of the least hedged favourable lines in the book"
+    },
+    {
+      "event_id": "E72",
+      "event_title": "Commonwealth Games weightlifting",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "India finishes top of the weightlifting gold-medal table.",
+      "real_hexagram": {
+        "numbers": [
+          7,
+          1,
+          1
+        ],
+        "quxiang_rationale": "上艮：舉重之重、之靜止；下乾：金與剛力。動爻取榜首之 1",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 26,
+          "name": "山天大畜"
+        },
+        "changed_hexagram": {
+          "number": 18,
+          "name": "山風蠱"
+        },
+        "mutual_hexagram": {
+          "name": "雷澤歸妹"
+        },
+        "cuo_hexagram": {
+          "name": "澤地萃"
+        },
+        "zong_hexagram": {
+          "name": "天雷无妄"
+        },
+        "ti_yong": {
+          "ti": "艮（上卦）- 土・止",
+          "yong": "乾（下卦）- 金・健",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（止遇健）"
+        },
+        "moving_line_position": "初九（動）：得正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E117",
+        "numbers": [
+          1,
+          6,
+          4
+        ],
+        "quxiang_rationale": "上乾：天；下坎：試飛之險與未定。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 6,
+          "name": "天水訟"
+        },
+        "changed_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "地火明夷"
+        },
+        "zong_hexagram": {
+          "name": "水天需"
+        },
+        "ti_yong": {
+          "ti": "坎（下卦）- 水・陷",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坎）傾向「涉險應變、勞心趨流」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（陷遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "大畜 line 1 有厲，利已 — danger, and the correct move is to stop"
+    },
+    {
+      "event_id": "E73",
+      "event_title": "MLB trade deadline",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-03",
+      "binary_outcome_definition": "A player with at least one career All-Star selection changes teams on deadline day.",
+      "real_hexagram": {
+        "numbers": [
+          2,
+          4,
+          6
+        ],
+        "quxiang_rationale": "上兌：交易為口舌、為金錢；下震：突發的異動。動爻取截止時刻 6pm",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "震 ☳",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 17,
+          "name": "澤雷隨"
+        },
+        "changed_hexagram": {
+          "number": 25,
+          "name": "天雷无妄"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "山風蠱"
+        },
+        "zong_hexagram": {
+          "name": "山風蠱"
+        },
+        "ti_yong": {
+          "ti": "震（下卦）- 木・動",
+          "yong": "兌（上卦）- 金・說",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・兌）正在「和悅交流、取悅外應」。兩股力性質不同，端看你如何在其間取捨（動遇說）"
+        },
+        "moving_line_position": "上六（動）：得正·無應(↔六三同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E71",
+        "numbers": [
+          8,
+          2,
+          2
+        ],
+        "quxiang_rationale": "上坤：團隊為眾；下兌：手與悅。動爻取 8/2 之 2",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 19,
+          "name": "地澤臨"
+        },
+        "changed_hexagram": {
+          "number": 24,
+          "name": "地雷復"
+        },
+        "mutual_hexagram": {
+          "name": "地雷復"
+        },
+        "cuo_hexagram": {
+          "name": "天山遯"
+        },
+        "zong_hexagram": {
+          "name": "風地觀"
+        },
+        "ti_yong": {
+          "ti": "坤（上卦）- 土・順",
+          "yong": "兌（下卦）- 金・說",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・兌）正在「和悅交流、取悅外應」。兩股力性質不同，端看你如何在其間取捨（順遇說）"
+        },
+        "moving_line_position": "九二（動）：失正·有應·上被六三陰乘"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "隨 line 6 拘係之乃從維之 under 用克體 — things get bound in place rather than moved"
+    },
+    {
+      "event_id": "E74",
+      "event_title": "NL West standings on 10 August",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "The Los Angeles Dodgers lead the NL West outright at the end of play on 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          8,
+          4
+        ],
+        "quxiang_rationale": "上乾：領先者居首；下坤：戰績表為地。動爻取 8/10 之 10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 12,
+          "name": "天地否"
+        },
+        "changed_hexagram": {
+          "number": 20,
+          "name": "風地觀"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "地天泰"
+        },
+        "zong_hexagram": {
+          "name": "地天泰"
+        },
+        "ti_yong": {
+          "ti": "坤（下卦）- 土・順",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・乾）正在「剛健主導、進取不息」。一剛一柔：主導與承載之間，看你要推進還是承接（順遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E98",
+        "numbers": [
+          3,
+          6,
+          2
+        ],
+        "quxiang_rationale": "上離：夏威夷之日與火山；下坎：環繞之洋。動爻取 8/8 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 64,
+          "name": "火水未濟"
+        },
+        "changed_hexagram": {
+          "number": 35,
+          "name": "火地晉"
+        },
+        "mutual_hexagram": {
+          "name": "水火既濟"
+        },
+        "cuo_hexagram": {
+          "name": "水火既濟"
+        },
+        "zong_hexagram": {
+          "name": "水火既濟"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・坎）正在「涉險應變、勞心趨流」。一陷一明：身處險而前方有明，關鍵在能否脫險見光（麗遇陷）"
+        },
+        "moving_line_position": "九二（動）：失正·有應·陽乘陰（剛統柔·最順）·上被六三陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "否 line 4 有命无咎，疇離祉 — a mandate breaks the blockage and the benefit is shared"
+    },
+    {
+      "event_id": "E75",
+      "event_title": "MLB no-hitter window",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "At least one no-hitter (individual or combined) is thrown between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          5,
+          5
+        ],
+        "quxiang_rationale": "上離：罕見的光采；下巽：無安打之「無」、風之空。動爻取巽數 5",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 5,
+        "primary_hexagram": {
+          "number": 50,
+          "name": "火風鼎"
+        },
+        "changed_hexagram": {
+          "number": 44,
+          "name": "天風姤"
+        },
+        "mutual_hexagram": {
+          "name": "澤天夬"
+        },
+        "cuo_hexagram": {
+          "name": "水雷屯"
+        },
+        "zong_hexagram": {
+          "name": "澤火革"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "離（上卦）- 火・麗",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（入遇麗）"
+        },
+        "moving_line_position": "六五（動）：失正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E115",
+        "numbers": [
+          1,
+          4,
+          5
+        ],
+        "quxiang_rationale": "上乾：天為蒼穹；下震：發射之動與雷。動爻取 CRS-35 之 35 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "震 ☳",
+        "changing_line": 5,
+        "primary_hexagram": {
+          "number": 25,
+          "name": "天雷无妄"
+        },
+        "changed_hexagram": {
+          "number": 21,
+          "name": "火雷噬嗑"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "地風升"
+        },
+        "zong_hexagram": {
+          "name": "山天大畜"
+        },
+        "ti_yong": {
+          "ti": "震（下卦）- 木・動",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（動遇健）"
+        },
+        "moving_line_position": "九五（動）：得正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "鼎 line 5 transforming to 姤 — 有隕自天, the unplanned rare arrival from outside"
+    },
+    {
+      "event_id": "E76",
+      "event_title": "UEFA Champions League third qualifying round, first legs",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-05",
+      "binary_outcome_definition": "At least one first leg ends with the lower-ranked (by UEFA club coefficient) side winning away from home.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          6,
+          3
+        ],
+        "quxiang_rationale": "上巽：客場的遠行；下坎：資格賽的險阻。動爻取第三輪",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "changed_hexagram": {
+          "number": 57,
+          "name": "巽為風"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷火豐"
+        },
+        "zong_hexagram": {
+          "name": "水澤節"
+        },
+        "ti_yong": {
+          "ti": "巽（上卦）- 木・入",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（入遇陷）"
+        },
+        "moving_line_position": "六三（動）：失正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E72",
+        "numbers": [
+          7,
+          1,
+          1
+        ],
+        "quxiang_rationale": "上艮：舉重之重、之靜止；下乾：金與剛力。動爻取榜首之 1",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 26,
+          "name": "山天大畜"
+        },
+        "changed_hexagram": {
+          "number": 18,
+          "name": "山風蠱"
+        },
+        "mutual_hexagram": {
+          "name": "雷澤歸妹"
+        },
+        "cuo_hexagram": {
+          "name": "澤地萃"
+        },
+        "zong_hexagram": {
+          "name": "天雷无妄"
+        },
+        "ti_yong": {
+          "ti": "艮（上卦）- 土・止",
+          "yong": "乾（下卦）- 金・健",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（止遇健）"
+        },
+        "moving_line_position": "初九（動）：得正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "渙 line 3 渙其躬无悔 — dissolution of a fixed position, the upset costs nothing"
+    },
+    {
+      "event_id": "E77",
+      "event_title": "NFL Hall of Fame Game, Canton",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-06",
+      "binary_outcome_definition": "The Carolina Panthers win the Hall of Fame Game.",
+      "real_hexagram": {
+        "numbers": [
+          7,
+          4,
+          6
+        ],
+        "quxiang_rationale": "上艮：名人堂為門、為紀念的靜止；下震：球賽之動。動爻取 8/6 之 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "震 ☳",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 27,
+          "name": "山雷頤"
+        },
+        "changed_hexagram": {
+          "number": 24,
+          "name": "地雷復"
+        },
+        "mutual_hexagram": {
+          "name": "坤為地"
+        },
+        "cuo_hexagram": {
+          "name": "澤風大過"
+        },
+        "zong_hexagram": {
+          "name": "山雷頤"
+        },
+        "ti_yong": {
+          "ti": "震（下卦）- 木・動",
+          "yong": "艮（上卦）- 土・止",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・艮）正在「靜止守成、止於其所」。一動一靜：進與守的拉扯，急動或久守都不易（動遇止）"
+        },
+        "moving_line_position": "上九（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E78",
+        "numbers": [
+          1,
+          5,
+          4
+        ],
+        "quxiang_rationale": "上乾：頭號種子；下巽：籤表如網。動爻取 8/10 之 10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 44,
+          "name": "天風姤"
+        },
+        "changed_hexagram": {
+          "number": 57,
+          "name": "巽為風"
+        },
+        "mutual_hexagram": {
+          "name": "乾為天"
+        },
+        "cuo_hexagram": {
+          "name": "地雷復"
+        },
+        "zong_hexagram": {
+          "name": "澤天夬"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（入遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "頤 line 6 由頤，厲吉 — danger and good fortune together, verdict favourable"
+    },
+    {
+      "event_id": "E78",
+      "event_title": "National Bank Open, Toronto",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "The No. 1 seed is still in the draw at the end of play on 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          5,
+          4
+        ],
+        "quxiang_rationale": "上乾：頭號種子；下巽：籤表如網。動爻取 8/10 之 10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 44,
+          "name": "天風姤"
+        },
+        "changed_hexagram": {
+          "number": 57,
+          "name": "巽為風"
+        },
+        "mutual_hexagram": {
+          "name": "乾為天"
+        },
+        "cuo_hexagram": {
+          "name": "地雷復"
+        },
+        "zong_hexagram": {
+          "name": "澤天夬"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（入遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E89",
+        "numbers": [
+          1,
+          7,
+          4
+        ],
+        "quxiang_rationale": "上乾：黃金為金、為天；下艮：山中之藏、之靜。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 33,
+          "name": "天山遯"
+        },
+        "changed_hexagram": {
+          "number": 53,
+          "name": "風山漸"
+        },
+        "mutual_hexagram": {
+          "name": "天風姤"
+        },
+        "cuo_hexagram": {
+          "name": "地澤臨"
+        },
+        "zong_hexagram": {
+          "name": "雷天大壯"
+        },
+        "ti_yong": {
+          "ti": "艮（下卦）- 土・止",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（止遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "姤 line 4 包无魚，起凶 — the expected holding is not there"
+    },
+    {
+      "event_id": "E79",
+      "event_title": "WNBA restart after the All-Star break",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "The Las Vegas Aces win their first game after the All-Star break.",
+      "real_hexagram": {
+        "numbers": [
+          4,
+          3,
+          1
+        ],
+        "quxiang_rationale": "上震：休賽後重啟之動；下離：賽事的展演。動爻取「第一場」之 1",
+        "upper_trigram": "震 ☳",
+        "lower_trigram": "離 ☲",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 55,
+          "name": "雷火豐"
+        },
+        "changed_hexagram": {
+          "number": 62,
+          "name": "雷山小過"
+        },
+        "mutual_hexagram": {
+          "name": "澤風大過"
+        },
+        "cuo_hexagram": {
+          "name": "風水渙"
+        },
+        "zong_hexagram": {
+          "name": "火山旅"
+        },
+        "ti_yong": {
+          "ti": "震（上卦）- 木・動",
+          "yong": "離（下卦）- 火・麗",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（動遇麗）"
+        },
+        "moving_line_position": "初九（動）：得正·無應(↔九四同性)·上被六二陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E120",
+        "numbers": [
+          3,
+          4,
+          3
+        ],
+        "quxiang_rationale": "上離：極光之明；下震：地磁擾動之電。動爻取 G3 之 3",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "震 ☳",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 21,
+          "name": "火雷噬嗑"
+        },
+        "changed_hexagram": {
+          "number": 30,
+          "name": "離為火"
+        },
+        "mutual_hexagram": {
+          "name": "水山蹇"
+        },
+        "cuo_hexagram": {
+          "name": "水風井"
+        },
+        "zong_hexagram": {
+          "name": "山火賁"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（麗遇動）"
+        },
+        "moving_line_position": "六三（動）：失正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "豐 line 1 往有尚 — going forward earns regard"
+    },
+    {
+      "event_id": "E80",
+      "event_title": "Commonwealth Games artistic gymnastics",
+      "event_domain": "Sports",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "England wins the men's all-around gold medal.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          1,
+          6
+        ],
+        "quxiang_rationale": "上巽：體操的柔韌與器械之木；下乾：全能為圓、為天。動爻取六項器械",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 9,
+          "name": "風天小畜"
+        },
+        "changed_hexagram": {
+          "number": 5,
+          "name": "水天需"
+        },
+        "mutual_hexagram": {
+          "name": "火澤睽"
+        },
+        "cuo_hexagram": {
+          "name": "雷地豫"
+        },
+        "zong_hexagram": {
+          "name": "天澤履"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（健遇入）"
+        },
+        "moving_line_position": "上九（動）：失正·無應(↔九三同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E88",
+        "numbers": [
+          3,
+          1,
+          2
+        ],
+        "quxiang_rationale": "上離：指數高點的光；下乾：大者之集。動爻取 500 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 14,
+          "name": "火天大有"
+        },
+        "changed_hexagram": {
+          "number": 30,
+          "name": "離為火"
+        },
+        "mutual_hexagram": {
+          "name": "澤天夬"
+        },
+        "cuo_hexagram": {
+          "name": "水地比"
+        },
+        "zong_hexagram": {
+          "name": "天火同人"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "乾（下卦）- 金・健",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（麗遇健）"
+        },
+        "moving_line_position": "九二（動）：失正·有應"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "小畜 line 6 君子征凶 — explicit prohibition on advancing"
+    },
+    {
+      "event_id": "E81",
+      "event_title": "FOMC July decision and Powell press conference",
+      "event_domain": "Markets",
+      "expected_date": "2026-07-29",
+      "binary_outcome_definition": "The target range for the federal funds rate is left unchanged.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          2,
+          5
+        ],
+        "quxiang_rationale": "上乾：聯準會為君、為權威；下兌：記者會的口舌。動爻取 7/29 之 29 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 5,
+        "primary_hexagram": {
+          "number": 10,
+          "name": "天澤履"
+        },
+        "changed_hexagram": {
+          "number": 38,
+          "name": "火澤睽"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "地山謙"
+        },
+        "zong_hexagram": {
+          "name": "風天小畜"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（說遇健）"
+        },
+        "moving_line_position": "九五（動）：得正·無應(↔九二同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E63",
+        "numbers": [
+          8,
+          3,
+          2
+        ],
+        "quxiang_rationale": "上坤：列國聚集的獎牌榜為眾、為土；下離：競技的展示與光采。動爻取閉幕日 8/2 之 2",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "離 ☲",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 36,
+          "name": "地火明夷"
+        },
+        "changed_hexagram": {
+          "number": 11,
+          "name": "地天泰"
+        },
+        "mutual_hexagram": {
+          "name": "雷水解"
+        },
+        "cuo_hexagram": {
+          "name": "天水訟"
+        },
+        "zong_hexagram": {
+          "name": "火地晉"
+        },
+        "ti_yong": {
+          "ti": "坤（上卦）- 土・順",
+          "yong": "離（下卦）- 火・麗",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（順遇麗）"
+        },
+        "moving_line_position": "六二（動）：得正·無應(↔六五同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "履 line 5 夬履，貞厲 — 夬 is decisive breakthrough, and persistence (holding) is flagged dangerous"
+    },
+    {
+      "event_id": "E82",
+      "event_title": "Apple quarterly earnings",
+      "event_domain": "Markets",
+      "expected_date": "2026-07-30",
+      "binary_outcome_definition": "Apple reports EPS above the consensus estimate.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          2,
+          6
+        ],
+        "quxiang_rationale": "上離：蘋果的螢幕與品牌光采；下兌：銷售與金錢。動爻取 7/30 之 30 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 38,
+          "name": "火澤睽"
+        },
+        "changed_hexagram": {
+          "number": 54,
+          "name": "雷澤歸妹"
+        },
+        "mutual_hexagram": {
+          "name": "水火既濟"
+        },
+        "cuo_hexagram": {
+          "name": "水山蹇"
+        },
+        "zong_hexagram": {
+          "name": "風火家人"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "離（上卦）- 火・麗",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（說遇麗）"
+        },
+        "moving_line_position": "上九（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E107",
+        "numbers": [
+          6,
+          3,
+          6
+        ],
+        "quxiang_rationale": "上坎：漏洞為隱、為盜；下離：揭露之光。動爻取 8/6 之 6",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "離 ☲",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 63,
+          "name": "水火既濟"
+        },
+        "changed_hexagram": {
+          "number": 37,
+          "name": "風火家人"
+        },
+        "mutual_hexagram": {
+          "name": "火水未濟"
+        },
+        "cuo_hexagram": {
+          "name": "火水未濟"
+        },
+        "zong_hexagram": {
+          "name": "火水未濟"
+        },
+        "ti_yong": {
+          "ti": "離（下卦）- 火・麗",
+          "yong": "坎（上卦）- 水・陷",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・坎）正在「涉險應變、勞心趨流」。一陷一明：身處險而前方有明，關鍵在能否脫險見光（麗遇陷）"
+        },
+        "moving_line_position": "上六（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "睽 line 6 匪寇婚媾，往遇雨則吉 — what looks threatening resolves favourably"
+    },
+    {
+      "event_id": "E83",
+      "event_title": "Microsoft quarterly earnings",
+      "event_domain": "Markets",
+      "expected_date": "2026-07-29",
+      "binary_outcome_definition": "Microsoft reports EPS above the consensus estimate.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          5,
+          5
+        ],
+        "quxiang_rationale": "上乾：企業市場的支配；下巽：雲端如風、如網絡。動爻取 7/29 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 5,
+        "primary_hexagram": {
+          "number": 44,
+          "name": "天風姤"
+        },
+        "changed_hexagram": {
+          "number": 50,
+          "name": "火風鼎"
+        },
+        "mutual_hexagram": {
+          "name": "乾為天"
+        },
+        "cuo_hexagram": {
+          "name": "地雷復"
+        },
+        "zong_hexagram": {
+          "name": "澤天夬"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（入遇健）"
+        },
+        "moving_line_position": "九五（動）：得正·無應(↔九二同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E114",
+        "numbers": [
+          7,
+          3,
+          3
+        ],
+        "quxiang_rationale": "上艮：發表會之門未開、為待；下離：公告之顯。動爻取九月之 9 mod 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "離 ☲",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 22,
+          "name": "山火賁"
+        },
+        "changed_hexagram": {
+          "number": 27,
+          "name": "山雷頤"
+        },
+        "mutual_hexagram": {
+          "name": "雷水解"
+        },
+        "cuo_hexagram": {
+          "name": "澤水困"
+        },
+        "zong_hexagram": {
+          "name": "火雷噬嗑"
+        },
+        "ti_yong": {
+          "ti": "艮（上卦）- 土・止",
+          "yong": "離（下卦）- 火・麗",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（止遇麗）"
+        },
+        "moving_line_position": "九三（動）：得正·無應(↔上九同性)·陽乘陰（剛統柔·最順）·上被六四陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "姤 line 5 含章，有隕自天 — concealed excellence, and something arrives from above"
+    },
+    {
+      "event_id": "E84",
+      "event_title": "Amazon quarterly earnings",
+      "event_domain": "Markets",
+      "expected_date": "2026-07-30",
+      "binary_outcome_definition": "Amazon reports revenue above the consensus estimate.",
+      "real_hexagram": {
+        "numbers": [
+          8,
+          5,
+          6
+        ],
+        "quxiang_rationale": "上坤：物流與倉儲為地、為眾；下巽：AWS 之風與遍布。動爻取 7/30 mod 6",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 46,
+          "name": "地風升"
+        },
+        "changed_hexagram": {
+          "number": 18,
+          "name": "山風蠱"
+        },
+        "mutual_hexagram": {
+          "name": "雷澤歸妹"
+        },
+        "cuo_hexagram": {
+          "name": "天雷无妄"
+        },
+        "zong_hexagram": {
+          "name": "澤地萃"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "坤（上卦）- 土・順",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（入遇順）"
+        },
+        "moving_line_position": "上六（動）：得正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E86",
+        "numbers": [
+          8,
+          7,
+          1
+        ],
+        "quxiang_rationale": "上坤：勞動大眾為眾；下艮：報告為定數、為止。動爻取 8/7 mod 6",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 15,
+          "name": "地山謙"
+        },
+        "changed_hexagram": {
+          "number": 36,
+          "name": "地火明夷"
+        },
+        "mutual_hexagram": {
+          "name": "雷水解"
+        },
+        "cuo_hexagram": {
+          "name": "天澤履"
+        },
+        "zong_hexagram": {
+          "name": "雷地豫"
+        },
+        "ti_yong": {
+          "ti": "坤（上卦）- 土・順",
+          "yong": "艮（下卦）- 土・止",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（順遇止）"
+        },
+        "moving_line_position": "初六（動）：失正·無應(↔六四同性)"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "升 line 6 冥升 — ascending blind, transforming to 蠱, decay found at the top"
+    },
+    {
+      "event_id": "E85",
+      "event_title": "Meta quarterly earnings and next-day stock reaction",
+      "event_domain": "Markets",
+      "expected_date": "2026-07-30",
+      "binary_outcome_definition": "Meta's share price closes higher on the first full trading day after the report than on the day before it.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          3,
+          6
+        ],
+        "quxiang_rationale": "上巽：社群網絡為風、為傳言；下離：螢幕與展示。動爻取 7/30 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "離 ☲",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 37,
+          "name": "風火家人"
+        },
+        "changed_hexagram": {
+          "number": 63,
+          "name": "水火既濟"
+        },
+        "mutual_hexagram": {
+          "name": "火水未濟"
+        },
+        "cuo_hexagram": {
+          "name": "雷水解"
+        },
+        "zong_hexagram": {
+          "name": "火澤睽"
+        },
+        "ti_yong": {
+          "ti": "離（下卦）- 火・麗",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（麗遇入）"
+        },
+        "moving_line_position": "上九（動）：失正·無應(↔九三同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E70",
+        "numbers": [
+          6,
+          2,
+          3
+        ],
+        "quxiang_rationale": "上坎：泳池之水；下兌：澤。動爻取 15 金門檻 mod 6",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 60,
+          "name": "水澤節"
+        },
+        "changed_hexagram": {
+          "number": 5,
+          "name": "水天需"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "火山旅"
+        },
+        "zong_hexagram": {
+          "name": "風水渙"
+        },
+        "ti_yong": {
+          "ti": "坎（上卦）- 水・陷",
+          "yong": "兌（下卦）- 金・說",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坎）傾向「涉險應變、勞心趨流」，處境（用・兌）正在「和悅交流、取悅外應」。兩股力性質不同，端看你如何在其間取捨（陷遇說）"
+        },
+        "moving_line_position": "六三（動）：失正·無應(↔上六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "家人 line 6 有孚威如，終吉 transforming to 既濟 — everything into its correct place"
+    },
+    {
+      "event_id": "E86",
+      "event_title": "US July employment report",
+      "event_domain": "Markets",
+      "expected_date": "2026-08-07",
+      "binary_outcome_definition": "Headline nonfarm payroll growth comes in above the consensus forecast.",
+      "real_hexagram": {
+        "numbers": [
+          8,
+          7,
+          1
+        ],
+        "quxiang_rationale": "上坤：勞動大眾為眾；下艮：報告為定數、為止。動爻取 8/7 mod 6",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 15,
+          "name": "地山謙"
+        },
+        "changed_hexagram": {
+          "number": 36,
+          "name": "地火明夷"
+        },
+        "mutual_hexagram": {
+          "name": "雷水解"
+        },
+        "cuo_hexagram": {
+          "name": "天澤履"
+        },
+        "zong_hexagram": {
+          "name": "雷地豫"
+        },
+        "ti_yong": {
+          "ti": "坤（上卦）- 土・順",
+          "yong": "艮（下卦）- 土・止",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（順遇止）"
+        },
+        "moving_line_position": "初六（動）：失正·無應(↔六四同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E113",
+        "numbers": [
+          1,
+          7,
+          4
+        ],
+        "quxiang_rationale": "上乾：政府為君；下艮：監管為止、為限。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 33,
+          "name": "天山遯"
+        },
+        "changed_hexagram": {
+          "number": 53,
+          "name": "風山漸"
+        },
+        "mutual_hexagram": {
+          "name": "天風姤"
+        },
+        "cuo_hexagram": {
+          "name": "地澤臨"
+        },
+        "zong_hexagram": {
+          "name": "雷天大壯"
+        },
+        "ti_yong": {
+          "ti": "艮（下卦）- 土・止",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（止遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "謙 line 1 謙謙君子 — doubled modesty; the figure comes in low"
+    },
+    {
+      "event_id": "E87",
+      "event_title": "Bitcoin over the two-week window",
+      "event_domain": "Markets",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "Bitcoin's price on 10 August is higher than its price on 27 July.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          6,
+          4
+        ],
+        "quxiang_rationale": "上乾：幣為金、為圓；下坎：隱流與波動之險。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 6,
+          "name": "天水訟"
+        },
+        "changed_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "地火明夷"
+        },
+        "zong_hexagram": {
+          "name": "水天需"
+        },
+        "ti_yong": {
+          "ti": "坎（下卦）- 水・陷",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坎）傾向「涉險應變、勞心趨流」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（陷遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E68",
+        "numbers": [
+          7,
+          8,
+          2
+        ],
+        "quxiang_rationale": "上艮：柔道的手與制止；下坤：摔向地面。動爻取 8/2 之 2",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 23,
+          "name": "山地剝"
+        },
+        "changed_hexagram": {
+          "number": 4,
+          "name": "山水蒙"
+        },
+        "mutual_hexagram": {
+          "name": "坤為地"
+        },
+        "cuo_hexagram": {
+          "name": "澤天夬"
+        },
+        "zong_hexagram": {
+          "name": "地雷復"
+        },
+        "ti_yong": {
+          "ti": "艮（上卦）- 土・止",
+          "yong": "坤（下卦）- 土・順",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（止遇順）"
+        },
+        "moving_line_position": "六二（動）：得正·無應(↔六五同性)"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "訟 line 4 不克訟，復自命 — cannot prevail, returns and stands down"
+    },
+    {
+      "event_id": "E88",
+      "event_title": "S&P 500 record watch",
+      "event_domain": "Markets",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "The S&P 500 sets at least one new all-time closing high between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          1,
+          2
+        ],
+        "quxiang_rationale": "上離：指數高點的光；下乾：大者之集。動爻取 500 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 14,
+          "name": "火天大有"
+        },
+        "changed_hexagram": {
+          "number": 30,
+          "name": "離為火"
+        },
+        "mutual_hexagram": {
+          "name": "澤天夬"
+        },
+        "cuo_hexagram": {
+          "name": "水地比"
+        },
+        "zong_hexagram": {
+          "name": "天火同人"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "乾（下卦）- 金・健",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（麗遇健）"
+        },
+        "moving_line_position": "九二（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E74",
+        "numbers": [
+          1,
+          8,
+          4
+        ],
+        "quxiang_rationale": "上乾：領先者居首；下坤：戰績表為地。動爻取 8/10 之 10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 12,
+          "name": "天地否"
+        },
+        "changed_hexagram": {
+          "number": 20,
+          "name": "風地觀"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "地天泰"
+        },
+        "zong_hexagram": {
+          "name": "地天泰"
+        },
+        "ti_yong": {
+          "ti": "坤（下卦）- 土・順",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・乾）正在「剛健主導、進取不息」。一剛一柔：主導與承載之間，看你要推進還是承接（順遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "大有 line 2 大車以載，有攸往 transforming to doubled 離 — capacity, destination, and peak brightness"
+    },
+    {
+      "event_id": "E89",
+      "event_title": "Gold over the two-week window",
+      "event_domain": "Markets",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "Spot gold closes higher on 10 August than on 27 July.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          7,
+          4
+        ],
+        "quxiang_rationale": "上乾：黃金為金、為天；下艮：山中之藏、之靜。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 33,
+          "name": "天山遯"
+        },
+        "changed_hexagram": {
+          "number": 53,
+          "name": "風山漸"
+        },
+        "mutual_hexagram": {
+          "name": "天風姤"
+        },
+        "cuo_hexagram": {
+          "name": "地澤臨"
+        },
+        "zong_hexagram": {
+          "name": "雷天大壯"
+        },
+        "ti_yong": {
+          "ti": "艮（下卦）- 土・止",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（止遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E108",
+        "numbers": [
+          2,
+          6,
+          3
+        ],
+        "quxiang_rationale": "上兌：兌為毀折、為講談；下坎：入侵之隱。動爻取 8/9 mod 6",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 47,
+          "name": "澤水困"
+        },
+        "changed_hexagram": {
+          "number": 28,
+          "name": "澤風大過"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "山火賁"
+        },
+        "zong_hexagram": {
+          "name": "水風井"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（說遇陷）"
+        },
+        "moving_line_position": "六三（動）：失正·無應(↔上六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "遯 line 4 好遯 — willing retreat, ground given up on purpose"
+    },
+    {
+      "event_id": "E90",
+      "event_title": "US 10-year Treasury yield over the window",
+      "event_domain": "Markets",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "The 10-year Treasury yield is lower on 10 August than on 27 July.",
+      "real_hexagram": {
+        "numbers": [
+          6,
+          5,
+          4
+        ],
+        "quxiang_rationale": "上坎：殖利率如水之流與深；下巽：十年為長、為入。動爻取 8/10 mod 6",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 48,
+          "name": "水風井"
+        },
+        "changed_hexagram": {
+          "number": 28,
+          "name": "澤風大過"
+        },
+        "mutual_hexagram": {
+          "name": "火澤睽"
+        },
+        "cuo_hexagram": {
+          "name": "火雷噬嗑"
+        },
+        "zong_hexagram": {
+          "name": "澤水困"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "坎（上卦）- 水・陷",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（入遇陷）"
+        },
+        "moving_line_position": "六四（動）：得正·無應(↔初六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E85",
+        "numbers": [
+          5,
+          3,
+          6
+        ],
+        "quxiang_rationale": "上巽：社群網絡為風、為傳言；下離：螢幕與展示。動爻取 7/30 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "離 ☲",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 37,
+          "name": "風火家人"
+        },
+        "changed_hexagram": {
+          "number": 63,
+          "name": "水火既濟"
+        },
+        "mutual_hexagram": {
+          "name": "火水未濟"
+        },
+        "cuo_hexagram": {
+          "name": "雷水解"
+        },
+        "zong_hexagram": {
+          "name": "火澤睽"
+        },
+        "ti_yong": {
+          "ti": "離（下卦）- 火・麗",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（麗遇入）"
+        },
+        "moving_line_position": "上九（動）：失正·無應(↔九三同性)"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "井 line 4 井甃 — the shaft is lined and nothing is drawn; transforming to 大過, strain increasing"
+    },
+    {
+      "event_id": "E91",
+      "event_title": "Guam primary election",
+      "event_domain": "Politics",
+      "expected_date": "2026-08-01",
+      "binary_outcome_definition": "The incumbent delegate wins their party's primary.",
+      "real_hexagram": {
+        "numbers": [
+          2,
+          8,
+          1
+        ],
+        "quxiang_rationale": "上兌：島嶼為澤、初選為口舌；下坤：選民為眾。動爻取 8/1 之 1",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 45,
+          "name": "澤地萃"
+        },
+        "changed_hexagram": {
+          "number": 17,
+          "name": "澤雷隨"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "山天大畜"
+        },
+        "zong_hexagram": {
+          "name": "地風升"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "坤（下卦）- 土・順",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（說遇順）"
+        },
+        "moving_line_position": "初六（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E65",
+        "numbers": [
+          4,
+          3,
+          4
+        ],
+        "quxiang_rationale": "上震：接力的足與速度、雷動；下離：閉幕夜的燈火與展示。動爻取 4x100 之 4",
+        "upper_trigram": "震 ☳",
+        "lower_trigram": "離 ☲",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 55,
+          "name": "雷火豐"
+        },
+        "changed_hexagram": {
+          "number": 36,
+          "name": "地火明夷"
+        },
+        "mutual_hexagram": {
+          "name": "澤風大過"
+        },
+        "cuo_hexagram": {
+          "name": "風水渙"
+        },
+        "zong_hexagram": {
+          "name": "火山旅"
+        },
+        "ti_yong": {
+          "ti": "離（下卦）- 火・麗",
+          "yong": "震（上卦）- 木・動",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（麗遇動）"
+        },
+        "moving_line_position": "九四（動）：失正·無應(↔初九同性)·上被六五陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "萃 line 1 一握為笑，勿恤，往无咎 — an early wobble resolved by one gesture"
+    },
+    {
+      "event_id": "E92",
+      "event_title": "Michigan US Senate Democratic primary",
+      "event_domain": "Politics",
+      "expected_date": "2026-08-04",
+      "binary_outcome_definition": "The candidate leading in the final pre-primary public polling average wins the Democratic primary.",
+      "real_hexagram": {
+        "numbers": [
+          6,
+          2,
+          4
+        ],
+        "quxiang_rationale": "上坎：密西根為湖水之州；下兌：競選的言說。動爻取 8/4 之 4",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 60,
+          "name": "水澤節"
+        },
+        "changed_hexagram": {
+          "number": 58,
+          "name": "兌為澤"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "火山旅"
+        },
+        "zong_hexagram": {
+          "name": "風水渙"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "坎（上卦）- 水・陷",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（說遇陷）"
+        },
+        "moving_line_position": "六四（動）：得正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E116",
+        "numbers": [
+          1,
+          5,
+          2
+        ],
+        "quxiang_rationale": "上乾：太空為天；下巽：反覆出入如風。動爻取 8 次門檻 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 44,
+          "name": "天風姤"
+        },
+        "changed_hexagram": {
+          "number": 33,
+          "name": "天山遯"
+        },
+        "mutual_hexagram": {
+          "name": "乾為天"
+        },
+        "cuo_hexagram": {
+          "name": "地雷復"
+        },
+        "zong_hexagram": {
+          "name": "澤天夬"
+        },
+        "ti_yong": {
+          "ti": "乾（上卦）- 金・健",
+          "yong": "巽（下卦）- 木・入",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（健遇入）"
+        },
+        "moving_line_position": "九二（動）：失正·無應(↔九五同性)·陽乘陰（剛統柔·最順）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "節 line 4 安節，亨 — the limit is accepted without friction; success unqualified"
+    },
+    {
+      "event_id": "E93",
+      "event_title": "Michigan gubernatorial primaries",
+      "event_domain": "Politics",
+      "expected_date": "2026-08-04",
+      "binary_outcome_definition": "The Republican gubernatorial primary is decided by more than 10 percentage points.",
+      "real_hexagram": {
+        "numbers": [
+          6,
+          1,
+          4
+        ],
+        "quxiang_rationale": "上坎：密西根之湖；下乾：州長為君、席位開放。動爻取 10 個百分點門檻 mod 6",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 5,
+          "name": "水天需"
+        },
+        "changed_hexagram": {
+          "number": 43,
+          "name": "澤天夬"
+        },
+        "mutual_hexagram": {
+          "name": "火澤睽"
+        },
+        "cuo_hexagram": {
+          "name": "火地晉"
+        },
+        "zong_hexagram": {
+          "name": "天水訟"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "坎（上卦）- 水・陷",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（健遇陷）"
+        },
+        "moving_line_position": "六四（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E75",
+        "numbers": [
+          3,
+          5,
+          5
+        ],
+        "quxiang_rationale": "上離：罕見的光采；下巽：無安打之「無」、風之空。動爻取巽數 5",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 5,
+        "primary_hexagram": {
+          "number": 50,
+          "name": "火風鼎"
+        },
+        "changed_hexagram": {
+          "number": 44,
+          "name": "天風姤"
+        },
+        "mutual_hexagram": {
+          "name": "澤天夬"
+        },
+        "cuo_hexagram": {
+          "name": "水雷屯"
+        },
+        "zong_hexagram": {
+          "name": "澤火革"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "離（上卦）- 火・麗",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（入遇麗）"
+        },
+        "moving_line_position": "六五（動）：失正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "需 line 4 出自穴 transforming to 夬 — escape followed by decisive breakthrough"
+    },
+    {
+      "event_id": "E94",
+      "event_title": "Missouri primary elections",
+      "event_domain": "Politics",
+      "expected_date": "2026-08-04",
+      "binary_outcome_definition": "Every incumbent US House member seeking renomination in Missouri wins their primary.",
+      "real_hexagram": {
+        "numbers": [
+          8,
+          7,
+          4
+        ],
+        "quxiang_rationale": "上坤：州為地；下艮：現任者為止、為守。動爻取 8/4 之 4",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 15,
+          "name": "地山謙"
+        },
+        "changed_hexagram": {
+          "number": 62,
+          "name": "雷山小過"
+        },
+        "mutual_hexagram": {
+          "name": "雷水解"
+        },
+        "cuo_hexagram": {
+          "name": "天澤履"
+        },
+        "zong_hexagram": {
+          "name": "雷地豫"
+        },
+        "ti_yong": {
+          "ti": "艮（下卦）- 土・止",
+          "yong": "坤（上卦）- 土・順",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（止遇順）"
+        },
+        "moving_line_position": "六四（動）：得正·無應(↔初六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E121",
+        "numbers": [
+          3,
+          8,
+          4
+        ],
+        "quxiang_rationale": "上離：高溫之火；下坤：國土為地。動爻取 8/10 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 35,
+          "name": "火地晉"
+        },
+        "changed_hexagram": {
+          "number": 23,
+          "name": "山地剝"
+        },
+        "mutual_hexagram": {
+          "name": "水山蹇"
+        },
+        "cuo_hexagram": {
+          "name": "水天需"
+        },
+        "zong_hexagram": {
+          "name": "地火明夷"
+        },
+        "ti_yong": {
+          "ti": "坤（下卦）- 土・順",
+          "yong": "離（上卦）- 火・麗",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（順遇麗）"
+        },
+        "moving_line_position": "九四（動）：失正·有應·陽乘陰（剛統柔·最順）·上被六五陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "謙 line 4 无不利 — the blanket favourable verdict"
+    },
+    {
+      "event_id": "E95",
+      "event_title": "Kansas gubernatorial primary",
+      "event_domain": "Politics",
+      "expected_date": "2026-08-04",
+      "binary_outcome_definition": "The Republican candidate with the most establishment endorsements wins the gubernatorial primary.",
+      "real_hexagram": {
+        "numbers": [
+          8,
+          5,
+          4
+        ],
+        "quxiang_rationale": "上坤：堪薩斯平原為地；下巽：風行平原、未定之勢。動爻取 8/4 之 4",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 46,
+          "name": "地風升"
+        },
+        "changed_hexagram": {
+          "number": 32,
+          "name": "雷風恆"
+        },
+        "mutual_hexagram": {
+          "name": "雷澤歸妹"
+        },
+        "cuo_hexagram": {
+          "name": "天雷无妄"
+        },
+        "zong_hexagram": {
+          "name": "澤地萃"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "坤（上卦）- 土・順",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（入遇順）"
+        },
+        "moving_line_position": "六四（動）：得正·無應(↔初六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E112",
+        "numbers": [
+          3,
+          1,
+          4
+        ],
+        "quxiang_rationale": "上離：晶片為火、為明；下乾：硬體霸權之金。動爻取 8/10 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 14,
+          "name": "火天大有"
+        },
+        "changed_hexagram": {
+          "number": 26,
+          "name": "山天大畜"
+        },
+        "mutual_hexagram": {
+          "name": "澤天夬"
+        },
+        "cuo_hexagram": {
+          "name": "水地比"
+        },
+        "zong_hexagram": {
+          "name": "天火同人"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "離（上卦）- 火・麗",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（健遇麗）"
+        },
+        "moving_line_position": "九四（動）：失正·無應(↔初九同性)·上被六五陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "升 line 4 王用亨于岐山，吉无咎 — the rite at the ancestral seat; the established line holds"
+    },
+    {
+      "event_id": "E96",
+      "event_title": "Washington top-two primary",
+      "event_domain": "Politics",
+      "expected_date": "2026-08-04",
+      "binary_outcome_definition": "A Democrat finishes first in the top-two primary for Washington's US Senate seat.",
+      "real_hexagram": {
+        "numbers": [
+          2,
+          6,
+          2
+        ],
+        "quxiang_rationale": "上兌：前二名制之「二」與口舌；下坎：普吉特海灣之水。動爻取「二」",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 47,
+          "name": "澤水困"
+        },
+        "changed_hexagram": {
+          "number": 45,
+          "name": "澤地萃"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "山火賁"
+        },
+        "zong_hexagram": {
+          "name": "水風井"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（說遇陷）"
+        },
+        "moving_line_position": "九二（動）：失正·無應(↔九五同性)·陽乘陰（剛統柔·最順）·上被六三陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E92",
+        "numbers": [
+          6,
+          2,
+          4
+        ],
+        "quxiang_rationale": "上坎：密西根為湖水之州；下兌：競選的言說。動爻取 8/4 之 4",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 60,
+          "name": "水澤節"
+        },
+        "changed_hexagram": {
+          "number": 58,
+          "name": "兌為澤"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "火山旅"
+        },
+        "zong_hexagram": {
+          "name": "風水渙"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "坎（上卦）- 水・陷",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（說遇陷）"
+        },
+        "moving_line_position": "六四（動）：得正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "困 line 2 朱紱方來 — the insignia of office is on its way"
+    },
+    {
+      "event_id": "E97",
+      "event_title": "Tennessee primary elections",
+      "event_domain": "Politics",
+      "expected_date": "2026-08-06",
+      "binary_outcome_definition": "Every incumbent US House member seeking renomination in Tennessee wins their primary.",
+      "real_hexagram": {
+        "numbers": [
+          7,
+          8,
+          6
+        ],
+        "quxiang_rationale": "上艮：田納西之山；下坤：選民為眾。動爻取 8/6 之 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 23,
+          "name": "山地剝"
+        },
+        "changed_hexagram": {
+          "number": 2,
+          "name": "坤為地"
+        },
+        "mutual_hexagram": {
+          "name": "坤為地"
+        },
+        "cuo_hexagram": {
+          "name": "澤天夬"
+        },
+        "zong_hexagram": {
+          "name": "地雷復"
+        },
+        "ti_yong": {
+          "ti": "坤（下卦）- 土・順",
+          "yong": "艮（上卦）- 土・止",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（順遇止）"
+        },
+        "moving_line_position": "上九（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E79",
+        "numbers": [
+          4,
+          3,
+          1
+        ],
+        "quxiang_rationale": "上震：休賽後重啟之動；下離：賽事的展演。動爻取「第一場」之 1",
+        "upper_trigram": "震 ☳",
+        "lower_trigram": "離 ☲",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 55,
+          "name": "雷火豐"
+        },
+        "changed_hexagram": {
+          "number": 62,
+          "name": "雷山小過"
+        },
+        "mutual_hexagram": {
+          "name": "澤風大過"
+        },
+        "cuo_hexagram": {
+          "name": "風水渙"
+        },
+        "zong_hexagram": {
+          "name": "火山旅"
+        },
+        "ti_yong": {
+          "ti": "震（上卦）- 木・動",
+          "yong": "離（下卦）- 火・麗",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（動遇麗）"
+        },
+        "moving_line_position": "初九（動）：得正·無應(↔九四同性)·上被六二陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "剝 line 6 君子得輿 — the established party obtains the carriage even as the stripping completes"
+    },
+    {
+      "event_id": "E98",
+      "event_title": "Hawaii primary election",
+      "event_domain": "Politics",
+      "expected_date": "2026-08-08",
+      "binary_outcome_definition": "The incumbent governor wins the Democratic gubernatorial primary.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          6,
+          2
+        ],
+        "quxiang_rationale": "上離：夏威夷之日與火山；下坎：環繞之洋。動爻取 8/8 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 64,
+          "name": "火水未濟"
+        },
+        "changed_hexagram": {
+          "number": 35,
+          "name": "火地晉"
+        },
+        "mutual_hexagram": {
+          "name": "水火既濟"
+        },
+        "cuo_hexagram": {
+          "name": "水火既濟"
+        },
+        "zong_hexagram": {
+          "name": "水火既濟"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・坎）正在「涉險應變、勞心趨流」。一陷一明：身處險而前方有明，關鍵在能否脫險見光（麗遇陷）"
+        },
+        "moving_line_position": "九二（動）：失正·有應·陽乘陰（剛統柔·最順）·上被六三陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E81",
+        "numbers": [
+          1,
+          2,
+          5
+        ],
+        "quxiang_rationale": "上乾：聯準會為君、為權威；下兌：記者會的口舌。動爻取 7/29 之 29 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 5,
+        "primary_hexagram": {
+          "number": 10,
+          "name": "天澤履"
+        },
+        "changed_hexagram": {
+          "number": 38,
+          "name": "火澤睽"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "地山謙"
+        },
+        "zong_hexagram": {
+          "name": "風天小畜"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（說遇健）"
+        },
+        "moving_line_position": "九五（動）：得正·無應(↔九二同性)"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "未濟 line 2 曳其輪，貞吉 transforming to 晉 — holding steady, then clear progress"
+    },
+    {
+      "event_id": "E99",
+      "event_title": "Spider-Man: Brand New Day opening weekend",
+      "event_domain": "Culture",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "It finishes #1 at the domestic box office for its opening weekend.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          3,
+          1
+        ],
+        "quxiang_rationale": "上巽：蜘蛛絲為繩直、為入；下離：銀幕的展演。動爻取 7/31 之 31 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "離 ☲",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 37,
+          "name": "風火家人"
+        },
+        "changed_hexagram": {
+          "number": 53,
+          "name": "風山漸"
+        },
+        "mutual_hexagram": {
+          "name": "火水未濟"
+        },
+        "cuo_hexagram": {
+          "name": "雷水解"
+        },
+        "zong_hexagram": {
+          "name": "火澤睽"
+        },
+        "ti_yong": {
+          "ti": "巽（上卦）- 木・入",
+          "yong": "離（下卦）- 火・麗",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（入遇麗）"
+        },
+        "moving_line_position": "初九（動）：得正·有應·上被六二陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E105",
+        "numbers": [
+          3,
+          8,
+          3
+        ],
+        "quxiang_rationale": "上離：串流螢幕；下坤：大眾收視為眾。動爻取 8/9 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 35,
+          "name": "火地晉"
+        },
+        "changed_hexagram": {
+          "number": 56,
+          "name": "火山旅"
+        },
+        "mutual_hexagram": {
+          "name": "水山蹇"
+        },
+        "cuo_hexagram": {
+          "name": "水天需"
+        },
+        "zong_hexagram": {
+          "name": "地火明夷"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "坤（下卦）- 土・順",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（麗遇順）"
+        },
+        "moving_line_position": "六三（動）：失正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "家人 line 1 閑有家，悔亡 — structure set early, regret never forms"
+    },
+    {
+      "event_id": "E100",
+      "event_title": "Spider-Man: Brand New Day opening gross",
+      "event_domain": "Culture",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "Domestic opening weekend gross exceeds $150 million.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          2,
+          6
+        ],
+        "quxiang_rationale": "上巽：蛛網之線；下兌：票房為金錢。動爻取 1.5 億門檻 150 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 61,
+          "name": "風澤中孚"
+        },
+        "changed_hexagram": {
+          "number": 60,
+          "name": "水澤節"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷山小過"
+        },
+        "zong_hexagram": {
+          "name": "風澤中孚"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・巽）正在「漸進順入、謙伏滲透」。一悅一巽：外和而內順，宜柔不宜剛（說遇入）"
+        },
+        "moving_line_position": "上九（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E101",
+        "numbers": [
+          4,
+          7,
+          3
+        ],
+        "quxiang_rationale": "上震：新片入場之動；下艮：在位者守成不動。動爻取 8/9 mod 6",
+        "upper_trigram": "震 ☳",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 62,
+          "name": "雷山小過"
+        },
+        "changed_hexagram": {
+          "number": 16,
+          "name": "雷地豫"
+        },
+        "mutual_hexagram": {
+          "name": "澤風大過"
+        },
+        "cuo_hexagram": {
+          "name": "風澤中孚"
+        },
+        "zong_hexagram": {
+          "name": "雷山小過"
+        },
+        "ti_yong": {
+          "ti": "震（上卦）- 木・動",
+          "yong": "艮（下卦）- 土・止",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・艮）正在「靜止守成、止於其所」。一動一靜：進與守的拉扯，急動或久守都不易（動遇止）"
+        },
+        "moving_line_position": "九三（動）：得正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "中孚 line 6 翰音登于天，貞凶 — the noise has outrun the substance; transforms to 節, cut back to size"
+    },
+    {
+      "event_id": "E101",
+      "event_title": "Second weekend of August at the box office",
+      "event_domain": "Culture",
+      "expected_date": "2026-08-09",
+      "binary_outcome_definition": "Spider-Man: Brand New Day is still #1 domestically for the weekend of 7-9 August.",
+      "real_hexagram": {
+        "numbers": [
+          4,
+          7,
+          3
+        ],
+        "quxiang_rationale": "上震：新片入場之動；下艮：在位者守成不動。動爻取 8/9 mod 6",
+        "upper_trigram": "震 ☳",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 62,
+          "name": "雷山小過"
+        },
+        "changed_hexagram": {
+          "number": 16,
+          "name": "雷地豫"
+        },
+        "mutual_hexagram": {
+          "name": "澤風大過"
+        },
+        "cuo_hexagram": {
+          "name": "風澤中孚"
+        },
+        "zong_hexagram": {
+          "name": "雷山小過"
+        },
+        "ti_yong": {
+          "ti": "震（上卦）- 木・動",
+          "yong": "艮（下卦）- 土・止",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・艮）正在「靜止守成、止於其所」。一動一靜：進與守的拉扯，急動或久守都不易（動遇止）"
+        },
+        "moving_line_position": "九三（動）：得正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E106",
+        "numbers": [
+          3,
+          7,
+          2
+        ],
+        "quxiang_rationale": "上離：電影；下艮：艮為狗、為小（片名 Buddy）。動爻取 2000 萬門檻 20 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 56,
+          "name": "火山旅"
+        },
+        "changed_hexagram": {
+          "number": 50,
+          "name": "火風鼎"
+        },
+        "mutual_hexagram": {
+          "name": "澤風大過"
+        },
+        "cuo_hexagram": {
+          "name": "水澤節"
+        },
+        "zong_hexagram": {
+          "name": "雷火豐"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "艮（下卦）- 土・止",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（麗遇止）"
+        },
+        "moving_line_position": "六二（動）：得正·無應(↔六五同性)"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "小過 line 3 從或戕之，凶 — struck down by the one who comes after"
+    },
+    {
+      "event_id": "E102",
+      "event_title": "Lollapalooza Chicago",
+      "event_domain": "Culture",
+      "expected_date": "2026-08-02",
+      "binary_outcome_definition": "The festival completes all four days without a full-grounds weather evacuation.",
+      "real_hexagram": {
+        "numbers": [
+          4,
+          2,
+          4
+        ],
+        "quxiang_rationale": "上震：音樂節之雷與聲；下兌：群眾之悅。動爻取四日之 4",
+        "upper_trigram": "震 ☳",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 54,
+          "name": "雷澤歸妹"
+        },
+        "changed_hexagram": {
+          "number": 19,
+          "name": "地澤臨"
+        },
+        "mutual_hexagram": {
+          "name": "水火既濟"
+        },
+        "cuo_hexagram": {
+          "name": "風山漸"
+        },
+        "zong_hexagram": {
+          "name": "風山漸"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "震（上卦）- 木・動",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（說遇動）"
+        },
+        "moving_line_position": "九四（動）：失正·無應(↔初九同性)·陽乘陰（剛統柔·最順）·上被六五陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E111",
+        "numbers": [
+          5,
+          6,
+          2
+        ],
+        "quxiang_rationale": "上巽：雲端為風；下坎：陷落之險。動爻取兩小時門檻",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "changed_hexagram": {
+          "number": 20,
+          "name": "風地觀"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷火豐"
+        },
+        "zong_hexagram": {
+          "name": "水澤節"
+        },
+        "ti_yong": {
+          "ti": "巽（上卦）- 木・入",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（入遇陷）"
+        },
+        "moving_line_position": "九二（動）：失正·無應(↔九五同性)·陽乘陰（剛統柔·最順）·上被六三陰乘"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "歸妹 line 4 愆期 — the schedule is missed"
+    },
+    {
+      "event_id": "E103",
+      "event_title": "Billboard Hot 100 top spot",
+      "event_domain": "Culture",
+      "expected_date": "2026-08-08",
+      "binary_outcome_definition": "The #1 song on the Hot 100 chart dated 8 August is the same as on the chart dated 1 August.",
+      "real_hexagram": {
+        "numbers": [
+          2,
+          7,
+          2
+        ],
+        "quxiang_rationale": "上兌：歌為口舌；下艮：續居榜首為止、為不動。動爻取 8/8 mod 6",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 31,
+          "name": "澤山咸"
+        },
+        "changed_hexagram": {
+          "number": 28,
+          "name": "澤風大過"
+        },
+        "mutual_hexagram": {
+          "name": "天風姤"
+        },
+        "cuo_hexagram": {
+          "name": "山澤損"
+        },
+        "zong_hexagram": {
+          "name": "雷風恆"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "艮（下卦）- 土・止",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（說遇止）"
+        },
+        "moving_line_position": "六二（動）：得正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E94",
+        "numbers": [
+          8,
+          7,
+          4
+        ],
+        "quxiang_rationale": "上坤：州為地；下艮：現任者為止、為守。動爻取 8/4 之 4",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 15,
+          "name": "地山謙"
+        },
+        "changed_hexagram": {
+          "number": 62,
+          "name": "雷山小過"
+        },
+        "mutual_hexagram": {
+          "name": "雷水解"
+        },
+        "cuo_hexagram": {
+          "name": "天澤履"
+        },
+        "zong_hexagram": {
+          "name": "雷地豫"
+        },
+        "ti_yong": {
+          "ti": "艮（下卦）- 土・止",
+          "yong": "坤（上卦）- 土・順",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（止遇順）"
+        },
+        "moving_line_position": "六四（動）：得正·無應(↔初六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "咸 line 2 咸其腓，凶，居吉 — staying put is the auspicious branch"
+    },
+    {
+      "event_id": "E104",
+      "event_title": "Billboard 200 top album",
+      "event_domain": "Culture",
+      "expected_date": "2026-08-08",
+      "binary_outcome_definition": "The #1 album on the Billboard 200 chart dated 8 August is a new entry.",
+      "real_hexagram": {
+        "numbers": [
+          2,
+          4,
+          2
+        ],
+        "quxiang_rationale": "上兌：音樂；下震：新輯空降之震。動爻取 200 mod 6",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "震 ☳",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 17,
+          "name": "澤雷隨"
+        },
+        "changed_hexagram": {
+          "number": 58,
+          "name": "兌為澤"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "山風蠱"
+        },
+        "zong_hexagram": {
+          "name": "山風蠱"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（說遇動）"
+        },
+        "moving_line_position": "六二（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E97",
+        "numbers": [
+          7,
+          8,
+          6
+        ],
+        "quxiang_rationale": "上艮：田納西之山；下坤：選民為眾。動爻取 8/6 之 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 23,
+          "name": "山地剝"
+        },
+        "changed_hexagram": {
+          "number": 2,
+          "name": "坤為地"
+        },
+        "mutual_hexagram": {
+          "name": "坤為地"
+        },
+        "cuo_hexagram": {
+          "name": "澤天夬"
+        },
+        "zong_hexagram": {
+          "name": "地雷復"
+        },
+        "ti_yong": {
+          "ti": "坤（下卦）- 土・順",
+          "yong": "艮（上卦）- 土・止",
+          "wuxing": "比和（吉）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（順遇止）"
+        },
+        "moving_line_position": "上九（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "隨 line 2 係小子，失丈夫 — the newer, nearer attachment displaces the established one"
+    },
+    {
+      "event_id": "E105",
+      "event_title": "Netflix weekly top title",
+      "event_domain": "Culture",
+      "expected_date": "2026-08-09",
+      "binary_outcome_definition": "The most-watched English-language title for the week of 3-9 August is a title released within the prior 30 days.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          8,
+          3
+        ],
+        "quxiang_rationale": "上離：串流螢幕；下坤：大眾收視為眾。動爻取 8/9 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 35,
+          "name": "火地晉"
+        },
+        "changed_hexagram": {
+          "number": 56,
+          "name": "火山旅"
+        },
+        "mutual_hexagram": {
+          "name": "水山蹇"
+        },
+        "cuo_hexagram": {
+          "name": "水天需"
+        },
+        "zong_hexagram": {
+          "name": "地火明夷"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "坤（下卦）- 土・順",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（麗遇順）"
+        },
+        "moving_line_position": "六三（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E119",
+        "numbers": [
+          7,
+          4,
+          1
+        ],
+        "quxiang_rationale": "上艮：地與山；下震：地震之雷動。動爻取規模 7 mod 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "震 ☳",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 27,
+          "name": "山雷頤"
+        },
+        "changed_hexagram": {
+          "number": 23,
+          "name": "山地剝"
+        },
+        "mutual_hexagram": {
+          "name": "坤為地"
+        },
+        "cuo_hexagram": {
+          "name": "澤風大過"
+        },
+        "zong_hexagram": {
+          "name": "山雷頤"
+        },
+        "ti_yong": {
+          "ti": "艮（上卦）- 土・止",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・震）正在「起而行動、振奮求變」。一動一靜：進與守的拉扯，急動或久守都不易（止遇動）"
+        },
+        "moving_line_position": "初九（動）：得正·有應·上被六二陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "晉 line 3 眾允，悔亡 — the crowd's assent carries it; transforms to 旅, transient"
+    },
+    {
+      "event_id": "E106",
+      "event_title": "August wide release performance",
+      "event_domain": "Culture",
+      "expected_date": "2026-08-09",
+      "binary_outcome_definition": "Buddy opens above $20 million domestically.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          7,
+          2
+        ],
+        "quxiang_rationale": "上離：電影；下艮：艮為狗、為小（片名 Buddy）。動爻取 2000 萬門檻 20 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 56,
+          "name": "火山旅"
+        },
+        "changed_hexagram": {
+          "number": 50,
+          "name": "火風鼎"
+        },
+        "mutual_hexagram": {
+          "name": "澤風大過"
+        },
+        "cuo_hexagram": {
+          "name": "水澤節"
+        },
+        "zong_hexagram": {
+          "name": "雷火豐"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "艮（下卦）- 土・止",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（麗遇止）"
+        },
+        "moving_line_position": "六二（動）：得正·無應(↔六五同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E110",
+        "numbers": [
+          1,
+          3,
+          4
+        ],
+        "quxiang_rationale": "上乾：前沿為天、為創始；下離：智能之明。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "離 ☲",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 13,
+          "name": "天火同人"
+        },
+        "changed_hexagram": {
+          "number": 37,
+          "name": "風火家人"
+        },
+        "mutual_hexagram": {
+          "name": "天風姤"
+        },
+        "cuo_hexagram": {
+          "name": "地水師"
+        },
+        "zong_hexagram": {
+          "name": "火天大有"
+        },
+        "ti_yong": {
+          "ti": "離（下卦）- 火・麗",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（麗遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·無應(↔初九同性)"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "旅 line 2 旅即次，懷其資 — adequate and modest, explicitly small-scale"
+    },
+    {
+      "event_id": "E107",
+      "event_title": "Black Hat USA 2026 briefings",
+      "event_domain": "Tech",
+      "expected_date": "2026-08-06",
+      "binary_outcome_definition": "At least one Briefing discloses a named, previously undisclosed vulnerability in a commercially deployed LLM or AI agent product.",
+      "real_hexagram": {
+        "numbers": [
+          6,
+          3,
+          6
+        ],
+        "quxiang_rationale": "上坎：漏洞為隱、為盜；下離：揭露之光。動爻取 8/6 之 6",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "離 ☲",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 63,
+          "name": "水火既濟"
+        },
+        "changed_hexagram": {
+          "number": 37,
+          "name": "風火家人"
+        },
+        "mutual_hexagram": {
+          "name": "火水未濟"
+        },
+        "cuo_hexagram": {
+          "name": "火水未濟"
+        },
+        "zong_hexagram": {
+          "name": "火水未濟"
+        },
+        "ti_yong": {
+          "ti": "離（下卦）- 火・麗",
+          "yong": "坎（上卦）- 水・陷",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・坎）正在「涉險應變、勞心趨流」。一陷一明：身處險而前方有明，關鍵在能否脫險見光（麗遇陷）"
+        },
+        "moving_line_position": "上六（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E69",
+        "numbers": [
+          2,
+          4,
+          3
+        ],
+        "quxiang_rationale": "上兌：少年之戲與喜悅；下震：快攻之動。動爻取 3x3 之 3",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "震 ☳",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 17,
+          "name": "澤雷隨"
+        },
+        "changed_hexagram": {
+          "number": 49,
+          "name": "澤火革"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "山風蠱"
+        },
+        "zong_hexagram": {
+          "name": "山風蠱"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（說遇動）"
+        },
+        "moving_line_position": "六三（動）：失正·無應(↔上六同性)"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "既濟 line 6 濡其首，厲 — the head goes under; exposure arrives after apparent completion"
+    },
+    {
+      "event_id": "E108",
+      "event_title": "DEF CON 2026",
+      "event_domain": "Tech",
+      "expected_date": "2026-08-09",
+      "binary_outcome_definition": "A DEF CON village result receives coverage in at least one mainstream (non-trade) national news outlet.",
+      "real_hexagram": {
+        "numbers": [
+          2,
+          6,
+          3
+        ],
+        "quxiang_rationale": "上兌：兌為毀折、為講談；下坎：入侵之隱。動爻取 8/9 mod 6",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 47,
+          "name": "澤水困"
+        },
+        "changed_hexagram": {
+          "number": 28,
+          "name": "澤風大過"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "山火賁"
+        },
+        "zong_hexagram": {
+          "name": "水風井"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（說遇陷）"
+        },
+        "moving_line_position": "六三（動）：失正·無應(↔上六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E82",
+        "numbers": [
+          3,
+          2,
+          6
+        ],
+        "quxiang_rationale": "上離：蘋果的螢幕與品牌光采；下兌：銷售與金錢。動爻取 7/30 之 30 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 38,
+          "name": "火澤睽"
+        },
+        "changed_hexagram": {
+          "number": 54,
+          "name": "雷澤歸妹"
+        },
+        "mutual_hexagram": {
+          "name": "水火既濟"
+        },
+        "cuo_hexagram": {
+          "name": "水山蹇"
+        },
+        "zong_hexagram": {
+          "name": "風火家人"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "離（上卦）- 火・麗",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（說遇麗）"
+        },
+        "moving_line_position": "上九（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "困 line 3 入于其宮，不見其妻，凶 — the expected thing is absent"
+    },
+    {
+      "event_id": "E109",
+      "event_title": "Samsung Galaxy Z Fold 8 retail availability",
+      "event_domain": "Tech",
+      "expected_date": "2026-08-07",
+      "binary_outcome_definition": "General retail availability begins on or before 10 August with no announced delay.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          2,
+          2
+        ],
+        "quxiang_rationale": "上巽：摺疊為巽之柔木、之入；下兌：零售與金錢。動爻取 Fold 8 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 61,
+          "name": "風澤中孚"
+        },
+        "changed_hexagram": {
+          "number": 42,
+          "name": "風雷益"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷山小過"
+        },
+        "zong_hexagram": {
+          "name": "風澤中孚"
+        },
+        "ti_yong": {
+          "ti": "巽（上卦）- 木・入",
+          "yong": "兌（下卦）- 金・說",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・兌）正在「和悅交流、取悅外應」。一悅一巽：外和而內順，宜柔不宜剛（入遇說）"
+        },
+        "moving_line_position": "九二（動）：失正·無應(↔九五同性)·上被六三陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E99",
+        "numbers": [
+          5,
+          3,
+          1
+        ],
+        "quxiang_rationale": "上巽：蜘蛛絲為繩直、為入；下離：銀幕的展演。動爻取 7/31 之 31 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "離 ☲",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 37,
+          "name": "風火家人"
+        },
+        "changed_hexagram": {
+          "number": 53,
+          "name": "風山漸"
+        },
+        "mutual_hexagram": {
+          "name": "火水未濟"
+        },
+        "cuo_hexagram": {
+          "name": "雷水解"
+        },
+        "zong_hexagram": {
+          "name": "火澤睽"
+        },
+        "ti_yong": {
+          "ti": "巽（上卦）- 木・入",
+          "yong": "離（下卦）- 火・麗",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（入遇麗）"
+        },
+        "moving_line_position": "初九（動）：得正·有應·上被六二陰乘"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "中孚 line 2 鳴鶴在陰，其子和之 — the call is answered; transforms to 益, benefit passed downward"
+    },
+    {
+      "event_id": "E110",
+      "event_title": "Frontier model release window",
+      "event_domain": "Tech",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "At least one of OpenAI, Anthropic or Google DeepMind publicly releases a new flagship model between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          3,
+          4
+        ],
+        "quxiang_rationale": "上乾：前沿為天、為創始；下離：智能之明。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "離 ☲",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 13,
+          "name": "天火同人"
+        },
+        "changed_hexagram": {
+          "number": 37,
+          "name": "風火家人"
+        },
+        "mutual_hexagram": {
+          "name": "天風姤"
+        },
+        "cuo_hexagram": {
+          "name": "地水師"
+        },
+        "zong_hexagram": {
+          "name": "火天大有"
+        },
+        "ti_yong": {
+          "ti": "離（下卦）- 火・麗",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（麗遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·無應(↔初九同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E96",
+        "numbers": [
+          2,
+          6,
+          2
+        ],
+        "quxiang_rationale": "上兌：前二名制之「二」與口舌；下坎：普吉特海灣之水。動爻取「二」",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 47,
+          "name": "澤水困"
+        },
+        "changed_hexagram": {
+          "number": 45,
+          "name": "澤地萃"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "山火賁"
+        },
+        "zong_hexagram": {
+          "name": "水風井"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（說遇陷）"
+        },
+        "moving_line_position": "九二（動）：失正·無應(↔九五同性)·陽乘陰（剛統柔·最順）·上被六三陰乘"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "同人 line 4 乘其墉，弗克攻 — the move is fully prepared and not delivered"
+    },
+    {
+      "event_id": "E111",
+      "event_title": "Major cloud outage window",
+      "event_domain": "Tech",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "At least one of AWS, Azure or Google Cloud publicly acknowledges an outage lasting two hours or more affecting a major region.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          6,
+          2
+        ],
+        "quxiang_rationale": "上巽：雲端為風；下坎：陷落之險。動爻取兩小時門檻",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "changed_hexagram": {
+          "number": 20,
+          "name": "風地觀"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷火豐"
+        },
+        "zong_hexagram": {
+          "name": "水澤節"
+        },
+        "ti_yong": {
+          "ti": "巽（上卦）- 木・入",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（入遇陷）"
+        },
+        "moving_line_position": "九二（動）：失正·無應(↔九五同性)·陽乘陰（剛統柔·最順）·上被六三陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E93",
+        "numbers": [
+          6,
+          1,
+          4
+        ],
+        "quxiang_rationale": "上坎：密西根之湖；下乾：州長為君、席位開放。動爻取 10 個百分點門檻 mod 6",
+        "upper_trigram": "坎 ☵",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 5,
+          "name": "水天需"
+        },
+        "changed_hexagram": {
+          "number": 43,
+          "name": "澤天夬"
+        },
+        "mutual_hexagram": {
+          "name": "火澤睽"
+        },
+        "cuo_hexagram": {
+          "name": "火地晉"
+        },
+        "zong_hexagram": {
+          "name": "天水訟"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "坎（上卦）- 水・陷",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（健遇陷）"
+        },
+        "moving_line_position": "六四（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "渙 line 2 渙奔其机 — general scattering, and an urgent dash for something to lean on"
+    },
+    {
+      "event_id": "E112",
+      "event_title": "Nvidia over the window",
+      "event_domain": "Tech",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "Nvidia closes higher on 10 August than on 27 July.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          1,
+          4
+        ],
+        "quxiang_rationale": "上離：晶片為火、為明；下乾：硬體霸權之金。動爻取 8/10 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 14,
+          "name": "火天大有"
+        },
+        "changed_hexagram": {
+          "number": 26,
+          "name": "山天大畜"
+        },
+        "mutual_hexagram": {
+          "name": "澤天夬"
+        },
+        "cuo_hexagram": {
+          "name": "水地比"
+        },
+        "zong_hexagram": {
+          "name": "天火同人"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "離（上卦）- 火・麗",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（健遇麗）"
+        },
+        "moving_line_position": "九四（動）：失正·無應(↔初九同性)·上被六五陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E73",
+        "numbers": [
+          2,
+          4,
+          6
+        ],
+        "quxiang_rationale": "上兌：交易為口舌、為金錢；下震：突發的異動。動爻取截止時刻 6pm",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "震 ☳",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 17,
+          "name": "澤雷隨"
+        },
+        "changed_hexagram": {
+          "number": 25,
+          "name": "天雷无妄"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "山風蠱"
+        },
+        "zong_hexagram": {
+          "name": "山風蠱"
+        },
+        "ti_yong": {
+          "ti": "震（下卦）- 木・動",
+          "yong": "兌（上卦）- 金・說",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・兌）正在「和悅交流、取悅外應」。兩股力性質不同，端看你如何在其間取捨（動遇說）"
+        },
+        "moving_line_position": "上六（動）：得正·無應(↔六三同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "大有 line 4 匪其彭，无咎 — no swelling, no display; transforms to 大畜, held in"
+    },
+    {
+      "event_id": "E113",
+      "event_title": "AI regulatory action",
+      "event_domain": "Tech",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "A new binding AI regulatory measure or formal enforcement action is announced by a US federal agency or the EU between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          7,
+          4
+        ],
+        "quxiang_rationale": "上乾：政府為君；下艮：監管為止、為限。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "艮 ☶",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 33,
+          "name": "天山遯"
+        },
+        "changed_hexagram": {
+          "number": 53,
+          "name": "風山漸"
+        },
+        "mutual_hexagram": {
+          "name": "天風姤"
+        },
+        "cuo_hexagram": {
+          "name": "地澤臨"
+        },
+        "zong_hexagram": {
+          "name": "雷天大壯"
+        },
+        "ti_yong": {
+          "ti": "艮（下卦）- 土・止",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（止遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E83",
+        "numbers": [
+          1,
+          5,
+          5
+        ],
+        "quxiang_rationale": "上乾：企業市場的支配；下巽：雲端如風、如網絡。動爻取 7/29 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 5,
+        "primary_hexagram": {
+          "number": 44,
+          "name": "天風姤"
+        },
+        "changed_hexagram": {
+          "number": 50,
+          "name": "火風鼎"
+        },
+        "mutual_hexagram": {
+          "name": "乾為天"
+        },
+        "cuo_hexagram": {
+          "name": "地雷復"
+        },
+        "zong_hexagram": {
+          "name": "澤天夬"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（入遇健）"
+        },
+        "moving_line_position": "九五（動）：得正·無應(↔九二同性)"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "遯 line 4 好遯 — withdrawal rather than imposition"
+    },
+    {
+      "event_id": "E114",
+      "event_title": "Apple September event scheduling",
+      "event_domain": "Tech",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "Apple publicly announces the date of its September event on or before 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          7,
+          3,
+          3
+        ],
+        "quxiang_rationale": "上艮：發表會之門未開、為待；下離：公告之顯。動爻取九月之 9 mod 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "離 ☲",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 22,
+          "name": "山火賁"
+        },
+        "changed_hexagram": {
+          "number": 27,
+          "name": "山雷頤"
+        },
+        "mutual_hexagram": {
+          "name": "雷水解"
+        },
+        "cuo_hexagram": {
+          "name": "澤水困"
+        },
+        "zong_hexagram": {
+          "name": "火雷噬嗑"
+        },
+        "ti_yong": {
+          "ti": "艮（上卦）- 土・止",
+          "yong": "離（下卦）- 火・麗",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（止遇麗）"
+        },
+        "moving_line_position": "九三（動）：得正·無應(↔上九同性)·陽乘陰（剛統柔·最順）·上被六四陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E122",
+        "numbers": [
+          7,
+          1,
+          4
+        ],
+        "quxiang_rationale": "上艮：延誤為止；下乾：航太機構之大業。動爻取 8/10 mod 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 26,
+          "name": "山天大畜"
+        },
+        "changed_hexagram": {
+          "number": 14,
+          "name": "火天大有"
+        },
+        "mutual_hexagram": {
+          "name": "雷澤歸妹"
+        },
+        "cuo_hexagram": {
+          "name": "澤地萃"
+        },
+        "zong_hexagram": {
+          "name": "天雷无妄"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "艮（上卦）- 土・止",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（健遇止）"
+        },
+        "moving_line_position": "六四（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "賁 line 3 — ornament at a high gloss under 艮, the gate that has not yet opened; 永貞 defers"
+    },
+    {
+      "event_id": "E115",
+      "event_title": "NASA SpaceX CRS-35 resupply mission",
+      "event_domain": "Science",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "CRS-35 launches on or before 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          4,
+          5
+        ],
+        "quxiang_rationale": "上乾：天為蒼穹；下震：發射之動與雷。動爻取 CRS-35 之 35 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "震 ☳",
+        "changing_line": 5,
+        "primary_hexagram": {
+          "number": 25,
+          "name": "天雷无妄"
+        },
+        "changed_hexagram": {
+          "number": 21,
+          "name": "火雷噬嗑"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "地風升"
+        },
+        "zong_hexagram": {
+          "name": "山天大畜"
+        },
+        "ti_yong": {
+          "ti": "震（下卦）- 木・動",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・震）傾向「起而行動、振奮求變」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（動遇健）"
+        },
+        "moving_line_position": "九五（動）：得正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E100",
+        "numbers": [
+          5,
+          2,
+          6
+        ],
+        "quxiang_rationale": "上巽：蛛網之線；下兌：票房為金錢。動爻取 1.5 億門檻 150 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "兌 ☱",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 61,
+          "name": "風澤中孚"
+        },
+        "changed_hexagram": {
+          "number": 60,
+          "name": "水澤節"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷山小過"
+        },
+        "zong_hexagram": {
+          "name": "風澤中孚"
+        },
+        "ti_yong": {
+          "ti": "兌（下卦）- 金・說",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・巽）正在「漸進順入、謙伏滲透」。一悅一巽：外和而內順，宜柔不宜剛（說遇入）"
+        },
+        "moving_line_position": "上九（動）：失正·有應"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "无妄 line 5 勿藥有喜 under 用克體 — do not intervene; the thing resolves on its own schedule, not this one"
+    },
+    {
+      "event_id": "E116",
+      "event_title": "Falcon 9 launch cadence",
+      "event_domain": "Science",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "SpaceX conducts 8 or more Falcon 9 launches between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          5,
+          2
+        ],
+        "quxiang_rationale": "上乾：太空為天；下巽：反覆出入如風。動爻取 8 次門檻 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 44,
+          "name": "天風姤"
+        },
+        "changed_hexagram": {
+          "number": 33,
+          "name": "天山遯"
+        },
+        "mutual_hexagram": {
+          "name": "乾為天"
+        },
+        "cuo_hexagram": {
+          "name": "地雷復"
+        },
+        "zong_hexagram": {
+          "name": "澤天夬"
+        },
+        "ti_yong": {
+          "ti": "乾（上卦）- 金・健",
+          "yong": "巽（下卦）- 木・入",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（健遇入）"
+        },
+        "moving_line_position": "九二（動）：失正·無應(↔九五同性)·陽乘陰（剛統柔·最順）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E67",
+        "numbers": [
+          5,
+          1,
+          4
+        ],
+        "quxiang_rationale": "上巽：場地自行車的風與穿行；下乾：輪為圓、為金。動爻取團體追逐 4 人",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 9,
+          "name": "風天小畜"
+        },
+        "changed_hexagram": {
+          "number": 1,
+          "name": "乾為天"
+        },
+        "mutual_hexagram": {
+          "name": "火澤睽"
+        },
+        "cuo_hexagram": {
+          "name": "雷地豫"
+        },
+        "zong_hexagram": {
+          "name": "天澤履"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（健遇入）"
+        },
+        "moving_line_position": "六四（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "姤 line 2 包有魚，无咎 — the supply is in hand and accounted for"
+    },
+    {
+      "event_id": "E117",
+      "event_title": "Starship flight test window",
+      "event_domain": "Science",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "A Starship integrated flight test occurs between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          1,
+          6,
+          4
+        ],
+        "quxiang_rationale": "上乾：天；下坎：試飛之險與未定。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 6,
+          "name": "天水訟"
+        },
+        "changed_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "地火明夷"
+        },
+        "zong_hexagram": {
+          "name": "水天需"
+        },
+        "ti_yong": {
+          "ti": "坎（下卦）- 水・陷",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坎）傾向「涉險應變、勞心趨流」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（陷遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E84",
+        "numbers": [
+          8,
+          5,
+          6
+        ],
+        "quxiang_rationale": "上坤：物流與倉儲為地、為眾；下巽：AWS 之風與遍布。動爻取 7/30 mod 6",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 6,
+        "primary_hexagram": {
+          "number": 46,
+          "name": "地風升"
+        },
+        "changed_hexagram": {
+          "number": 18,
+          "name": "山風蠱"
+        },
+        "mutual_hexagram": {
+          "name": "雷澤歸妹"
+        },
+        "cuo_hexagram": {
+          "name": "天雷无妄"
+        },
+        "zong_hexagram": {
+          "name": "澤地萃"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "坤（上卦）- 土・順",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（入遇順）"
+        },
+        "moving_line_position": "上六（動）：得正·有應"
+      },
+      "forced_binary_prediction": "NO",
+      "prediction_basis": "訟 line 4 不克訟，復自命 — the attempt is withdrawn rather than carried out"
+    },
+    {
+      "event_id": "E118",
+      "event_title": "Atlantic hurricane season",
+      "event_domain": "Science",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "At least one new named Atlantic tropical storm forms between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          5,
+          6,
+          4
+        ],
+        "quxiang_rationale": "上巽：颶風為風；下坎：海為水。動爻取 8/10 mod 6",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "changed_hexagram": {
+          "number": 6,
+          "name": "天水訟"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷火豐"
+        },
+        "zong_hexagram": {
+          "name": "水澤節"
+        },
+        "ti_yong": {
+          "ti": "坎（下卦）- 水・陷",
+          "yong": "巽（上卦）- 木・入",
+          "wuxing": "體生用（耗洩）",
+          "guade": "你（體・坎）傾向「涉險應變、勞心趨流」，處境（用・巽）正在「漸進順入、謙伏滲透」。兩股力性質不同，端看你如何在其間取捨（陷遇入）"
+        },
+        "moving_line_position": "六四（動）：得正·無應(↔初六同性)"
+      },
+      "control_hexagram": {
+        "displaced_from": "E104",
+        "numbers": [
+          2,
+          4,
+          2
+        ],
+        "quxiang_rationale": "上兌：音樂；下震：新輯空降之震。動爻取 200 mod 6",
+        "upper_trigram": "兌 ☱",
+        "lower_trigram": "震 ☳",
+        "changing_line": 2,
+        "primary_hexagram": {
+          "number": 17,
+          "name": "澤雷隨"
+        },
+        "changed_hexagram": {
+          "number": 58,
+          "name": "兌為澤"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "山風蠱"
+        },
+        "zong_hexagram": {
+          "name": "山風蠱"
+        },
+        "ti_yong": {
+          "ti": "兌（上卦）- 金・說",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・兌）傾向「和悅交流、取悅外應」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（說遇動）"
+        },
+        "moving_line_position": "六二（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "渙 line 4 渙有丘，匪夷所思 — out of the scattering, something accumulates unexpectedly"
+    },
+    {
+      "event_id": "E119",
+      "event_title": "Major earthquake window",
+      "event_domain": "Science",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "At least one magnitude 7.0 or greater earthquake occurs worldwide between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          7,
+          4,
+          1
+        ],
+        "quxiang_rationale": "上艮：地與山；下震：地震之雷動。動爻取規模 7 mod 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "震 ☳",
+        "changing_line": 1,
+        "primary_hexagram": {
+          "number": 27,
+          "name": "山雷頤"
+        },
+        "changed_hexagram": {
+          "number": 23,
+          "name": "山地剝"
+        },
+        "mutual_hexagram": {
+          "name": "坤為地"
+        },
+        "cuo_hexagram": {
+          "name": "澤風大過"
+        },
+        "zong_hexagram": {
+          "name": "山雷頤"
+        },
+        "ti_yong": {
+          "ti": "艮（上卦）- 土・止",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "用克體（凶）",
+          "guade": "你（體・艮）傾向「靜止守成、止於其所」，處境（用・震）正在「起而行動、振奮求變」。一動一靜：進與守的拉扯，急動或久守都不易（止遇動）"
+        },
+        "moving_line_position": "初九（動）：得正·有應·上被六二陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E95",
+        "numbers": [
+          8,
+          5,
+          4
+        ],
+        "quxiang_rationale": "上坤：堪薩斯平原為地；下巽：風行平原、未定之勢。動爻取 8/4 之 4",
+        "upper_trigram": "坤 ☷",
+        "lower_trigram": "巽 ☴",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 46,
+          "name": "地風升"
+        },
+        "changed_hexagram": {
+          "number": 32,
+          "name": "雷風恆"
+        },
+        "mutual_hexagram": {
+          "name": "雷澤歸妹"
+        },
+        "cuo_hexagram": {
+          "name": "天雷无妄"
+        },
+        "zong_hexagram": {
+          "name": "澤地萃"
+        },
+        "ti_yong": {
+          "ti": "巽（下卦）- 木・入",
+          "yong": "坤（上卦）- 土・順",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坤）正在「柔順承載、包容隨順」。兩股力性質不同，端看你如何在其間取捨（入遇順）"
+        },
+        "moving_line_position": "六四（動）：得正·無應(↔初六同性)·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "頤 line 1 凶 transforming to 剝 — disruption, and support stripped away"
+    },
+    {
+      "event_id": "E120",
+      "event_title": "Geomagnetic storm window",
+      "event_domain": "Science",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "NOAA observes a G3 (strong) or greater geomagnetic storm between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          4,
+          3
+        ],
+        "quxiang_rationale": "上離：極光之明；下震：地磁擾動之電。動爻取 G3 之 3",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "震 ☳",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 21,
+          "name": "火雷噬嗑"
+        },
+        "changed_hexagram": {
+          "number": 30,
+          "name": "離為火"
+        },
+        "mutual_hexagram": {
+          "name": "水山蹇"
+        },
+        "cuo_hexagram": {
+          "name": "水風井"
+        },
+        "zong_hexagram": {
+          "name": "山火賁"
+        },
+        "ti_yong": {
+          "ti": "離（上卦）- 火・麗",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・離）傾向「附麗顯明、依託而光」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（麗遇動）"
+        },
+        "moving_line_position": "六三（動）：失正·有應"
+      },
+      "control_hexagram": {
+        "displaced_from": "E76",
+        "numbers": [
+          5,
+          6,
+          3
+        ],
+        "quxiang_rationale": "上巽：客場的遠行；下坎：資格賽的險阻。動爻取第三輪",
+        "upper_trigram": "巽 ☴",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "changed_hexagram": {
+          "number": 57,
+          "name": "巽為風"
+        },
+        "mutual_hexagram": {
+          "name": "山雷頤"
+        },
+        "cuo_hexagram": {
+          "name": "雷火豐"
+        },
+        "zong_hexagram": {
+          "name": "水澤節"
+        },
+        "ti_yong": {
+          "ti": "巽（上卦）- 木・入",
+          "yong": "坎（下卦）- 水・陷",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・巽）傾向「漸進順入、謙伏滲透」，處境（用・坎）正在「涉險應變、勞心趨流」。兩股力性質不同，端看你如何在其間取捨（入遇陷）"
+        },
+        "moving_line_position": "六三（動）：失正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "噬嗑 line 3 遇毒 transforming to doubled 離 — the encounter happens, and it ends in pure light"
+    },
+    {
+      "event_id": "E121",
+      "event_title": "Northern hemisphere heat extremes",
+      "event_domain": "Science",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "At least one country sets a new national all-time high temperature record between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          3,
+          8,
+          4
+        ],
+        "quxiang_rationale": "上離：高溫之火；下坤：國土為地。動爻取 8/10 mod 6",
+        "upper_trigram": "離 ☲",
+        "lower_trigram": "坤 ☷",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 35,
+          "name": "火地晉"
+        },
+        "changed_hexagram": {
+          "number": 23,
+          "name": "山地剝"
+        },
+        "mutual_hexagram": {
+          "name": "水山蹇"
+        },
+        "cuo_hexagram": {
+          "name": "水天需"
+        },
+        "zong_hexagram": {
+          "name": "地火明夷"
+        },
+        "ti_yong": {
+          "ti": "坤（下卦）- 土・順",
+          "yong": "離（上卦）- 火・麗",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坤）傾向「柔順承載、包容隨順」，處境（用・離）正在「附麗顯明、依託而光」。兩股力性質不同，端看你如何在其間取捨（順遇麗）"
+        },
+        "moving_line_position": "九四（動）：失正·有應·陽乘陰（剛統柔·最順）·上被六五陰乘"
+      },
+      "control_hexagram": {
+        "displaced_from": "E66",
+        "numbers": [
+          1,
+          4,
+          3
+        ],
+        "quxiang_rationale": "上乾：拳擊的金屬與剛擊；下震：突發的動作。動爻取 3 金門檻",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "震 ☳",
+        "changing_line": 3,
+        "primary_hexagram": {
+          "number": 25,
+          "name": "天雷无妄"
+        },
+        "changed_hexagram": {
+          "number": 13,
+          "name": "天火同人"
+        },
+        "mutual_hexagram": {
+          "name": "風山漸"
+        },
+        "cuo_hexagram": {
+          "name": "地風升"
+        },
+        "zong_hexagram": {
+          "name": "山天大畜"
+        },
+        "ti_yong": {
+          "ti": "乾（上卦）- 金・健",
+          "yong": "震（下卦）- 木・動",
+          "wuxing": "體克用（吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・震）正在「起而行動、振奮求變」。兩股力性質不同，端看你如何在其間取捨（健遇動）"
+        },
+        "moving_line_position": "六三（動）：失正·有應"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "晉 line 4 晉如鼫鼠，貞厲 — a rise past what the foundation supports; 晉 is the climbing sun"
+    },
+    {
+      "event_id": "E122",
+      "event_title": "Major mission milestone slip",
+      "event_domain": "Science",
+      "expected_date": "2026-08-10",
+      "binary_outcome_definition": "NASA or ESA publicly announces a delay to a major mission milestone between 27 July and 10 August.",
+      "real_hexagram": {
+        "numbers": [
+          7,
+          1,
+          4
+        ],
+        "quxiang_rationale": "上艮：延誤為止；下乾：航太機構之大業。動爻取 8/10 mod 6",
+        "upper_trigram": "艮 ☶",
+        "lower_trigram": "乾 ☰",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 26,
+          "name": "山天大畜"
+        },
+        "changed_hexagram": {
+          "number": 14,
+          "name": "火天大有"
+        },
+        "mutual_hexagram": {
+          "name": "雷澤歸妹"
+        },
+        "cuo_hexagram": {
+          "name": "澤地萃"
+        },
+        "zong_hexagram": {
+          "name": "天雷无妄"
+        },
+        "ti_yong": {
+          "ti": "乾（下卦）- 金・健",
+          "yong": "艮（上卦）- 土・止",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・乾）傾向「剛健主導、進取不息」，處境（用・艮）正在「靜止守成、止於其所」。兩股力性質不同，端看你如何在其間取捨（健遇止）"
+        },
+        "moving_line_position": "六四（動）：得正·有應·陰乘陽（柔凌剛·最不穩）"
+      },
+      "control_hexagram": {
+        "displaced_from": "E87",
+        "numbers": [
+          1,
+          6,
+          4
+        ],
+        "quxiang_rationale": "上乾：幣為金、為圓；下坎：隱流與波動之險。動爻取 8/10 mod 6",
+        "upper_trigram": "乾 ☰",
+        "lower_trigram": "坎 ☵",
+        "changing_line": 4,
+        "primary_hexagram": {
+          "number": 6,
+          "name": "天水訟"
+        },
+        "changed_hexagram": {
+          "number": 59,
+          "name": "風水渙"
+        },
+        "mutual_hexagram": {
+          "name": "風火家人"
+        },
+        "cuo_hexagram": {
+          "name": "地火明夷"
+        },
+        "zong_hexagram": {
+          "name": "水天需"
+        },
+        "ti_yong": {
+          "ti": "坎（下卦）- 水・陷",
+          "yong": "乾（上卦）- 金・健",
+          "wuxing": "用生體（大吉）",
+          "guade": "你（體・坎）傾向「涉險應變、勞心趨流」，處境（用・乾）正在「剛健主導、進取不息」。兩股力性質不同，端看你如何在其間取捨（陷遇健）"
+        },
+        "moving_line_position": "九四（動）：失正·有應·陽乘陰（剛統柔·最順）"
+      },
+      "forced_binary_prediction": "YES",
+      "prediction_basis": "大畜 line 4 童牛之牿，元吉 — the restraint is applied early, before the thing can run"
+    }
+  ],
+  "predictions_merged": true
+}
