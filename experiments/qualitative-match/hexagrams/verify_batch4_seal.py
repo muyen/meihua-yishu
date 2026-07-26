@@ -9,6 +9,8 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+sys.path.insert(0, os.path.join(HERE, "..", "..", "..", "scripts"))
 INTERP = os.path.join(HERE, "..", "interpretations")
 CASTS = os.path.join(HERE, "casting_records_batch4.json")
 PREDS = os.path.join(HERE, "predictions_batch4.json")
@@ -59,6 +61,29 @@ def main():
     calls = [p["call"] for p in preds.values()]
     check(all(c in ("YES", "NO") for c in calls), "non-binary prediction found")
 
+    # Reproducibility: the stored casts must still fall out of scripts/meihua_calc.py.
+    # A sibling session already stripped 224 lines from that module once; without this
+    # the seal could be silently orphaned and we would only find out at scoring time.
+    from cast_batch4 import QUXIANG, summarize
+    from meihua_calc import qigua_by_numbers
+
+    fields = set(summarize(qigua_by_numbers(1, 1, 1)))
+
+    def hexagram_only(d):
+        """Drop provenance keys (numbers, rationale, displaced_from) — compare the cast itself."""
+        return {k: v for k, v in d.items() if k in fields}
+
+    for eid, rec in events.items():
+        up, low, line, _ = QUXIANG[eid]
+        fresh = summarize(qigua_by_numbers(up, low, line))
+        check(
+            fresh == hexagram_only(rec["real_hexagram"]),
+            f"{eid}: 取象 ({up},{low},{line}) no longer reproduces the stored cast",
+        )
+        src = pairing[eid]
+        check(hexagram_only(rec["control_hexagram"]) == hexagram_only(events[src]["real_hexagram"]),
+              f"{eid}: control hexagram is not {src}'s real hexagram")
+
     # Merge predictions into the casting record so resolution has one file to read.
     for eid, rec in events.items():
         rec["forced_binary_prediction"] = preds[eid]["call"]
@@ -75,6 +100,7 @@ def main():
     yes = calls.count("YES")
     print("SEALED STATE OK")
     print(f"  60 events, 120 interpretation files, headers match blinding key")
+    print(f"  all 60 取象 triples still reproduce from scripts/meihua_calc.py")
     print(f"  every control body identical to its displaced source's real body")
     print(f"  forced binary predictions: {yes} YES / {len(calls) - yes} NO")
 
