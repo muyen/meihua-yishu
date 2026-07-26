@@ -22,12 +22,11 @@ Unlike popular misconceptions about divination, Meihua Yishu is a structured thi
 | "Superstition" | Systematic framework based on pattern recognition |
 | "Magic" | Philosophical method for examining situations from multiple angles |
 
-> **Why "not prediction" is backed by evidence, not modesty:** two independent experiments
-> both found that *computing* 吉/凶 from structure or 五行 lands at ~50% (coin-flip) — this
-> project's own [prediction-validation report](experiments/prediction-validation/FINAL-REPORT.md)
-> (五行生剋 = 50.6%) and the sibling *iching* project's verdict-word masking test. See
-> [references/why-not-prediction.md](references/why-not-prediction.md). The hexagram is a 象 to
-> read in context (互/變/錯/綜), not a verdict to compute.
+> **Why "not prediction" is backed by evidence, not modesty:** this project's own
+> [prediction-validation report](experiments/prediction-validation/FINAL-REPORT.md) found that
+> *computing* 吉/凶 from 五行生剋 lands at coin-flip. The hexagram is a 象 to read in context
+> (互/變/錯/綜), not a verdict to compute — and this skill deliberately reports no scores,
+> percentages, or hexagram "types".
 
 ### Benefits
 
@@ -69,14 +68,14 @@ Compared to other I Ching methods:
 - Direction-based Divination — Cast based on the direction of a person or object
 
 ### Interpretation Functions
-- Ti-Yong Analysis — Interpret the relationship between Ti (体) and Yong (用) trigrams via **two complementary lenses**: five-element 生克 *and* Trigram-Virtue 卦德 (健/順/動/入/陷/麗/止/說). Sibling research found 卦德 has ~5× the explanatory power of five-elements; both are framed as reference lenses, never verdicts (NEW!)
+- Ti-Yong Analysis — Interpret the relationship between Ti (体) and Yong (用) trigrams via **two complementary lenses**: five-element 生克 *and* Trigram-Virtue 卦德 (健/順/動/入/陷/麗/止/說). Both are framed as reference lenses, never verdicts (NEW!)
 - Full Relational Field — Beyond 互卦 (nuclear) and 變卦 (changing), each cast now also shows 錯卦 (complement — the opposite face) and 綜卦 (inverse — the other party's view), so a hexagram is read as a 象 in context (NEW!)
 - Tongguan Mediation — Analyze five-element bridging to mitigate克 (controlling) relationships
 - 64 Hexagrams Interpretation — Detailed explanations of hexagram and line texts
 - Changing Lines Derivation — Analyze the fortune of transformed hexagrams
 - Seasonal Strength (卦氣) — Determine Ti trigram strength based on season
 - Timing Prediction (應期) — Predict when events will manifest
-- Strategy Guidance (策略建議) — Data-driven advice on whether to stay, leave, wait, or change (NEW!)
+- Strategy Guidance (策略建議) — Every reading must close with one concrete next step, reasoned from the line text, Ti-Yong, and the transformed hexagram
 
 ### Specialized Readings
 - 18 Specific Readings — Marriage, illness, wealth, travel, and more
@@ -103,8 +102,7 @@ meihua-yishu/
 │   ├── yaoci.md                 # 384 Line texts
 │   ├── zhouyi-zhuan.md          # Tuan & Xiang commentaries
 │   ├── bagua-wanwu.md           # Bagua correspondences + verses + character analysis (測字)
-│   ├── hexagram-relationships.md # Hexagram relationships + classical-text analysis + Tongguan
-│   ├── hexagram-strategy.md     # Strategy guide (stay/leave/change decisions) - optional aid
+│   ├── hexagram-relationships.md # Hexagram relationships + Tongguan
 │   ├── ying-guides.md           # Ten responses + external signs
 │   ├── yingqi-calc.md           # Timing calculation guide
 │   ├── 18-divinations.md        # 18 types of specific readings
@@ -291,7 +289,7 @@ See [LICENSE](LICENSE) for details.
 
 ## Related Projects
 
-- [Decoding I Ching](https://github.com/muyen/decoding-iching) — Text-analysis research on I Ching patterns. Provides the 384-line database and the classical-text metrics (auspicious/inauspicious word density, text-embedding similarity) used in this skill's reference files. Note: these measure the *language of the classical texts*, not real-world outcome probabilities.
+- [Decoding I Ching](https://github.com/muyen/decoding-iching) — Text-analysis research on I Ching patterns. This skill no longer uses any of its metrics: the hexagram-level 吉率 / attractor-repellor classification it once supplied was retracted by that project's own 2026-07 re-audit (n=6 lines per hexagram; shuffled labels reproduce equally extreme "attractors", permutation p=0.35/0.52).
 
 ## Contributing
 
