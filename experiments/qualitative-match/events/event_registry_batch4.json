@@ -1,0 +1,612 @@
+{
+  "generated": "2026-07-26",
+  "batch": 4,
+  "method": "取象法 via /meihua-yishu skill; displaced 取象法 controls (see protocol_batch4.md + amendment_01)",
+  "total_events": 60,
+  "event_range": "E63-E122",
+  "resolution_window": "2026-07-27 to 2026-08-10",
+  "casting_day": "2026-07-27",
+  "note": "Outcome definitions written BEFORE casting. source_confidence: 'verified' = date confirmed by web search 2026-07-26; 'inferred' = recurring/scheduled event whose exact date or format was not separately confirmed. Events that do not resolve inside the window are DROPPED, not replaced (protocol stop rule).",
+  "events": [
+    {
+      "event_id": "E63",
+      "title_en": "Commonwealth Games Glasgow 2026 — final medal table",
+      "title_zh": "格拉斯哥大英國協運動會 — 最終獎牌榜",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "The scaled-down Glasgow 2026 Commonwealth Games close on 2 August after 11 days across four venues in an eight-mile corridor, with a 10-sport programme and a fully integrated Para programme.",
+      "binary_outcome": "Australia finishes top of the overall gold-medal table.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E64",
+      "title_en": "Commonwealth Games — host nation Scotland's gold haul",
+      "title_zh": "大英國協運動會 — 地主蘇格蘭金牌數",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "Scotland competes as host for the second time in 12 years, in a Games it agreed to rescue at short notice after other bidders withdrew.",
+      "binary_outcome": "Scotland wins 10 or more gold medals.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E65",
+      "title_en": "Commonwealth Games athletics — closing night relays",
+      "title_zh": "大英國協運動會田徑 — 閉幕夜接力",
+      "domain": "Sports",
+      "expected_date": "2026-08-01",
+      "description": "Athletics runs 27 July to 1 August at Scotstoun. The closing night carries both 4x100m relay finals, the men's 5,000m, both One Mile finals, the men's 800m and the mixed 4x400m relay.",
+      "binary_outcome": "England wins the men's 4x100m relay final.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E66",
+      "title_en": "Commonwealth Games boxing — gold medal bouts",
+      "title_zh": "大英國協運動會拳擊 — 金牌賽",
+      "domain": "Sports",
+      "expected_date": "2026-08-01",
+      "description": "Boxing semi-finals are held on Friday 31 July with all gold medal bouts on Saturday 1 August.",
+      "binary_outcome": "India wins 3 or more boxing gold medals.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E67",
+      "title_en": "Commonwealth Games track cycling at the Sir Chris Hoy Velodrome",
+      "title_zh": "大英國協運動會場地自行車",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "Track cycling runs 30 July to 2 August at the velodrome named for Scotland's own six-time Olympic champion, with Para track cycling fully integrated into the medal programme.",
+      "binary_outcome": "Australia wins the men's team pursuit gold.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E68",
+      "title_en": "Commonwealth Games judo",
+      "title_zh": "大英國協運動會柔道",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "Judo is contested from 31 July to 2 August, returning to the programme after being absent from the previous Games.",
+      "binary_outcome": "England wins more judo gold medals than Scotland.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E69",
+      "title_en": "Commonwealth Games 3x3 basketball finals",
+      "title_zh": "大英國協運動會 3x3 籃球決賽",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "All four 3x3 tournaments — men's, women's, and both 3x3 wheelchair events — run 24-29 July with the medal matches on 2 August.",
+      "binary_outcome": "Australia wins the men's 3x3 basketball gold.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E70",
+      "title_en": "Commonwealth Games swimming",
+      "title_zh": "大英國協運動會游泳",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "Swimming and Para swimming are on the 10-sport Glasgow programme, historically the event where Australia accumulates its largest single-sport gold total.",
+      "binary_outcome": "Australia wins 15 or more swimming gold medals.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E71",
+      "title_en": "Commonwealth Games netball final",
+      "title_zh": "大英國協運動會英式籃球決賽",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "Netball, one of the 10 retained sports, decides its gold medal on the final day. Australia, New Zealand and England have shared every Commonwealth title.",
+      "binary_outcome": "Australia wins the netball gold medal.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E72",
+      "title_en": "Commonwealth Games weightlifting",
+      "title_zh": "大英國協運動會舉重",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "Weightlifting and Para powerlifting run through the Games. India has historically dominated the Commonwealth weightlifting programme.",
+      "binary_outcome": "India finishes top of the weightlifting gold-medal table.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E73",
+      "title_en": "MLB trade deadline",
+      "title_zh": "美國職棒交易大限",
+      "domain": "Sports",
+      "expected_date": "2026-08-03",
+      "description": "The 2026 deadline falls at 6 p.m. ET on 3 August, moved off the traditional 31 July date under the rule letting the Commissioner set it anywhere from 28 July to 3 August.",
+      "binary_outcome": "A player with at least one career All-Star selection changes teams on deadline day.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E74",
+      "title_en": "NL West standings on 10 August",
+      "title_zh": "國聯西區戰績（8月10日）",
+      "domain": "Sports",
+      "expected_date": "2026-08-10",
+      "description": "The two weeks after the deadline are when reshaped rosters first show whether a contender bought well or bought late.",
+      "binary_outcome": "The Los Angeles Dodgers lead the NL West outright at the end of play on 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E75",
+      "title_en": "MLB no-hitter window",
+      "title_zh": "美國職棒無安打比賽",
+      "domain": "Sports",
+      "expected_date": "2026-08-10",
+      "description": "Roughly 200 regular-season games are played between 27 July and 10 August, the stretch where late-summer pitching peaks meet worn-down lineups.",
+      "binary_outcome": "At least one no-hitter (individual or combined) is thrown between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E76",
+      "title_en": "UEFA Champions League third qualifying round, first legs",
+      "title_zh": "歐冠第三輪資格賽首回合",
+      "domain": "Sports",
+      "expected_date": "2026-08-05",
+      "description": "The third qualifying round is played 4/5 and 11 August. Clubs from smaller leagues meet sides that failed to qualify directly, with the away goal long since abolished and every tie decided over two legs.",
+      "binary_outcome": "At least one first leg ends with the lower-ranked (by UEFA club coefficient) side winning away from home.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E77",
+      "title_en": "NFL Hall of Fame Game, Canton",
+      "title_zh": "NFL 名人堂賽",
+      "domain": "Sports",
+      "expected_date": "2026-08-06",
+      "description": "The NFL preseason opens on Thursday 6 August in Canton, Ohio with the Carolina Panthers facing the Arizona Cardinals at 8:00pm ET on NBC — a game played almost entirely by roster hopefuls.",
+      "binary_outcome": "The Carolina Panthers win the Hall of Fame Game.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E78",
+      "title_en": "National Bank Open, Toronto",
+      "title_zh": "加拿大公開賽（多倫多）",
+      "domain": "Sports",
+      "expected_date": "2026-08-10",
+      "description": "The Toronto Masters 1000 runs 2-12 August on hard court, the first big test of the North American summer swing.",
+      "binary_outcome": "The No. 1 seed is still in the draw at the end of play on 10 August.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E79",
+      "title_en": "WNBA restart after the All-Star break",
+      "title_zh": "WNBA 全明星賽後重啟",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "The WNBA All-Star break ran 23-27 July around the All-Star Game at the United Center. Teams return to a compressed second half.",
+      "binary_outcome": "The Las Vegas Aces win their first game after the All-Star break.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E80",
+      "title_en": "Commonwealth Games artistic gymnastics",
+      "title_zh": "大英國協運動會競技體操",
+      "domain": "Sports",
+      "expected_date": "2026-08-02",
+      "description": "Artistic gymnastics is among the 10 sports retained for the reduced Glasgow programme, concentrated into a short window of apparatus and all-around finals.",
+      "binary_outcome": "England wins the men's all-around gold medal.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E81",
+      "title_en": "FOMC July decision and Powell press conference",
+      "title_zh": "聯準會七月利率決議",
+      "domain": "Markets",
+      "expected_date": "2026-07-29",
+      "description": "The FOMC meets 28-29 July, releasing its statement at 2:00pm ET on the 29th with a press conference at 2:30pm. No updated projections or dot plot accompany this meeting.",
+      "binary_outcome": "The target range for the federal funds rate is left unchanged.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E82",
+      "title_en": "Apple quarterly earnings",
+      "title_zh": "蘋果季度財報",
+      "domain": "Markets",
+      "expected_date": "2026-07-30",
+      "description": "Apple reports in the final week of July, the densest week of the Q2 2026 season, with the mega-cap technology names clustered together.",
+      "binary_outcome": "Apple reports EPS above the consensus estimate.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E83",
+      "title_en": "Microsoft quarterly earnings",
+      "title_zh": "微軟季度財報",
+      "domain": "Markets",
+      "expected_date": "2026-07-29",
+      "description": "Microsoft reports in the same cluster, with cloud and AI capital expenditure the line investors read first.",
+      "binary_outcome": "Microsoft reports EPS above the consensus estimate.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E84",
+      "title_en": "Amazon quarterly earnings",
+      "title_zh": "亞馬遜季度財報",
+      "domain": "Markets",
+      "expected_date": "2026-07-30",
+      "description": "Amazon reports in the peak week; the market reaction typically hinges on AWS growth and forward guidance rather than the headline number.",
+      "binary_outcome": "Amazon reports revenue above the consensus estimate.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E85",
+      "title_en": "Meta quarterly earnings and next-day stock reaction",
+      "title_zh": "Meta 財報與次日股價",
+      "domain": "Markets",
+      "expected_date": "2026-07-30",
+      "description": "Meta reports in the last week of July. Its post-earnings moves have repeatedly been double-digit in either direction as spending plans are re-priced.",
+      "binary_outcome": "Meta's share price closes higher on the first full trading day after the report than on the day before it.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E86",
+      "title_en": "US July employment report",
+      "title_zh": "美國七月非農就業報告",
+      "domain": "Markets",
+      "expected_date": "2026-08-07",
+      "description": "The July nonfarm payrolls report is released on the first Friday of August, a week after the Fed meets and with no intervening projections.",
+      "binary_outcome": "Headline nonfarm payroll growth comes in above the consensus forecast.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E87",
+      "title_en": "Bitcoin over the two-week window",
+      "title_zh": "比特幣兩週走勢",
+      "domain": "Markets",
+      "expected_date": "2026-08-10",
+      "description": "Crypto trades through the Fed decision, the mega-cap earnings cluster and the jobs report inside a single fortnight.",
+      "binary_outcome": "Bitcoin's price on 10 August is higher than its price on 27 July.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E88",
+      "title_en": "S&P 500 record watch",
+      "title_zh": "標普500新高觀察",
+      "domain": "Markets",
+      "expected_date": "2026-08-10",
+      "description": "The index enters the window with earnings season at its peak and the Fed decision unresolved.",
+      "binary_outcome": "The S&P 500 sets at least one new all-time closing high between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E89",
+      "title_en": "Gold over the two-week window",
+      "title_zh": "黃金兩週走勢",
+      "domain": "Markets",
+      "expected_date": "2026-08-10",
+      "description": "Gold's move across the window reads as the market's summary judgement on rates and risk.",
+      "binary_outcome": "Spot gold closes higher on 10 August than on 27 July.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E90",
+      "title_en": "US 10-year Treasury yield over the window",
+      "title_zh": "美國十年期公債殖利率",
+      "domain": "Markets",
+      "expected_date": "2026-08-10",
+      "description": "The long end absorbs the Fed statement, the refunding calendar and the jobs print in the same fortnight.",
+      "binary_outcome": "The 10-year Treasury yield is lower on 10 August than on 27 July.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E91",
+      "title_en": "Guam primary election",
+      "title_zh": "關島初選",
+      "domain": "Politics",
+      "expected_date": "2026-08-01",
+      "description": "Guam holds its primary on 1 August, the first of the August primary wave, choosing nominees including for its non-voting congressional delegate.",
+      "binary_outcome": "The incumbent delegate wins their party's primary.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E92",
+      "title_en": "Michigan US Senate Democratic primary",
+      "title_zh": "密西根聯邦參議員民主黨初選",
+      "domain": "Politics",
+      "expected_date": "2026-08-04",
+      "description": "Michigan holds both party primaries for its US Senate seat on 4 August, a contest that will shape one of November's most-watched general elections.",
+      "binary_outcome": "The candidate leading in the final pre-primary public polling average wins the Democratic primary.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E93",
+      "title_en": "Michigan gubernatorial primaries",
+      "title_zh": "密西根州長初選",
+      "domain": "Politics",
+      "expected_date": "2026-08-04",
+      "description": "Michigan's open governor's race reaches its primary on 4 August, with both parties selecting nominees for an open seat.",
+      "binary_outcome": "The Republican gubernatorial primary is decided by more than 10 percentage points.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E94",
+      "title_en": "Missouri primary elections",
+      "title_zh": "密蘇里初選",
+      "domain": "Politics",
+      "expected_date": "2026-08-04",
+      "description": "Missouri votes on 4 August for US House, state Senate and statewide nominations.",
+      "binary_outcome": "Every incumbent US House member seeking renomination in Missouri wins their primary.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E95",
+      "title_en": "Kansas gubernatorial primary",
+      "title_zh": "堪薩斯州長初選",
+      "domain": "Politics",
+      "expected_date": "2026-08-04",
+      "description": "Kansas holds its primary on 4 August, including nominations for an open governor's race.",
+      "binary_outcome": "The Republican candidate with the most establishment endorsements wins the gubernatorial primary.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E96",
+      "title_en": "Washington top-two primary",
+      "title_zh": "華盛頓州前二名初選",
+      "domain": "Politics",
+      "expected_date": "2026-08-04",
+      "description": "Washington runs its all-party top-two primary on 4 August, where all candidates appear on one ballot and the top two advance regardless of party.",
+      "binary_outcome": "A Democrat finishes first in the top-two primary for Washington's US Senate seat.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E97",
+      "title_en": "Tennessee primary elections",
+      "title_zh": "田納西初選",
+      "domain": "Politics",
+      "expected_date": "2026-08-06",
+      "description": "Tennessee votes on Thursday 6 August, keeping its unusual weekday-not-Tuesday primary tradition.",
+      "binary_outcome": "Every incumbent US House member seeking renomination in Tennessee wins their primary.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E98",
+      "title_en": "Hawaii primary election",
+      "title_zh": "夏威夷初選",
+      "domain": "Politics",
+      "expected_date": "2026-08-08",
+      "description": "Hawaii holds its primary on Saturday 8 August, the last of the primaries inside this window.",
+      "binary_outcome": "The incumbent governor wins the Democratic gubernatorial primary.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E99",
+      "title_en": "Spider-Man: Brand New Day opening weekend",
+      "title_zh": "蜘蛛人：全新一天 首週末",
+      "domain": "Culture",
+      "expected_date": "2026-08-02",
+      "description": "Spider-Man: Brand New Day releases 31 July in the US and Australia, the summer's largest superhero opening and a franchise reset after the previous trilogy's finale.",
+      "binary_outcome": "It finishes #1 at the domestic box office for its opening weekend.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E100",
+      "title_en": "Spider-Man: Brand New Day opening gross",
+      "title_zh": "蜘蛛人：全新一天 開票房",
+      "domain": "Culture",
+      "expected_date": "2026-08-02",
+      "description": "Tracking for a franchise reset carries unusually wide error bars: the character is proven, the configuration is new.",
+      "binary_outcome": "Domestic opening weekend gross exceeds $150 million.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E101",
+      "title_en": "Second weekend of August at the box office",
+      "title_zh": "八月第二個週末票房",
+      "domain": "Culture",
+      "expected_date": "2026-08-09",
+      "description": "August openers including Buddy, Mutiny, Coyote vs. ACME, The Dog Stars and The End of Oak Street enter against an incumbent blockbuster.",
+      "binary_outcome": "Spider-Man: Brand New Day is still #1 domestically for the weekend of 7-9 August.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E102",
+      "title_en": "Lollapalooza Chicago",
+      "title_zh": "芝加哥 Lollapalooza 音樂節",
+      "domain": "Culture",
+      "expected_date": "2026-08-02",
+      "description": "Lollapalooza runs 30 July to 2 August in Grant Park, a four-day festival with a long history of mid-set weather evacuations.",
+      "binary_outcome": "The festival completes all four days without a full-grounds weather evacuation.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E103",
+      "title_en": "Billboard Hot 100 top spot",
+      "title_zh": "告示牌單曲榜冠軍",
+      "domain": "Culture",
+      "expected_date": "2026-08-08",
+      "description": "Summer chart weeks are where a song either consolidates a long run or is displaced by a release timed to the season.",
+      "binary_outcome": "The #1 song on the Hot 100 chart dated 8 August is the same as on the chart dated 1 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E104",
+      "title_en": "Billboard 200 top album",
+      "title_zh": "告示牌專輯榜冠軍",
+      "domain": "Culture",
+      "expected_date": "2026-08-08",
+      "description": "The album chart in early August is typically decided by whether a major release lands in the tracking week.",
+      "binary_outcome": "The #1 album on the Billboard 200 chart dated 8 August is a new entry.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E105",
+      "title_en": "Netflix weekly top title",
+      "title_zh": "Netflix 每週最熱門作品",
+      "domain": "Culture",
+      "expected_date": "2026-08-09",
+      "description": "Netflix publishes weekly viewing hours; the top slot alternates between new releases and back-catalogue resurgences driven by social media.",
+      "binary_outcome": "The most-watched English-language title for the week of 3-9 August is a title released within the prior 30 days.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E106",
+      "title_en": "August wide release performance",
+      "title_zh": "八月新片表現",
+      "domain": "Culture",
+      "expected_date": "2026-08-09",
+      "description": "Buddy is among the wide releases opening in the first half of August, in the shadow of a Marvel tentpole.",
+      "binary_outcome": "Buddy opens above $20 million domestically.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E107",
+      "title_en": "Black Hat USA 2026 briefings",
+      "title_zh": "Black Hat USA 2026",
+      "domain": "Tech",
+      "expected_date": "2026-08-06",
+      "description": "Black Hat USA runs 1-6 August at Mandalay Bay, opening with four days of trainings and closing with two days of Briefings. AI security is expected to dominate: prompt injection at scale, model supply chain attacks, and the security properties of agentic systems.",
+      "binary_outcome": "At least one Briefing discloses a named, previously undisclosed vulnerability in a commercially deployed LLM or AI agent product.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E108",
+      "title_en": "DEF CON 2026",
+      "title_zh": "DEF CON 2026",
+      "domain": "Tech",
+      "expected_date": "2026-08-09",
+      "description": "DEF CON follows Black Hat in the same Las Vegas week — the highest-density technical week in the security calendar, with its village format producing the results that reach mainstream press.",
+      "binary_outcome": "A DEF CON village result receives coverage in at least one mainstream (non-trade) national news outlet.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E109",
+      "title_en": "Samsung Galaxy Z Fold 8 retail availability",
+      "title_zh": "三星 Z Fold 8 上市",
+      "domain": "Tech",
+      "expected_date": "2026-08-07",
+      "description": "Galaxy Unpacked was held 22 July, announcing the Z Fold 8 at $1,899, the Z Fold 8 Ultra at $2,099 and the Z Flip 8 at $1,199, with pre-orders opening at the close of the keynote and general availability expected in early August.",
+      "binary_outcome": "General retail availability begins on or before 10 August with no announced delay.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E110",
+      "title_en": "Frontier model release window",
+      "title_zh": "前沿模型發布",
+      "domain": "Tech",
+      "expected_date": "2026-08-10",
+      "description": "The major labs have been shipping on a compressed cadence, and the Las Vegas security week tends to attract adjacent announcements.",
+      "binary_outcome": "At least one of OpenAI, Anthropic or Google DeepMind publicly releases a new flagship model between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E111",
+      "title_en": "Major cloud outage window",
+      "title_zh": "雲端服務大規模中斷",
+      "domain": "Tech",
+      "expected_date": "2026-08-10",
+      "description": "Two weeks of peak summer load across AWS, Azure and Google Cloud, overlapping the security conference week.",
+      "binary_outcome": "At least one of AWS, Azure or Google Cloud publicly acknowledges an outage lasting two hours or more affecting a major region.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E112",
+      "title_en": "Nvidia over the window",
+      "title_zh": "輝達兩週股價",
+      "domain": "Tech",
+      "expected_date": "2026-08-10",
+      "description": "Nvidia does not report in this window but trades on everyone else's capital expenditure disclosures during the peak earnings week.",
+      "binary_outcome": "Nvidia closes higher on 10 August than on 27 July.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E113",
+      "title_en": "AI regulatory action",
+      "title_zh": "AI 監管動作",
+      "domain": "Tech",
+      "expected_date": "2026-08-10",
+      "description": "US and EU processes on AI oversight have both been running to timetables that produce announcements through the summer.",
+      "binary_outcome": "A new binding AI regulatory measure or formal enforcement action is announced by a US federal agency or the EU between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E114",
+      "title_en": "Apple September event scheduling",
+      "title_zh": "蘋果九月發表會排程",
+      "domain": "Tech",
+      "expected_date": "2026-08-10",
+      "description": "Apple is expected to announce new iPhones in September, reportedly including its first foldable, roughly eight weeks after Samsung's July keynote. Invitations historically go out in late August.",
+      "binary_outcome": "Apple publicly announces the date of its September event on or before 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E115",
+      "title_en": "NASA SpaceX CRS-35 resupply mission",
+      "title_zh": "CRS-35 國際太空站補給任務",
+      "domain": "Science",
+      "expected_date": "2026-08-10",
+      "description": "CRS-35 will deliver supplies and science to the International Space Station, scheduled no earlier than August 2026. Launch dates in this programme move frequently on weather and readiness.",
+      "binary_outcome": "CRS-35 launches on or before 10 August.",
+      "source_confidence": "verified"
+    },
+    {
+      "event_id": "E116",
+      "title_en": "Falcon 9 launch cadence",
+      "title_zh": "獵鷹九號發射節奏",
+      "domain": "Science",
+      "expected_date": "2026-08-10",
+      "description": "SpaceX has sustained a launch cadence measured in days rather than weeks, spread across Cape Canaveral, Kennedy and Vandenberg.",
+      "binary_outcome": "SpaceX conducts 8 or more Falcon 9 launches between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E117",
+      "title_en": "Starship flight test window",
+      "title_zh": "星艦試飛",
+      "domain": "Science",
+      "expected_date": "2026-08-10",
+      "description": "Starship test campaigns proceed in bursts separated by regulatory review and pad turnaround, making any specific two-week window genuinely uncertain.",
+      "binary_outcome": "A Starship integrated flight test occurs between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E118",
+      "title_en": "Atlantic hurricane season",
+      "title_zh": "大西洋颶風季",
+      "domain": "Science",
+      "expected_date": "2026-08-10",
+      "description": "Late July into August is when Atlantic activity conventionally accelerates toward the September peak.",
+      "binary_outcome": "At least one new named Atlantic tropical storm forms between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E119",
+      "title_en": "Major earthquake window",
+      "title_zh": "強震觀察",
+      "domain": "Science",
+      "expected_date": "2026-08-10",
+      "description": "Magnitude 7.0+ events occur globally at a long-run average of roughly one per month, distributed without pattern.",
+      "binary_outcome": "At least one magnitude 7.0 or greater earthquake occurs worldwide between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E120",
+      "title_en": "Geomagnetic storm window",
+      "title_zh": "地磁暴觀察",
+      "domain": "Science",
+      "expected_date": "2026-08-10",
+      "description": "The solar cycle remains active enough that strong storms and visible aurora at mid-latitudes have become recurrent news events.",
+      "binary_outcome": "NOAA observes a G3 (strong) or greater geomagnetic storm between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E121",
+      "title_en": "Northern hemisphere heat extremes",
+      "title_zh": "北半球高溫極值",
+      "domain": "Science",
+      "expected_date": "2026-08-10",
+      "description": "Early August is climatologically the hottest fortnight of the northern year, and recent summers have repeatedly produced national all-time records.",
+      "binary_outcome": "At least one country sets a new national all-time high temperature record between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    },
+    {
+      "event_id": "E122",
+      "title_en": "Major mission milestone slip",
+      "title_zh": "重大任務時程延誤",
+      "domain": "Science",
+      "expected_date": "2026-08-10",
+      "description": "Agency schedules across crewed and flagship science programmes have been under sustained pressure from budget and hardware readiness.",
+      "binary_outcome": "NASA or ESA publicly announces a delay to a major mission milestone between 27 July and 10 August.",
+      "source_confidence": "inferred"
+    }
+  ]
+}
