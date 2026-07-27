@@ -151,10 +151,10 @@ class TestAnalyzeHexagram(unittest.TestCase):
 
 class TestQiguaEndToEnd(unittest.TestCase):
     def test_qigua_by_numbers_known(self):
-        r = mc.qigua_by_numbers(7, 4, 11)        # 上艮 下震，動爻 11%6=5
+        r = mc.qigua_by_numbers(7, 4, 11)        # 上艮 下震，動爻 (7+4+11)%6=4
         self.assertEqual(r["本卦"]["名稱"], "山雷頤")
-        self.assertEqual(r["本卦"]["動爻"], "第5爻")
-        self.assertEqual(r["變卦"]["名稱"], "風雷益")
+        self.assertEqual(r["本卦"]["動爻"], "第4爻")
+        self.assertEqual(r["變卦"]["名稱"], "火雷噬嗑")
         self.assertEqual(r["錯卦"]["名稱"], "澤風大過")
 
     def test_qigua_by_numbers_two_args_dong_from_sum(self):
@@ -162,10 +162,44 @@ class TestQiguaEndToEnd(unittest.TestCase):
         r = mc.qigua_by_numbers(6, 8)            # (6+8)%6 = 2
         self.assertEqual(r["本卦"]["動爻"], "第2爻")
 
+    def test_three_numbers_use_total_not_third(self):
+        # 原書「總數除六」：三數起卦動爻取三數之和，非只取第三數。
+        # 若退回只取 num3，(6,8,9) 會得第3爻而非第5爻——此斷言即為那道防線。
+        r = mc.qigua_by_numbers(6, 8, 9)         # (6+8+9)=23, 23%6=5
+        self.assertEqual(r["本卦"]["動爻"], "第5爻")
+        self.assertIn("(6+8+9)", r["計算過程"]["動爻"])
+
     def test_qigua_by_time_runs(self):
         r = mc.qigua_by_time(2026, 5, 4, 14)
         self.assertIn("本卦", r)
         self.assertIn("計算過程", r)
+
+    def test_zishi_rolls_the_day_forward(self):
+        # 原書「日始於子時」：23 時已入次日子時，日數必須取次日，否則
+        # 23:30 與 22:30 會落在同一日數上，子時整段被歸錯天。
+        early = mc.qigua_by_gregorian_time_precise(2024, 1, 18, 22, 30, 0)
+        late = mc.qigua_by_gregorian_time_precise(2024, 1, 18, 23, 30, 0)
+        self.assertEqual(early["計算過程"]["日數"], 8)
+        self.assertEqual(late["計算過程"]["日數"], 9)
+        self.assertIn("子時推日", late["計算過程"])
+        self.assertNotIn("子時推日", early["計算過程"])
+        self.assertIn("日始於子時", late["日期轉換"]["說明"])
+
+    def test_zishi_rolls_into_a_leap_month(self):
+        # 2023 閏二月：二月最後一天的子時應進入「閏二月初一」，不是三月初一。
+        last = mc._month_days(mc.YEAR_INFOS[2023 - 1900], 2, False)
+        self.assertEqual(mc.lunar_next_day(2023, 2, last, False), (2023, 2, 1, True))
+
+    def test_qian_kun_hu_gua_comes_from_the_bian_gua(self):
+        # 乾/坤六爻皆同，直接取互會得本卦自身（無所取象），原書規定改從變卦取互。
+        qian = mc.qigua_by_numbers(1, 1, 1)      # 乾為天，動爻 (1+1+1)%6=3
+        self.assertEqual(qian["本卦"]["名稱"], "乾為天")
+        self.assertTrue(qian["互卦"]["取自變卦"])
+        self.assertNotEqual(qian["互卦"]["名稱"], "乾為天")
+
+        # 一般卦不受影響，仍從本卦取互。
+        other = mc.qigua_by_numbers(7, 4, 11)
+        self.assertFalse(other["互卦"]["取自變卦"])
 
     def test_qigua_by_gregorian_adds_conversion(self):
         r = mc.qigua_by_gregorian_time(2026, 6, 18, 14)
@@ -272,8 +306,9 @@ class TestYaoPositions(unittest.TestCase):
         # 六二乘初九、上六乘九五 → 陰乘陽（柔凌剛）
         self.assertTrue(self.lines[2]["承乘"].startswith("陰乘陽"))
         self.assertTrue(self.lines[6]["承乘"].startswith("陰乘陽"))
-        # 九三乘六二 → 陽乘陰（剛統柔）
-        self.assertTrue(self.lines[3]["承乘"].startswith("陽乘陰"))
+        # 九三居六二之上 → 下陰承陽（柔承剛）。古法「乘」專指陰居陽上，
+        # 反向並無「陽乘陰」一說，故此處用承不用乘。
+        self.assertTrue(self.lines[3]["承乘"].startswith("下陰承陽"))
 
     def test_moving_line_summary_captures_isolation(self):
         # 動爻初九：得正卻無應、且上被六二陰乘——此刻勿動的結構依據
@@ -286,3 +321,48 @@ class TestYaoPositions(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class TestWangShuai(unittest.TestCase):
+    """卦氣旺衰：解卦流程第四步，過去只在 references 裡當表給 LLM 查，現改為計算。"""
+
+    # references/yingqi-calc.md §3.1 的原表，順序＝旺相休囚死
+    TABLE = {
+        "春": ("木", "火", "水", "金", "土"),
+        "夏": ("火", "土", "木", "水", "金"),
+        "秋": ("金", "水", "土", "火", "木"),
+        "冬": ("水", "木", "金", "土", "火"),
+        "四季末": ("土", "金", "火", "木", "水"),
+    }
+
+    def test_matches_the_source_table(self):
+        # 推導（當令旺／令生相／生令休／剋令囚／令剋死）必須逐格重現原表，
+        # 否則旺衰就只是好聽的字，不是那份古法。
+        for season, elements in self.TABLE.items():
+            for element, want in zip(elements, ("旺", "相", "休", "囚", "死")):
+                self.assertEqual(mc.analyze_wangshuai(element, season), want,
+                                 f"{season}·{element}")
+
+    def test_every_element_has_exactly_one_state_per_season(self):
+        for season in self.TABLE:
+            states = [mc.analyze_wangshuai(e, season) for e in ("木", "火", "土", "金", "水")]
+            self.assertCountEqual(states, ["旺", "相", "休", "囚", "死"], season)
+
+    def test_sijimo_is_the_last_18_days_of_months_3_6_9_12(self):
+        # 四季末（土旺）是唯一讓坤艮當令的時令；漏了它，土就永遠不旺。
+        for month in (3, 6, 9, 12):
+            length = mc._month_days(mc.YEAR_INFOS[2024 - 1900], month, False)
+            self.assertEqual(mc.get_season(2024, month, length), "四季末")
+            self.assertNotEqual(mc.get_season(2024, month, length - 18), "四季末")
+        self.assertEqual(mc.get_season(2024, 1, 15), "春")
+        self.assertEqual(mc.get_season(2024, 5, 15), "夏")
+        self.assertEqual(mc.get_season(2024, 8, 15), "秋")
+        self.assertEqual(mc.get_season(2024, 11, 15), "冬")
+
+    def test_time_cast_reports_it_and_number_cast_does_not(self):
+        # 數字起卦無日期即無時令，該節從缺——不可用「現在」或預設值蒙混。
+        timed = mc.qigua_by_gregorian_time_precise(2024, 4, 20, 14, 30, 0)
+        self.assertIn("卦氣旺衰", timed)
+        self.assertIn("時令", timed["卦氣旺衰"])
+        self.assertIsInstance(timed["卦氣旺衰"]["體卦得令"], bool)
+        self.assertNotIn("卦氣旺衰", mc.qigua_by_numbers(6, 8, 7))
