@@ -688,18 +688,22 @@ def qigua_by_gregorian_time_precise(year: int, month: int, day: int,
     return result
 
 
-def qigua_by_numbers(num1: int, num2: int, num3: Optional[int] = None) -> Dict:
+def qigua_by_numbers(num1: int, num2: int, num3: Optional[int] = None,
+                     season: Optional[str] = None) -> Dict:
     """以數字起卦。
 
     動爻恆取「總數除六」（原書 卷一・數字占）：兩數則 (num1+num2)、三數則
     (num1+num2+num3)。三數時只取 num3 是常見的今人簡法，非原書之法。
+
+    season 為占時時令。數字本身不含日期，故由 qigua_by_numbers_at 代入——只
+    用來輸出【卦氣旺衰】，絕不參與上下卦與動爻之數。不給則該節從缺。
     """
     upper_gua = num_to_gua(num1)
     lower_gua = num_to_gua(num2)
     total = num1 + num2 + (num3 if num3 is not None else 0)
     dong_yao = num_to_yao(total)
 
-    result = _analyze_hexagram(upper_gua, lower_gua, dong_yao)
+    result = _analyze_hexagram(upper_gua, lower_gua, dong_yao, season)
     dong_expr = f"({num1}+{num2}) mod 6 = {dong_yao}" if num3 is None \
         else f"({num1}+{num2}+{num3}) mod 6 = {dong_yao}"
     result["計算過程"] = {
@@ -707,6 +711,29 @@ def qigua_by_numbers(num1: int, num2: int, num3: Optional[int] = None) -> Dict:
         "第二數": f"{num2} → {num2} mod 8 = {lower_gua} → {BAGUA[lower_gua]['name']}",
         "動爻": dong_expr,
     }
+    return result
+
+
+def qigua_by_numbers_at(year: int, month: int, day: int, hour: int,
+                        num1: int, num2: int,
+                        num3: Optional[int] = None) -> Dict:
+    """數字起卦 + 占時（西曆），使【卦氣旺衰】可用。
+
+    卦氣旺衰只需月令，與起卦之數無關：日期不入上下卦、不入動爻，僅用來定時令。
+    23 時照「日始於子時」推日，故與同一時刻的時間起卦落在同一個農曆日、同一個
+    時令，不會兩處說法不同。
+    """
+    lunar_year, lunar_month, lunar_day, is_leap = gregorian_to_lunar(year, month, day)
+    l_year, l_month, l_day, leap, rolled = _apply_zishi(
+        lunar_year, lunar_month, lunar_day, hour, is_leap)
+    result = qigua_by_numbers(num1, num2, num3,
+                              get_season(l_year, l_month, l_day, leap))
+    lunar_text, _ = _lunar_display(lunar_year, lunar_month, lunar_day, hour, is_leap)
+    note = (f"西曆{year}年{month}月{day}日{hour}時（農曆{lunar_text}）"
+            "——僅定時令（卦氣旺衰），不入起卦之數")
+    if rolled:
+        note += "；23時屬次日子時，農曆日已推次日（日始於子時）"
+    result["計算過程"]["占時"] = note
     return result
 
 
@@ -817,7 +844,12 @@ if __name__ == "__main__":
             num1 = int(sys.argv[2])
             num2 = int(sys.argv[3])
             num3 = int(sys.argv[4]) if len(sys.argv) > 4 else None
-            result = qigua_by_numbers(num1, num2, num3)
+            # 占時取執行當下：此腳本在占卜當時、在占者機器上跑，now() 就是占時，
+            # 與 time 模式同一來源。日期只定時令，不入起卦之數。
+            now = datetime.now()
+            result = qigua_by_numbers_at(now.year, now.month, now.day, now.hour,
+                                         num1, num2, num3)
+            print(f"\n占時：{now.strftime('%Y年%m月%d日 %H時')}（僅供卦氣旺衰）")
         elif sys.argv[1] == "convert" and len(sys.argv) >= 5:
             year = int(sys.argv[2])
             month = int(sys.argv[3])

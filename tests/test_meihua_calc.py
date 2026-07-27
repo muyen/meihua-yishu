@@ -169,6 +169,24 @@ class TestQiguaEndToEnd(unittest.TestCase):
         self.assertEqual(r["本卦"]["動爻"], "第5爻")
         self.assertIn("(6+8+9)", r["計算過程"]["動爻"])
 
+    def test_numbers_with_date_add_wangshuai_but_not_change_the_hexagram(self):
+        # 占時只定時令。若日期漏進起卦之數，本卦或動爻就會與無日期版本不同——
+        # 這組斷言就是那道防線。旺衰是加出來的一節，不是換掉的一卦。
+        plain = mc.qigua_by_numbers(6, 8, 9)
+        dated = mc.qigua_by_numbers_at(2026, 1, 20, 14, 6, 8, 9)  # 農曆十二月・冬
+        self.assertEqual(dated["本卦"], plain["本卦"])
+        self.assertEqual(dated["變卦"], plain["變卦"])
+        self.assertNotIn("卦氣旺衰", plain)
+        self.assertEqual(dated["卦氣旺衰"]["時令"], "冬（水旺）")
+        self.assertIn("不入起卦之數", dated["計算過程"]["占時"])
+
+    def test_numbers_at_23h_takes_the_next_lunar_day(self):
+        # 日始於子時：數字卦的占時也走同一條推日規則，否則同一時刻的時間卦與
+        # 數字卦會落在不同農曆日、可能給出不同時令。
+        r = mc.qigua_by_numbers_at(2026, 4, 17, 23, 1, 1)  # 農曆三月初一 23時 → 初二
+        self.assertIn("農曆2026年3月2日", r["計算過程"]["占時"])
+        self.assertIn("日始於子時", r["計算過程"]["占時"])
+
     def test_qigua_by_time_runs(self):
         r = mc.qigua_by_time(2026, 5, 4, 14)
         self.assertIn("本卦", r)
